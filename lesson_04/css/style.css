@@ -1,0 +1,111 @@
+@import url("reset.css");
+* {
+	color: rgb(42, 33, 33);
+}
+
+#nav li {
+	color: green;
+}
+
+li {
+	color: blanchedalmond;
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5 {
+	color: blue;
+}
+
+div ul .header {
+	color: black;
+}
+
+* > header ul {
+	color: aquamarine;
+}
+
+#some-id {
+	color: yellow;
+}
+
+div.header {
+	color: blue;
+}
+
+h1 {
+	color: red;
+}
+
+p {
+	color: azure;
+}
+
+h2 {
+	color: blue;
+}
+
+.spoiler-box__title {
+	color: rgb(165, 236, 51);
+}
+
+[class*="__title"] {
+	color: blueviolet;
+}
+
+.content-area h2 {
+	color: red;
+}
+
+.text * {
+	color: green;
+}
+
+.text > p {
+	color: red;
+}
+
+.second-content p {
+	color: blueviolet;
+}
+
+.text ~ p {
+	color: red;
+}
+
+.main-text,
+.content-area,
+.third-content,
+.text p {
+	color: brown;
+}
+
+.general-content-container p {
+	color: rgba(4, 92, 92, 0.686);
+}
+
+.footer-info {
+	color: cadetblue;
+}
+
+.footer-info strong {
+	color: greenyellow;
+}
+
+body strong {
+	color: red;
+}
+
+body .footer-info {
+	color: red;
+}
+
+body .footer-info strong {
+	color: blue;
+}
+
+div em {
+	color: yellow;
+}

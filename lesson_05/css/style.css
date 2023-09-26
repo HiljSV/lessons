@@ -1,0 +1,204 @@
+/* ================ ШРИФТИ =================== */
+
+/* Підключення шрифтів здійснено через файл який знаходиться /css/fonts.css */
+
+@import url("fonts.css");
+
+/* Скидання стилів */
+
+@import url("reset.css");
+
+/* Основні стилі */
+
+body {
+	font-family: "Inter", sans-serif;
+	font-family: "Poppins", sans-serif;
+	font-size: 18px;
+	color: #37393f;
+}
+
+.menu {
+}
+
+.logo {
+	display: flex;
+	font-size: 25px;
+	font-family: Poppins;
+	font-weight: 700;
+}
+
+.logo-icon {
+	float: left;
+	width: 47px;
+}
+
+.logo img {
+	width: 42px;
+	height: 29px;
+}
+
+.logo-text span {
+	color: #6b77e5;
+}
+
+.nav {
+	color: #37393f;
+	font-size: 18px;
+	font-family: Inter;
+	font-weight: 400;
+}
+
+.button-conteiner {
+	background-color: #6b77e5;
+	vertical-align: middle;
+	display: table-cell;
+	width: 184px;
+	height: 66px;
+}
+
+.button-text {
+	color: #ffffff;
+	font-size: 18px;
+	font-family: Inter;
+}
+
+.baner-text,
+.title,
+.sub-title {
+	font-family: "Poppins";
+}
+
+.baner-content {
+	background-color: rgba(55, 57, 63, 0.93);
+	vertical-align: middle;
+	display: table-cell;
+	width: 1920px;
+	height: 458px;
+}
+
+.title-buner-text {
+	color: white;
+	font-size: 18px;
+	font-family: Inter;
+	font-weight: 600;
+	line-height: 26.31px;
+}
+
+.box-point-list-box {
+	display: flex;
+	float: left;
+	vertical-align: middle;
+	width: 11px;
+	height: 11px;
+	color: #40ddb6;
+	margin-left: 42px;
+}
+
+.baner-text {
+	color: #ffffff;
+	font-size: 60px;
+	font-family: Poppins;
+	font-weight: 700;
+	line-height: 66px;
+	margin-left: 52px;
+}
+
+.text {
+	font-family: "Inter";
+}
+
+.servis-singl-container {
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 31.75px;
+}
+
+.services-list-1 {
+	background-color: #6b77e5;
+	vertical-align: middle;
+	display: table-cell;
+	width: 408px;
+	height: 52px;
+	color: white;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 25.4px;
+}
+
+/*Тут зробив відступ стрілочки яка вказує направо біля тексту Financial Consultancy width: 120px якщо більше 130 вказати то прескочить нижче надпису*/
+
+.vector-right-white-img {
+	width: 175px;
+	height: 18px;
+	color: white;
+	line-height: 25.4px;
+}
+
+.services-list-2,
+.services-list-3,
+.services-list-4,
+.services-list-5 {
+	color: #37393f;
+	width: 408px;
+	height: 52px;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 25.4px;
+}
+
+.vector-right-img {
+	width: 120px;
+	height: 18px;
+	color: #37393f;
+	line-height: 25.4px;
+}
+
+.title {
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 38.1px;
+}
+
+.text {
+	color: #7d7d7d;
+	font-family: "Inter";
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 26.31px;
+}
+
+.sub-title {
+	color: #6b77e5;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 25.4px;
+}
+
+.page-six .title {
+	color: #37393f;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 50.8px;
+}
+
+/*Код повязаний з ul та ol шукав сам і робив так як маркери після обнулення стилів не ставились*/
+
+ul.bulleted-list li::before {
+	content: "\2022";
+	color: #7d7d7d;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 26.31px;
+}
+
+ol.numbered-list {
+	color: #7d7d7d;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 26.31px;
+}
+
+ol.numbered-list li {
+	list-style-position: inside;
+	list-style-type: decimal-leading-zero;
+}

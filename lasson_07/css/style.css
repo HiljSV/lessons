@@ -1,0 +1,341 @@
+/* Підключення FONTS вручну при підключенні вручну розкоментувати строчку знизу*/
+/* @import url("fonts.css"); */
+
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+
+body {		
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	color: #7d7d7d;
+}
+
+.licencing-block {
+	padding: 50px 0px;
+	max-width: 1248px;
+	margin: 0 auto; /* відцентрувати блок */	
+}
+
+.title{
+	max-width: 296px;
+	margin: 0 auto;		
+}
+
+.title-line,
+.name-title{
+	text-align: center;
+}
+
+.title-line{	
+	font-size: 0;	
+	
+}
+.rectengl{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: #40DDB6;
+	
+}
+.sub-information {	
+	display: inline-block;
+	margin-left: 6px;
+	max-width: 200px;	
+	color: #37393F;
+	font-size: 18px;
+	
+}
+
+.name-title,
+.content-title,
+.sub-content-title,
+.sub-content-title span,
+.photography-title,
+.sub-content-pixels-title,
+.sub-content-unsplash-title,
+.content-block-fonts-item{
+	color: #37393F;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	line-height: 1.21; /* 121% 72.6px */
+	
+}
+
+.name-title{
+	font-size: 60px;
+	line-height: 1.21; /* 121% 72.6px */
+	margin-bottom: 70px;
+}
+.content-block,
+.content-block-icons,
+.content-block-photography {
+	max-width: 1218px;
+} 
+.content-title,
+.photography-title {	
+	font-size: 40px;	
+	margin-bottom: 11px;
+}
+.text {
+	color: #7D7D7D;
+	font-size: 18px;	
+	font-weight: 400;
+	line-height: 1.46; /* 146.187% 26.314px */
+	margin-bottom: 32px;
+}
+
+.sub-content-title {
+	font-size: 30px;
+	margin-bottom: 100px;
+}
+.sub-content-title span {
+	color: #40DDB6;	
+	font-family: "Poppins", sans-serif;
+	font-size: 30px;
+	font-weight: 400;		
+}
+
+.text-block-photography {
+	margin-bottom: 24px;
+}
+
+.content-block-pixels {
+	margin-bottom: 44px;
+	
+
+}
+.sub-content-pixels-title {	
+	font-size: 30px;	
+	margin-bottom: 25px;	
+}
+
+.sub-content-pixels-title span{
+	color: #40DDB6;	
+	font-family: "Poppins", sans-serif;
+	font-size: 30px;
+	font-weight: 400;		
+}
+
+.content-block-unsplash {
+	margin-bottom: 120px;
+}
+.sub-content-unsplash-title {
+	font-size: 30px;	
+	margin-bottom: 15px;	
+}
+.sub-content-unsplash-title span {
+	color: #40DDB6;	
+	font-family: "Poppins", sans-serif;
+	font-size: 30px;
+	font-weight: 400;	
+}
+.content-block-unsplash-text{
+	color: #40DDB6;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.46; /* 146.187% 26.314px */
+}
+
+.content-block-fonts{
+	margin-bottom: 150px;
+
+}
+.content-block-fonts-item {
+	font-size: 40px;
+	margin-bottom: 25px;	
+}
+
+.content-block-fonts-text {
+	font-weight: 400;
+	line-height: 1.46; /* 146.187% 26.314px */
+}
+
+.content-block-fonts-text span {
+	color: #40DDB6;
+	font-weight: 500;
+	line-height: 1.46;
+}
+
+.project-information {
+	max-width: 830px;
+	margin: 0 auto; /* відцентрувати блок */	
+	padding-top: 50px;
+	padding-bottom: 150px;
+}
+.project-information-title {
+	color: #37393F;
+	font-family: "Poppins", sans-serif;
+	font-size: 40px;	
+	font-weight: 700;
+	line-height: 1.27; /* 127% 50.8px */
+	margin-bottom: 13px;
+}
+.project-information-text {	
+	line-height: 1.46; /* 146.187% 26.314px */	
+}
+
+.project-information-text p{
+	margin-bottom: 33px;
+}
+
+.project-information-ul,
+.project-information-ol {
+	font-weight: 500;
+	line-height: 1.46; /* 146.187% 26.314px */	
+}
+
+.project-information-ul li,
+.project-information-ol li {	
+	margin-bottom: 35px;
+}
+
+
+.ephoriaecommerce {
+	max-width: 1240px;
+	margin: 0 auto; /* відцентрувати блок */		
+	padding: 100px;
+}
+
+.title-ephoriaecommerce{
+	max-width: 537px;
+	min-height: 31px;
+	font-size: 0px;
+}
+
+.rectangle{
+	display: inline-block;
+	width: 6px;
+	height: 28px;
+	border-radius: 10px;
+	background: #8A33FD;
+}
+
+.title-ephoriaecommerce-one{
+	display: inline-block;
+	vertical-align: middle;
+	color: #3C4242;
+	font-family: "Core Sans C", sans-serif;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 1.19;
+	margin-bottom: 30px; /* 119.643% 33.5px */
+	padding-left: 15px;
+	/* letter-spacing: 0.56px; */
+}
+.title-ephoriaecommerce-too,
+.title-ephoriaecommerce-three,
+.title-ephoriaecommerce-four {
+	color: #807D7E;
+	font-family: "Core Sans C", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.67; /* 33.5px 167.5% */
+	margin-bottom: 25px;
+}
+.title-ephoriaecommerce-text-one,
+.title-ephoriaecommerce-text-too {
+	color: #807D7E;
+	font-family: "Causten", sans-serif;
+	font-size: 20px;	
+	font-weight: 400;
+	line-height: 1.67; /* 33.5px 167.5% */
+	margin-bottom: 25px;
+	
+}
+.title-ephoriaecommerce-text-one p,
+.title-ephoriaecommerce-text-too p {	
+	margin-bottom: 20px;	
+}
+
+.title-ephoriaecommerce-text-one span,
+.title-ephoriaecommerce-text-too span {	
+	color: #807D7E;
+	font-family: "Causten", sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.67; /* 33.5px 167.5% */	
+}
+
+.title-ephoriaecommerce-four {
+	margin-bottom: 0px;
+}
+
+.jewellery {
+	max-width: 1133px;
+	margin: 0 auto; /* відцентрувати блок */
+	font-size: 0px;	
+	padding: 100px 15px;
+
+}
+.jewellery-block {
+	max-width: 503px;
+	font-family: "Cormorant Infant", sans-serif;		
+	/* margin-bottom: 160px; */
+	display: inline-block;
+	margin-right: 70px;
+	padding-bottom: 70px;
+
+}
+.block-item-3 {
+	color: #D58417;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 100%; /* 20px */
+	margin-bottom: 27px;
+}
+.block-item-2 {
+	color: #000;
+font-family: "Cormorant Infant", sans-serif;
+font-size: 64px;
+font-weight: 700;
+line-height: 100%; /* 64px */
+margin-bottom: 27px;
+}
+.jewellery-block-text {
+	color: #606060;
+font-family: "Cormorant Infant", sans-serif;
+font-size: 30px;
+font-weight: 700;
+line-height: 1.4; /* 140% 42px */
+}
+.photo-block{
+	display: inline-block;
+	max-width: 530px;	
+	vertical-align: bottom;
+}
+
+.img-4{
+	height: 336px;
+	width: 177px;
+	margin-right: 30px;	
+}
+
+.img-5 {
+	height: 500px;
+	width: 307px;	
+}
+
+.img-4,
+.img-5{
+	display: inline-block;
+	border: 1px solid #502203;
+	border-radius: 235px;
+	vertical-align: middle;
+}
+
+.img-4 img, .img-5 img {
+	max-width: 100%;
+	margin-left: -11px;
+	padding-top: 19px;
+	border-radius: 235px;
+}
+
+img{
+	vertical-align: top;
+}

@@ -1,0 +1,1068 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+
+
+
+/* ____________________________________________________________ */
+
+/* HOMEWORK LESSON 9 TRAINING */
+
+/* ____________________________________________________________ */
+
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 0;
+}
+
+.training-block-1 {
+	margin: 0 auto;
+	max-width: 1200px;
+	margin-bottom: 20px;
+	padding: 30px;
+	font-size: 16px;
+}
+
+.link-hover-1 {
+	font-size: 30px;
+	color: green;
+}
+
+.link-hover-1:hover {
+	color: white;
+	/* при наведенні мишкою колір змінюється на синій*/
+	background-color: rgb(181, 127, 232);
+	text-decoration: underline;
+	/* текст підкреслюється стан обєкту стає посилання */
+}
+
+.link-hover-2 {
+	font-size: 30px;
+	color: green;
+	text-decoration: underline;
+	/* текст підкреслюється стан обєкту стає посилання */
+}
+
+.training-block-2 {
+	margin: 0 auto;
+	max-width: 1200px;
+	min-height: 330px;
+	margin-bottom: 20px;
+	padding: 30px;
+	font-size: 16px;
+	border: 3px solid green;
+}
+
+.link-hover-3,
+.link-hover-4,
+.link-hover-5 {
+	font-size: 30px;
+	color: rgb(212, 70, 14);
+}
+
+.training-block-2:hover .link-hover-3 {
+	/* виділяється весь блок посилань 3-4-5, коли main:hover + .link-hover-3 виділяються наступні після посилання 3,  main:hover *.link-hover-3 виділяється весь блок посилань 3-4-5, коли main:hover >.link-hover-4 виділяються усі крім посилання 4 */
+	font-size: 40px;
+	color: white;
+	/* при наведенні мишкою колір змінюється на синій*/
+	background-color: rgb(181, 127, 232);
+	text-decoration: underline;
+	/* текст підкреслюється стан обєкту стає посилання */
+}
+
+.training-block-2:hover .link-hover-4 {
+	font-size: 40px;
+	color: white;
+	/* при наведенні мишкою колір змінюється на синій*/
+	background-color: rgba(232, 127, 232, 0.685);
+}
+
+.training-block-2:hover .link-hover-5 {
+	font-size: 40px;
+	color: white;
+	/* при наведенні мишкою колір змінюється на синій*/
+	background-color: rgb(7, 123, 47);
+	text-decoration: underline;
+	/* текст підкреслюється стан обєкту стає посилання */
+}
+
+.training-block-3 {
+	margin: 0 auto;
+	max-width: 1200px;
+	margin-bottom: 20px;
+	padding: 30px;
+	font-size: 30px;
+	border: 3px solid green;
+}
+
+.link-hover-6 {
+	font-size: 40px;
+	color: rgb(208, 185, 185);
+	/* при наведенні мишкою колір змінюється на синій*/
+	background-color: rgb(7, 123, 47);
+	text-decoration: underline;
+	/* текст підкреслюється стан обєкту стає посилання */
+	opacity: 0.55;
+	/* обєкт стає прозорим */
+}
+
+.hover-expl {}
+
+.hover-expl__block {
+	width: 300px;
+	height: 300px;
+	background-color: #f54a4a;
+	opacity: 0;
+	/* в .hover-expl__block - opacity: 0; є можливість взаємодіяьт з блоком через батьківський об'єкт анімаційно*/
+	/* display: none; */
+	/* об'єкт видалений з браузера на його місце встає інший об'єкт */
+	/* opacity: 0; */
+	/* opacity: 0; обєкт стає прозорим, opacity: 0,5 до 1; об'єкт зьінює прозорвсть */
+	visibility: hidden;
+	/* ховає об'єкт і зним неможливо взаємодіяти */
+}
+
+/* .hover-expl__block:hover{
+	display: inline;
+	display: block;
+} */
+
+.hover-expl:hover .hover-expl__block {
+	visibility: visible;
+	opacity: 1;
+	/*в .hover-expl__block - opacity: 1; є можливість взаємодіяьт з блоком через батьківський об'єкт анімаційно*/
+}
+
+.training-block-4,
+.training-block-5,
+.training-block-6 {
+	margin: 0 auto;
+	max-width: 1200px;
+	margin-bottom: 20px;
+	padding: 30px;
+	font-size: 30px;
+	border: 3px solid green;
+}
+
+.link-hover-7 {
+	color: green;
+}
+
+.link-hover-7:active {
+	/* :active - стан коли натиснули використання по бажанню */
+	color: blue;
+	text-decoration: underline;
+	/* текст підкреслюється стан обєкту стає посилання */
+}
+
+.link-hover-8:visited {
+	/* :active - стан змінює колір коли посилання було вже натиснуте колір тусклий використовують */
+	color: rgb(67, 67, 89);
+}
+
+.link-hover-9 {
+	color: blue;
+	text-decoration: underline;
+	/* текст підкреслюється стан обєкту стає посилання */
+}
+
+.link-hover-10 {
+	color: blue;
+	text-decoration: underline;
+	/* текст підкреслюється стан обєкту стає посилання */
+}
+
+.link-hover-10:focus {
+	/* :focus - стан змінює при користуванні TAB */
+	outline: 3px dotted red;
+	color: yellowgreen;
+}
+
+.link-target:hover {
+	color: white;
+	/* при наведенні мишкою колір змінюється на синій*/
+	background-color: rgb(181, 127, 232);
+	text-decoration: underline;
+	/* текст підкреслюється стан обєкту стає посилання */
+}
+
+.box {
+	width: 300px;
+	height: 300px;
+	background-color: rgb(181, 127, 232);
+	visibility: hidden;
+}
+
+.box:target {
+	/* :target - переходить на об'єкт який може знаходитись буть де */
+	width: 300px;
+	height: 300px;
+	outline: 3px dotted red;
+	color: yellowgreen;
+	visibility: visible;
+}
+
+.training-block-7-text,
+.training-block-8-text {
+	margin: 0 auto;
+	max-width: 1200px;
+	margin-bottom: 20px;
+	padding: 30px;
+	font-size: 18px;
+	border-radius: 30px;
+	outline: 3px dotted green;
+}
+
+.training-block-7-text p {
+	line-height: 1.3;
+	margin-bottom: 20px;
+}
+
+.training-block-7-text p:first-child {
+	/* звертаємось до першого параграфу тексту якщо першим вставити <span>123</span> перед <p>1 Lorem....laboriosam?</p> все злетить і перестане працювати для цього є  */
+	background-color: green;
+}
+
+.training-block-7-text p:first-of-type {
+	/* звертаємось до першого параграфу тексту якщо першим вставити <span>123</span> перед <p>1 Lorem....laboriosam?</p> все злетить і перестане працювати */
+	background-color: green;
+}
+
+.training-block-8-text *:first-child {
+	background-color: green;
+}
+
+.training-block-8-text p:last-child {
+	/* звертаємось до першого параграфу тексту якщо першим вставити <span>123</span> перед <p>1 Lorem....laboriosam?</p> все злетить і перестане працювати для цього є  */
+	background-color: green;
+}
+
+.training-block-9-text {
+	margin: 0 auto;
+	max-width: 1200px;
+	margin-bottom: 20px;
+	padding: 30px;
+	font-size: 18px;
+	border-radius: 30px;
+	outline: 3px dotted green;
+}
+
+.training-block-9-text p {
+	line-height: 1.3;
+	margin-bottom: 20px;
+}
+
+.training-block-9-text p:nth-child(2) {
+	background-color: rgb(49, 142, 228);
+}
+
+.training-block-9-text p:nth-child(odd) {
+	/* odd - звертаємось до непарних */
+	outline: 8px dotted rgb(194, 50, 34);
+}
+
+.training-block-9-text p:nth-child(even) {
+	/* even - звертаємось до парних */
+	outline: 8px solid rgb(230, 230, 44);
+}
+
+.training-block-10-text {
+	margin: 0 auto;
+	max-width: 1200px;
+	margin-bottom: 20px;
+	padding: 30px;
+	font-size: 18px;
+	border-radius: 30px;
+	outline: 3px dotted green;
+}
+
+.training-block-10-text p {
+	line-height: 1.3;
+	margin-bottom: 20px;
+}
+
+.training-block-10-text p:nth-child(2n + 2) {
+	background-color: rgb(49, 142, 228);
+}
+
+.training-block-10-text p:nth-child(2n + 2) {
+	outline: 8px dotted rgb(194, 50, 34);
+}
+
+.training-block-10-text p:nth-child(4n + 4) {
+	outline: 8px solid rgb(230, 230, 44);
+}
+
+.training-block-11-text {
+	margin: 0 auto;
+	max-width: 1200px;
+	margin-bottom: 20px;
+	padding: 30px;
+	font-size: 18px;
+	border-radius: 30px;
+	outline: 3px dotted green;
+}
+
+.training-block-11-text p {
+	line-height: 1.3;
+	margin-bottom: 20px;
+}
+
+.training-block-10-text p:not(:last-child) {
+	/* прибрати останній відступ можна .training-block-10-text p:not(:last-child); або :last-child, *:last-child,  */
+	margin-bottom: 20px;
+}
+
+/* ГАРНА ПРАКТИКА прибрати останній об'єкт вісячий відступ */
+.training-block-12-text {
+	margin: 0 auto;
+	background-color: yellowgreen;
+	max-width: 1200px;
+	margin-bottom: 20px;
+	padding: 25px;
+	font-size: 18px;
+}
+
+.training-block-12-text__title-12 {
+	font-weight: 700;
+	font-size: 40px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.training-block-12-text__title-12-text p {
+	line-height: 1.3;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.training-block-12-text__link-12 {
+	line-height: 1.3;
+	font-size: 18px;
+	margin-bottom: 20px;
+	display: inline-block;
+	color: blueviolet;
+	text-decoration: underline;
+}
+
+/* .training-block-12-text >:not(:last-child){
+		margin-bottom: 0px;
+	} */
+
+.training-block-12-text>*:last-child {
+	margin-bottom: 0px;
+}
+
+/* ____________________________________________________________ */
+
+/* HOMEWORK LESSON 9 GAME */
+
+/* ____________________________________________________________ */
+
+.game-block-line-hover {
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 120px;
+	padding: 30px;
+	font-size: 30px;
+	border: 3px solid green;
+	border-radius: 15px;
+}
+
+.game-block-line-hover__title-name-game {
+	margin-bottom: 20px;
+	padding: 30px;
+	font-family: "Poppins", sans-serif;
+	font-size: 60px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	color: rgb(25, 25, 175);
+	text-shadow: 4px 2px 4px rgba(95, 107, 233, 1);
+	letter-spacing: 15px;
+}
+
+.game-block-line-hover__text-game {
+	margin-bottom: 20px;
+	padding: 30px;
+	font-family: "Poppins", sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	text-indent: 40px;
+	word-spacing: 15px;
+	color: rgb(28, 196, 198);
+	text-align: center;
+}
+
+.game-block-line-hover__block-start-game {
+	max-width: 100px;
+	margin: 0 auto;
+	height: 40px;
+	text-align: center;
+	border: 3px solid rgb(247, 7, 7);
+	height: 40px;
+	display: table;
+}
+
+.game-block-line-hover__block-arrow {
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 35px solid #f54a4a;
+	display: inline-block;
+}
+
+.game-block-field {}
+
+.game-block-1 {
+	width: 50px;
+	height: 150px;
+	margin: 0 auto;
+	background-color: #f54a4a;
+}
+
+.game-block-1:hover {
+	background-color: rgba(155, 10, 143, 0.589);
+}
+
+.game-block-1:hover~.game-block-2 {
+	visibility: visible;
+}
+
+.game-block-2:hover {
+	visibility: visible;
+}
+
+.game-block-2 {
+	width: 592px;
+	height: 50px;
+	background-color: #f54a4a;
+	visibility: hidden;
+}
+
+.game-block-2:hover~.game-block-3,
+.game-block-3:hover {
+	visibility: visible;
+}
+
+.game-block-3 {
+	width: 50px;
+	height: 50px;
+	background-color: #f54a4a;
+	visibility: hidden;
+}
+
+.game-block-4 {
+	width: 50px;
+	height: 50px;
+	background-color: #f54a4a;
+	visibility: hidden;
+}
+
+.game-block-3:hover~.game-block-4,
+.game-block-4:hover {
+	visibility: visible;
+}
+
+.game-block-5 {
+	width: 100px;
+	height: 50px;
+	background-color: #f54a4a;
+	visibility: hidden;
+}
+
+.game-block-4:hover~.game-block-5,
+.game-block-5:hover {
+	visibility: visible;
+}
+
+.game-block-6 {
+	width: 934px;
+	height: 50px;
+	margin: 0 auto;
+	margin-top: -50px;
+	background-color: #f54a4a;
+	visibility: hidden;
+}
+
+.game-block-5:hover~.game-block-6,
+.game-block-6:hover {
+	visibility: visible;
+}
+
+.game-block-7 {
+	width: 25px;
+	height: 200px;
+	margin: 0 auto;
+	margin-right: 76px;
+	margin-top: -50px;
+	background-color: #f54a4a;
+	visibility: hidden;
+}
+
+.game-block-6:hover~.game-block-7,
+.game-block-7:hover {
+	visibility: visible;
+}
+
+.game-block-8 {
+	width: 650px;
+	height: 30px;
+	margin-left: 384px;
+	margin-top: -30px;
+	background-color: #f54a4a;
+	visibility: hidden;
+}
+
+.game-block-7:hover~.game-block-8,
+.game-block-8:hover {
+	visibility: visible;
+}
+
+.game-block-9 {
+	width: 50px;
+	height: 150px;
+	margin-left: 385px;
+	background-color: #00e5ff91;
+	visibility: hidden;
+}
+
+.game-block-8:hover~.game-block-9,
+.game-block-9:hover {
+	visibility: visible;
+}
+
+.game-block-10 {
+	min-height: 300px;
+	visibility: hidden;
+}
+
+.game-block-9:hover~.game-block-10,
+.image:hover {
+	visibility: visible;
+	background: url("../img/honey.jpg") 0 0 / 500px no-repeat;
+}
+
+/* ____________________________________________________________ */
+
+/* HOMEWORK LESSON 9 */
+
+/* ____________________________________________________________ */
+
+.consalting-block {
+	margin: 0 auto;
+	max-width: 1920px;
+	padding: 30px;
+	font-size: 0px;
+	margin-bottom: 145px;
+}
+
+/* ____________________________________________________________ */
+
+/* HOMEWORK LESSON 9 BLOCK 1 */
+
+/* ____________________________________________________________ */
+
+.consalting-block__one {
+	margin: 0 auto;
+	max-width: 692px;
+	font-size: 18px;
+	line-height: 1.46;
+	margin-bottom: 45px;
+}
+
+.consalting-block-one__content-block-one {
+	max-width: 692px;
+	margin-bottom: 42px;
+}
+
+.consalting-block-one__title {
+	color: #37393f;
+	font-size: 30px;
+	margin-bottom: 3px;
+}
+
+.consalting-block-one__sub-text-1 {
+	color: #7d7d7d;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.46;
+}
+
+.consalting-block-one__content-block-two {
+	max-width: 692px;
+	margin-bottom: 40px;
+}
+
+.consalting-block-one__sub-title {
+	color: #6b77e5;
+	font-size: 20px;
+}
+
+.consalting-block-one__sub-text-2 {
+	color: #7d7d7d;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.46;
+}
+
+.consalting-block-one__content-block-three {
+	max-width: 692px;
+	margin-bottom: 50px;
+	font-size: 0px;
+}
+
+.consalting-block-one__sub-content-img {
+	max-width: 398px;
+	height: auto;
+}
+
+.consalting-block-one__sub-content {
+	max-width: 332px;
+	min-width: 263px;
+	display: inline-block;
+	margin-left: 29px;
+}
+
+.consalting-block-one__sub-content-title {
+	display: inline-block;
+	margin-bottom: 15px;
+	color: #37393f;
+	font-size: 25px;
+}
+
+.consalting-block-one__sub-content-text {
+	margin-bottom: 15px;
+	color: #40ddb6;
+	font-size: 20px;
+}
+
+.consalting-block-one__sub-content-list {
+	max-width: 332px;
+	color: #7d7d7d;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.consalting-block-one__sub-content-list-one {
+	margin-bottom: 30px;
+}
+
+.consalting-block-one__sub-content-list-two {
+	margin-bottom: 30px;
+}
+
+.consalting-block-one__sub-content-list-three {
+	margin-bottom: 30px;
+}
+
+.consalting-block-one__sub-content-list-one::before,
+.consalting-block-one__sub-content-list-two::before,
+.consalting-block-one__sub-content-list-three::before {
+	background-image: url(../img/consalting/li_icon.svg);
+	width: 27px;
+	height: 27px;
+	border-radius: 50%;
+	content: "";
+	margin-right: 8px;
+	margin-bottom: -7px;
+}
+
+.consalting-block-one__sub-text-1,
+.consalting-block-one__sub-text-2,
+.consalting-block-one__sub-content-list>*:last-child {
+	margin-bottom: 0px;
+}
+
+.consalting-block-one__content-block-four {
+	max-width: 692px;
+	margin-bottom: 42px;
+}
+
+.consalting-block-one__title {
+	color: #37393f;
+	font-size: 30px;
+}
+
+.consalting-block-one__title,
+.consalting-block-one__sub-title,
+.consalting-block-one__sub-content-title,
+.consalting-block-one__sub-content-text,
+.consalting-block-one__title {
+	font-family: "Poppins", sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.27;
+}
+
+.consalting-block-one__sub-text-1 {
+	color: #7d7d7d;
+	font-style: normal;
+	font-weight: 400;
+}
+
+/* ____________________________________________________________ */
+
+/* HOMEWORK LESSON 9 BLOCK 2 */
+
+/* ____________________________________________________________ */
+
+.consalting-block__two {
+	margin: 0 auto;
+	max-width: 675px;
+	font-size: 18px;
+	line-height: 1.46;
+	margin-bottom: 40px;
+}
+
+.consalting-block__two-content-block-one {
+	max-width: 673px;
+	margin-bottom: 48px;
+}
+
+.consalting-block__two-title {
+	color: #37393f;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin-bottom: 16px;
+}
+
+.consalting-block__two-title::before {
+	background: #40ddb6;
+	width: 12px;
+	height: 12px;
+	content: "";
+	margin-right: 6px;
+	margin-bottom: 0px;
+}
+
+.consalting-block__two-sub-title {
+	max-width: 413px;
+	color: #37393f;
+	font-family: "Poppins", sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.21;
+	margin-bottom: 10px;
+}
+
+.consalting-block__two-sub-text-1 {
+	color: #7d7d7d;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.consalting-block__two-sub-text-1 p {
+	margin-bottom: 16px;
+}
+
+.consalting-block__two-sub-text-1>*:last-child {
+	margin-bottom: 0px;
+}
+
+.consalting-block__two-content-block-points {
+	max-width: 675px;
+	margin-bottom: 48px;
+}
+
+.consalting-block__two-content-block-points-one,
+.consalting-block__two-content-block-points-two {
+	border: 1px solid #e3e3e3;
+	padding: 28px 41px 28px 38px;
+	max-width: 675px;
+	margin-bottom: 31px;
+}
+
+.consalting-block__two-content-block-points-one-title-1,
+.consalting-block__two-content-block-points-one-title-2 {
+	color: #37393f;
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	margin-bottom: 12px;
+}
+
+.consalting-block__two-content-block-points-one-sub-text-1,
+.consalting-block__two-content-block-points-one-sub-text-2 {
+	color: #7d7d7d;
+	font-style: normal;
+	font-weight: 400;
+	padding-left: 46px;
+}
+
+.consalting-block__two-content-block-points-one-title-1::before,
+.consalting-block__two-content-block-points-one-title-2::before {
+	display: inline-block;
+	background-image: url(../img/consalting/li_icon.svg);
+	width: 27px;
+	height: 27px;
+	border-radius: 50%;
+	content: "";
+	margin-right: 19px;
+	margin-bottom: -4px;
+}
+
+.sum-button {
+	padding: 21px 35px 22px 35px;
+	background: #6b77e5;
+	color: #fff;
+	text-align: center;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	text-transform: capitalize;
+}
+
+.sum-button:hover {
+	color: #37393f;
+	background: #40ddb6;
+	text-decoration: underline;
+}
+
+.sum-button:focus {
+	outline: 3px solid #40ddb6;
+}
+
+/* ____________________________________________________________ */
+
+/* HOMEWORK LESSON 9 BLOCK 3 */
+
+/* ____________________________________________________________ */
+
+.consalting-block__three {
+	margin: 0 auto;
+	max-width: 1250px;
+	padding: 0 15px;
+	font-size: 18px;
+	line-height: 1.46;
+}
+
+.consalting-block__three-block-title {
+	margin: 0 auto;
+	max-width: 283px;
+	padding-bottom: 41px;
+}
+
+.consalting-block__three-title {
+	text-align: center;
+	color: #37393f;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin-bottom: 16px;
+}
+
+.consalting-block__three-title::before {
+	background: #40ddb6;
+	width: 12px;
+	height: 12px;
+	content: "";
+	margin-right: 6px;
+	margin-bottom: 0px;
+}
+
+.consalting-block__three-sub-title {
+	color: #37393f;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.21;
+}
+
+.consalting-block__three-content-block-two {
+	max-width: 1250px;
+	font-size: 0px;
+	margin-bottom: 138px;
+}
+
+.consalting-block__three-content-block-two-card-one {
+	max-width: 386px;
+	width: 100%;
+	text-align: center;
+	vertical-align: top;
+	display: inline-block;
+	margin-left: 31px;
+}
+
+.consalting-block__three-content-block-two-card-one:first-child {
+	margin-left: 0px;
+}
+
+.consalting-block__three-content-block-two-card-one>*:last-child {
+	margin-bottom: 0px;
+}
+
+.consalting-block__three-content-block-calendar-icon,
+.consalting-block__three-content-block-pazle-icon,
+.consalting-block__three-content-block-shield-icon {
+	width: 72px;
+	height: 72px;
+	border-radius: 50%;
+	content: "";
+	margin-bottom: -36px;
+}
+
+.consalting-block__three-content-block-sub-one {
+	max-width: 386px;
+	padding: 58px 43px;
+	background: #f4f4f4;
+}
+
+.consalting-block__three-content-block-sub-one-title {
+	color: #37393f;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 127%;
+	/* 31.75px */
+	margin-bottom: 16px;
+}
+
+.consalting-block__three-content-block-sub-one-text {
+	color: #7d7d7d;
+	text-align: center;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 146.187%;
+	/* 26.314px */
+	margin-bottom: 16px;
+}
+
+.testimonials {
+	color: #6b77e5;
+	text-align: center;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	text-transform: capitalize;
+}
+
+.testimonials:hover {
+	transform: scale(1.05);
+	text-decoration: underline;
+}
+
+/* ____________________________________________________________ */
+
+/* HOMEWORK LESSON 9 BLOCK 4 */
+
+/* ____________________________________________________________ */
+
+.jewellery {
+	margin: 0 auto;
+	max-width: 1600px;
+	font-size: 0px;
+	padding-bottom: 145px;
+}
+
+.jewellery-container {
+	font-size: 0px;
+	margin: 0 auto;
+	max-width: 1214px;
+	font-size: 18px;
+	line-height: 1.46;
+	margin-bottom: 45px;
+}
+
+.jewellery-title-box {
+	display: inline-block;
+	max-width: 488px;
+	margin-top: 150px;
+	vertical-align: top;
+}
+
+.jewellery-title {
+	color: #000;
+	font-family: "Cormorant Infant", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.jewellery-title {
+	font-size: 60px;
+	line-height: 1.15;
+	vertical-align: top;
+}
+
+.jewellery-title::after {
+	content: "";
+	display: block;
+	width: 66%;
+	height: 3px;
+	background-color: #78473b;
+	margin-top: 13px;
+}
+
+.jewellery-card-box {
+	display: inline-block;
+	max-width: 726px;
+}
+
+.jewellery-card-box-one {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.jewellery-card-link {}
+
+.jewellery-card-link:hover {
+	transform: scale(1.05);
+}
+
+.jewellery-image-one {
+	padding-top: 32px;
+	max-width: 334px;
+}
+
+.jewellery-card-box img {
+	max-width: 334px;
+	width: 100%;
+	box-shadow: -9px -9px 0 0 #fff, -9px -9px 0px 1px #000;
+}
+
+.jewellery-card-subtitle,
+.jewellery-card-price {
+	font-size: 24px;
+	line-height: 1.4;
+}
+
+.jewellery-card-box-two {
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.jewellery-card-title {
+	max-width: 339px;
+	font-size: 46px;
+	line-height: 1.13;
+	margin-bottom: 13px;
+}
+
+.jewellery-image-one {
+	padding-top: 31px;
+	max-width: 334px;
+}
+
+.jewellery-card-price p::before {
+	content: "$";
+	width: 14px;
+	height: 34px;
+}

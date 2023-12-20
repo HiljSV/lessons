@@ -537,16 +537,33 @@ body {
 	visibility: visible;
 }
 
-.game-block-10 {
+/* .game-block-10 {
 	min-height: 300px;
 	visibility: hidden;
-}
+} */
 
-.game-block-9:hover~.game-block-10,
+/* .game-block-9:hover~.game-block-10,
 .image:hover {
 	visibility: visible;
 	background: url("../img/honey.jpg") 0 0 / 500px no-repeat;
+} */
+
+
+.game-block-9:hover~.game-block-10,
+.game-block-10:hover {
+	visibility: visible;
+	background: url("../img/honey.jpg") 0 0 / 500px no-repeat;
 }
+
+.game-block-10 {
+	min-height: 300px;
+	visibility: visible;
+	display: inline-block;
+	width: 435px;
+}
+
+
+
 
 /* ____________________________________________________________ */
 
@@ -619,7 +636,6 @@ body {
 
 .consalting-block-one__sub-content-img {
 	max-width: 398px;
-	height: auto;
 }
 
 .consalting-block-one__sub-content {
@@ -804,7 +820,7 @@ body {
 .consalting-block__two-content-block-points-one-title-1::before,
 .consalting-block__two-content-block-points-one-title-2::before {
 	display: inline-block;
-	background-image: url(../img/consalting/li_icon.svg);
+	background: url(../img/consalting/li_icon.svg) 0 50% no-repeat;
 	width: 27px;
 	height: 27px;
 	border-radius: 50%;
@@ -846,12 +862,11 @@ body {
 	padding: 0 15px;
 	font-size: 18px;
 	line-height: 1.46;
+	margin-bottom: 138px;
 }
 
 .consalting-block__three-block-title {
-	margin: 0 auto;
-	max-width: 283px;
-	padding-bottom: 41px;
+	margin-bottom: 41px;
 }
 
 .consalting-block__three-title {
@@ -885,7 +900,7 @@ body {
 .consalting-block__three-content-block-two {
 	max-width: 1250px;
 	font-size: 0px;
-	margin-bottom: 138px;
+
 }
 
 .consalting-block__three-content-block-two-card-one {
@@ -979,13 +994,12 @@ body {
 	max-width: 1214px;
 	font-size: 18px;
 	line-height: 1.46;
-	margin-bottom: 45px;
 }
 
 .jewellery-title-box {
 	display: inline-block;
 	max-width: 488px;
-	margin-top: 150px;
+	padding-top: 150px;
 	vertical-align: top;
 }
 

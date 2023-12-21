@@ -1,0 +1,27 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+
+
+
+/* ____________________________________________________________ */
+
+/* HOMEWORK LESSON 9 TRAINING */
+
+/* ____________________________________________________________ */
+
+body {
+	margin: 0 auto;
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.29;
+}
+
+
+

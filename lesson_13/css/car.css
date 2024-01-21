@@ -1,0 +1,804 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	margin: 0 auto;
+	background-color: #fff;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+
+[class*="__container"] {
+	margin: 0 auto;
+	max-width: 1920px;
+}
+
+a:active {
+	color: #2c26e9;
+}
+
+a:visited {
+	color: #514bf1;
+}
+
+a:focus {
+	outline: 3px solid #2c26e9;
+}
+
+/* ! -----------------------HEADER--------------------- */
+.header {
+	margin: 0 auto;
+	font-size: 0;
+	background: #fff;
+	padding: 0 15px;
+	max-width: 1950px;
+	width: 100%;
+	position: relative;
+	z-index: 50;
+}
+
+.header__conteiner {}
+
+.header-info {
+	width: 100%;
+	background-color: #37393f;
+	font-size: 0;
+	padding: 15px 0;
+}
+
+.info-header__item {
+	margin: 0 auto;
+	max-width: 200px;
+	text-align: center;
+	font-family: "Inter", sans-serif;
+	color: #fff;
+	font-size: 35px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.menu-nav {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	font-size: 0px;
+	text-align: center;
+	background-color: #fff;
+	padding: 20px 219px;
+	font-size: 0px;
+	z-index: 49;
+}
+
+.nav-menu {}
+
+.menu {}
+
+.menu-rov {
+	display: inline-block;
+	font-size: 0px;
+}
+
+.rov-menu {}
+
+.logo-column {
+	max-width: 213px;
+	margin-right: 130px;
+}
+
+.column-logo {}
+
+.column-logo__link {
+	padding: 0 10px;
+}
+
+.column-logo__img {
+	margin-top: 4px;
+	max-width: 30px;
+	margin-right: 10px;
+}
+
+.column-logo__title {
+	display: inline-block;
+	font-family: "Poppins", sans-serif;
+	color: #0f0f0f;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.column-menu {
+	display: inline-block;
+	font-size: 0px;
+	margin-right: 130px;
+}
+
+.menu-column {}
+
+.menu-column__item {}
+
+.menu-list {}
+
+.list-menu {}
+
+.list-menu__item {
+	display: inline-block;
+	position: relative;
+}
+
+.list-menu__item:not(:last-child) {
+	margin-right: 10px;
+}
+
+.list-menu__link {
+	background-color: rgb(255, 203, 70);
+}
+
+.list-menu__link,
+.list-sub__link,
+.list-last__link {
+	display: inline-block;
+	width: 185px;
+	padding: 15px 20px;
+	font-family: "Poppins", sans-serif;
+	color: #0f0f0f;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: capitalize;
+	white-space: nowrap;
+	text-align: center;
+	border-radius: 10px;
+}
+
+
+
+.sub-list {
+	position: absolute;
+	left: 0px;
+	top: 61px;
+	padding-top: 11px;
+	visibility: hidden;
+}
+
+.list-sub {}
+
+.list-sub__item {
+	position: relative;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.list-sub__link {
+	background-color: rgb(47, 239, 239);
+}
+
+.last-list {
+	max-width: 260px;
+	position: absolute;
+	left: 185px;
+	top: 0px;
+	padding-left: 10px;
+	visibility: hidden;
+}
+
+.list-last {}
+
+.list-last__item {
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.list-last__link {
+	background-color: fuchsia;
+
+}
+
+.list-last__link--color {
+	background-color: rgb(212, 109, 241);
+}
+
+.list-menu__item:hover .list-menu__link,
+.list-sub__item:hover .list-sub__link,
+.list-last__item:hover .list-last__link {
+	background-color: #32f0b4;
+	text-decoration: underline;
+}
+
+.list-menu__item:hover .sub-list,
+.list-sub__item:hover .list-last {
+	visibility: visible;
+}
+
+.column-social {
+	display: inline-block;
+}
+
+.social-column {}
+
+.social-column__link {
+	background-color: #257cee;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.social-column__link:not(:last-child) {
+	margin-right: 5px;
+}
+
+.social-column__img {
+	background-color: #257cee;
+	width: 35px;
+	height: 35px;
+}
+
+/* ! -----------------------MAIN--------------------- */
+
+.main {
+	margin: 0 auto;
+	font-size: 0;
+	padding: 15px;
+	max-width: 1950px;
+	min-height: 1110px;
+	position: relative;
+	z-index: 1;
+}
+
+.main__conteiner {}
+
+.main-items {
+	position: relative;
+	width: 100%;
+}
+
+.items-main {}
+
+.items {}
+
+.main-space {}
+
+.spase-main {
+	margin: 0 auto;
+	width: 100%;
+	height: 1080px;
+	background-color: #8a2626;
+	background: url(../img/main/carpage/galaxy.jpg) 0px 0px / contain no-repeat;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.spase {}
+
+.spase-main__img {
+	width: 100%;
+}
+
+.main-planet {
+	position: relative;
+	background-color: rgba(138, 38, 38, 0);
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	min-height: 1080px;
+	z-index: 60;
+}
+
+.planet-main {}
+
+.planet {}
+
+.planet-main__city {
+	width: 100%;
+	height: 829px;
+	background-color: #ec1919;
+	background: url(../img/main/carpage/city.png) 0px 0px / contain repeat-x;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+}
+
+.city {}
+
+.planet-main__road {
+	height: 252px;
+	width: 100%;
+	display: block;
+	background: url(../img/main/carpage/road.png) 0px 0px / contain repeat-x;
+	position: absolute;
+	top: 829px;
+	left: 0;
+	z-index: 1;
+}
+
+.car {
+	margin: 0 auto;
+	font-size: 0px;
+	display: inline-block;
+	position: relative;
+	top: 640px;
+	left: 25%;
+	z-index: 1;
+}
+
+.car__wrap {
+	width: 1089px;
+	min-height: 451px;
+}
+
+.car-body {
+	width: 930px;
+	height: 220px;
+	background-color: rgba(216, 49, 216, 0);
+	position: absolute;
+	top: 120px;
+	left: 76px;
+	transform: rotate(1.2deg);
+	transform-origin: 100% 100%;
+	border-bottom: 20px solid transparent;
+	border-bottom-right-radius: 7%;
+}
+
+.body-car__arka--left {
+	width: 198px;
+	height: 170px;
+	position: absolute;
+	border-radius: 50%;
+	background: radial-gradient(circle,
+			rgba(13, 13, 13, 0) 0%,
+			rgba(255, 255, 255, 1) 43%,
+			rgba(89, 88, 91, 0) 43%,
+			43%,
+			rgba(35, 34, 37, 1) 59%,
+			rgba(255, 255, 255, 0) 61%,
+			rgba(70, 69, 72, 0) 100%);
+	top: 100px;
+	left: 95px;
+	z-index: 1;
+}
+
+.body-car__arka--right {
+	width: 200px;
+	height: 172px;
+	position: absolute;
+	border-radius: 50%;
+	background: radial-gradient(circle,
+			rgba(13, 13, 13, 0) 0%,
+			rgba(255, 255, 255, 1) 43%,
+			rgba(89, 88, 91, 0) 43%,
+			43%,
+			rgba(35, 34, 37, 1) 59%,
+			rgba(255, 255, 255, 0) 61%,
+			rgba(70, 69, 72, 0) 100%);
+	top: 91px;
+	left: 681px;
+	z-index: 1;
+}
+
+.body-car__hood {
+	width: 200px;
+	height: 142px;
+	border-left: 50px solid rgb(167, 15, 66);
+	border-top: 10px solid transparent;
+	border-bottom: 70px solid rgb(167, 15, 66);
+	border-top-right-radius: 100%;
+	position: absolute;
+	left: 622px;
+	top: 7px;
+	transform: rotate(0deg);
+	background: rgba(92, 166, 213, 0.586);
+	transform: rotate3d(10, 10, 10, 0deg) rotate(1deg) skew(62deg);
+}
+
+
+.body-car__before {
+	width: 250px;
+	height: 70px;
+	position: absolute;
+	top: 152px;
+	left: 683px;
+	transform: skew(1deg);
+	transform: rotate(0.1deg) skew(-15deg);
+	transform-origin: 100% 100%;
+
+	border-bottom-right-radius: 20%;
+}
+
+.body-car__centre {
+	width: 415px;
+	height: 30px;
+	position: absolute;
+	top: 191px;
+	left: 268px;
+	transform: rotate(0.1deg) skew(-15deg);
+	transform-origin: 100% 100%;
+
+}
+
+.body-car__after {
+	width: 295px;
+	height: 190px;
+	position: absolute;
+	top: 30px;
+	left: 72px;
+	transform: skew(1deg);
+	transform: rotate(0.1deg) skew(43deg);
+	transform-origin: 100% 100%;
+
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 178px;
+}
+
+.body-car__after-top {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: -70px;
+	left: 60px;
+	border-left: 110px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid rgb(167, 15, 66);
+}
+
+.body-car__roof {
+	width: 385px;
+	border-top: 15px solid rgb(167, 15, 66);
+	border-top-right-radius: 80%;
+	border-top-left-radius: 100%;
+	position: absolute;
+	background: #37393f;
+	top: 2px;
+	left: 165px;
+	transform: rotate(-0.5deg) skew(48deg);
+}
+
+.body-car-door {
+	width: 564px;
+	height: 201px;
+	top: 0;
+	left: 255px;
+	position: relative;
+	perspective: 100px;
+	perspective-origin: 100% 100%;
+	transform: rotate(0.1deg) skew(43.5deg);
+}
+
+.door-body__top {
+	width: 558px;
+	height: 115px;
+	position: absolute;
+	top: -28px;
+	left: -136px;
+	border-top: 20px solid rgb(167, 15, 66);
+	border-bottom: 20px solid rgb(167, 15, 66);
+	border-left: 30px solid rgb(167, 15, 66);
+	border-right: 30px solid rgb(167, 15, 66);
+	transform-origin: 100% 100%;
+	background: rgba(92, 166, 213, 0.586);
+	transform: rotate3d(180, -45, 22, 8.1deg) rotate(3deg) skew(46deg);
+}
+
+.door-body__bottom {
+	width: 346px;
+	height: 138px;
+	position: relative;
+	top: 65px;
+	left: -2px;
+	transform: rotate(1deg) skew(0deg);
+
+}
+
+.body-car__before,
+.body-car__centre,
+.body-car__after,
+.door-body__bottom {
+	background: rgb(167, 15, 66);
+	border-bottom: 20px solid rgb(167, 14, 65);
+}
+
+
+
+.door-body__bottom::before {
+	content: "";
+	width: 142px;
+	border-bottom: 70px solid rgb(167, 15, 66);
+	border-left: 0px solid transparent;
+	border-right: 70px solid transparent;
+	position: absolute;
+	left: 308px;
+	top: 34px;
+	transform: rotate(90deg);
+}
+
+.door-body__bottom::after {
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	left: 322px;
+	top: -32px;
+	border-top: 80px solid transparent;
+	border-left: 64px solid transparent;
+	border-right: 67px solid rgb(167, 15, 66);
+	transform-origin: 100% 100%;
+	transform: rotate3d(180, -45, 22, 8.1deg) rotate(3deg) skew(46deg);
+	transform: rotate(-38deg);
+}
+
+.car-interer {
+	width: 515px;
+	height: 198px;
+	position: absolute;
+	top: 10px;
+	left: 347px;
+	border-top: 10px solid rgb(167, 15, 66);
+	border-bottom: 25px solid rgb(167, 15, 66);
+	border-left: 50px solid rgb(167, 15, 66);
+	border-right: 20px solid rgb(167, 15, 66);
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 20%;
+	border-top-left-radius: 48%;
+	transform-origin: 100% 100%;
+	background: rgba(92, 167, 213, 0);
+	transform: rotate3d(180, -45, 22, 8.1deg) rotate(-1deg) skew(60deg);
+}
+
+.interer-beck {
+	width: 448px;
+	height: 143px;
+	position: absolute;
+	top: 65px;
+	left: 268px;
+	border-top: 10px solid rgb(167, 15, 66);
+	border-bottom: 20px solid rgb(33, 32, 33);
+	border-left: 15px solid rgb(33, 32, 33);
+	border-right: 10px solid rgb(33, 32, 33);
+	border-top-right-radius: 15px;
+	background: rgb(127, 15, 66);
+	transform: rotate(0deg) skew(50deg);
+}
+
+.door-body--up:hover {
+	transform-origin: 0 15px;
+	transform: translate(0px, -10px) scale(1) rotateX(130deg) skew(0deg);
+	left: 173px;
+	transition: all 1.8s 0.4s;
+}
+
+.car-wheel--left,
+.car-wheel--right {
+	width: 145px;
+	height: 145px;
+	background-color: #fff;
+	position: absolute;
+	border-radius: 50%;
+}
+
+.car-wheel--left {
+	top: 220px;
+	left: 197px;
+}
+
+.car-wheel--right {
+	top: 225px;
+	left: 785px;
+}
+
+.car-disk {
+	width: 91px;
+	height: 91px;
+	background: rgb(29, 28, 28);
+	background: radial-gradient(circle,
+			rgba(13, 13, 12, 1) 0%,
+			rgba(106, 106, 106, 1) 5%,
+			rgba(0, 0, 0, 1) 10%,
+			rgba(106, 106, 106, 1) 15%,
+			rgba(13, 13, 12, 1) 20%,
+			rgba(106, 106, 106, 1) 25%,
+			rgba(13, 13, 12, 1) 30%,
+			rgba(106, 106, 106, 1) 35%,
+			rgba(13, 13, 12, 1) 40%,
+			rgba(106, 106, 106, 1) 45%,
+			rgba(13, 13, 12, 1) 50%,
+			rgba(106, 106, 106, 1) 55%,
+			rgba(13, 13, 12, 1) 60%,
+			rgba(106, 106, 106, 1) 65%,
+			rgba(13, 13, 12, 1) 70%,
+			rgba(106, 106, 106, 1) 75%,
+			rgba(13, 13, 12, 1) 80%,
+			rgba(106, 106, 106, 1) 85%,
+			rgba(13, 13, 12, 1) 90%,
+			rgba(106, 106, 106, 1) 95%,
+			rgba(13, 13, 12, 1) 100%);
+	position: absolute;
+	border-radius: 50%;
+}
+
+.disk-car--left,
+.disk-car--right {
+	top: 28px;
+	left: 28px;
+}
+
+.disk-car__ribs {
+	width: 33px;
+	height: 20px;
+	background: rgb(13, 13, 12);
+	background: linear-gradient(0deg,
+			rgba(13, 13, 12, 1) 0%,
+			rgba(106, 106, 106, 1) 5%,
+			rgba(13, 13, 12, 1) 10%,
+			rgba(106, 106, 106, 1) 15%,
+			rgba(13, 13, 12, 1) 20%,
+			rgba(106, 106, 106, 1) 25%,
+			rgba(13, 13, 12, 1) 30%,
+			rgba(106, 106, 106, 1) 35%,
+			rgba(13, 13, 12, 1) 40%,
+			rgba(106, 106, 106, 1) 45%,
+			rgba(13, 13, 12, 1) 50%,
+			rgba(106, 106, 106, 1) 55%,
+			rgba(13, 13, 12, 1) 60%,
+			rgba(106, 106, 106, 1) 65%,
+			rgba(13, 13, 12, 1) 70%,
+			rgba(106, 106, 106, 1) 75%,
+			rgba(13, 13, 12, 1) 80%,
+			rgba(106, 106, 106, 1) 85%,
+			rgba(13, 13, 12, 1) 90%,
+			rgba(106, 106, 106, 1) 95%,
+			rgba(13, 13, 12, 1) 100%);
+	position: absolute;
+	top: 15px;
+	left: 12px;
+	z-index: 4;
+}
+
+.disk-car__ribs0-deg {
+	top: 15px;
+	left: 12px;
+}
+
+.disk-car__ribs1-deg {
+	top: 44px;
+	left: 20px;
+	transform: rotate(72deg);
+	transform-origin: 73.5% 50%;
+}
+
+.disk-car__ribs2-deg {
+	top: 61px;
+	left: -5px;
+	transform: rotate(144deg);
+	transform-origin: 73.5% 50%;
+	z-index: 3;
+}
+
+.disk-car__ribs3-deg {
+	top: 44px;
+	left: -28px;
+	transform: rotate(216deg);
+	transform-origin: 72.5% 50%;
+	z-index: 3;
+}
+
+.disk-car__ribs4-deg {
+	top: 58px;
+	left: 20px;
+	transform: rotate(-72deg);
+	transform-origin: 0% 72.5%;
+	z-index: 3;
+}
+
+.disk-car__ribs0-deg,
+.disk-car__ribs1-deg,
+.disk-car__ribs2-deg,
+.disk-car__ribs3-deg,
+.disk-car__ribs4-deg {
+	width: 67px;
+	height: 20px;
+	background: rgb(13, 13, 12);
+	background: linear-gradient(0deg,
+			rgba(13, 13, 12, 1) 0%,
+			rgba(106, 106, 106, 1) 5%,
+			rgba(13, 13, 12, 1) 10%,
+			rgba(106, 106, 106, 1) 15%,
+			rgba(13, 13, 12, 1) 20%,
+			rgba(106, 106, 106, 1) 25%,
+			rgba(13, 13, 12, 1) 30%,
+			rgba(106, 106, 106, 1) 35%,
+			rgba(13, 13, 12, 1) 40%,
+			rgba(106, 106, 106, 1) 45%,
+			rgba(13, 13, 12, 1) 50%,
+			rgba(106, 106, 106, 1) 55%,
+			rgba(13, 13, 12, 1) 60%,
+			rgba(106, 106, 106, 1) 65%,
+			rgba(13, 13, 12, 1) 70%,
+			rgba(106, 106, 106, 1) 75%,
+			rgba(13, 13, 12, 1) 80%,
+			rgba(106, 106, 106, 1) 85%,
+			rgba(13, 13, 12, 1) 90%,
+			rgba(106, 106, 106, 1) 95%,
+			rgba(13, 13, 12, 1) 100%);
+	position: absolute;
+}
+
+.car-rezina {
+	position: absolute;
+	box-sizing: content-box;
+	width: 145px;
+	height: 145px;
+	border: 2px dashed rgb(0, 0, 0, 1);
+	border-radius: 50%;
+	background: radial-gradient(closest-side,
+			rgba(255, 255, 255, 1) 0,
+			rgba(255, 255, 255, 1) 62%,
+			rgba(100, 100, 100, 1) 62%,
+			rgba(0, 0, 0, 1) 90%,
+			rgba(80, 80, 80, 1) 100%),
+		rgb(255, 255, 255);
+	background-position: 50% 50%;
+	background-origin: padding-box;
+	background-clip: border-box;
+	background-size: auto auto;
+	box-shadow: 0 0 9px 4px rgba(0, 0, 0, 0.5) inset;
+}
+
+.car-item {}
+
+.item-car {}
+
+/* ! -----------------------FOOTER--------------------- */
+
+.footer {
+	background: #fff;
+	padding: 0 15px;
+	max-width: 1950px;
+	position: relative;
+	margin: 0 auto;
+	font-size: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 49;
+}
+
+.footer__conteiner {}
+
+.footer-info {
+	text-align: center;
+	background-color: #37393f;
+	max-width: 100%;
+	padding: 15px 0;
+}
+
+.info-footer {}
+
+.info {}
+
+.info-items {}
+
+.items-info {}
+
+.items {}
+
+.items-info__item {
+	font-family: "Inter", sans-serif;
+	color: #fff;
+	font-size: 35px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+}

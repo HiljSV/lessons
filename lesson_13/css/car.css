@@ -575,8 +575,13 @@ a:focus {
 .car-body:hover .door-body--up {
 	transform-origin: 0 15px;
 	transform: translate(0px, -10px) scale(1) rotateX(130deg) skew(0deg);
-	left: 173px;
-	transition: all 0.82s 0.4s;
+	top: 0px;
+	left: 173px;	
+	transition: all 0.82s 0.3s;
+}
+
+.door-body--up{	
+	transition: all 0.82s 0.3s;
 }
 
 .car-wheel--left,

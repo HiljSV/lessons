@@ -168,7 +168,7 @@ a:focus {
 .sub-list {
 	position: absolute;
 	left: 0px;
-	top: 61px;
+	top: 59px;
 	padding-top: 11px;
 	visibility: hidden;
 }
@@ -188,9 +188,9 @@ a:focus {
 .last-list {
 	max-width: 260px;
 	position: absolute;
-	left: 185px;
+	left: 184px;
 	top: 0px;
-	padding-left: 10px;
+	padding-left: 11px;
 	visibility: hidden;
 }
 
@@ -349,7 +349,7 @@ a:focus {
 	transform: rotate(1.2deg);
 	transform-origin: 100% 100%;
 	border-bottom: 20px solid transparent;
-	border-bottom-right-radius: 7%;
+	border-bottom-right-radius: 7%;	
 }
 
 .body-car__arka--left {
@@ -572,11 +572,11 @@ a:focus {
 	transform: rotate(0deg) skew(50deg);
 }
 
-.door-body--up:hover {
+.car-body:hover .door-body--up {
 	transform-origin: 0 15px;
 	transform: translate(0px, -10px) scale(1) rotateX(130deg) skew(0deg);
 	left: 173px;
-	transition: all 1.8s 0.4s;
+	transition: all 0.82s 0.4s;
 }
 
 .car-wheel--left,
@@ -735,7 +735,7 @@ a:focus {
 	position: absolute;
 }
 
-.car-rezina {
+.car-tires {
 	position: absolute;
 	box-sizing: content-box;
 	width: 145px;

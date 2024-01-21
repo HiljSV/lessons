@@ -46,11 +46,12 @@ a:focus {
 	z-index: 50;
 }
 
-.header__container {}
+.header__conteiner {}
 
 .header-info {
-	max-width: 100%;
+	width: 100%;
 	background-color: #37393f;
+	font-size: 0;
 	padding: 15px 0;
 }
 
@@ -64,7 +65,6 @@ a:focus {
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
-	text-transform: uppercase;
 }
 
 .menu-nav {
@@ -74,7 +74,7 @@ a:focus {
 	font-size: 0px;
 	text-align: center;
 	background-color: #fff;
-	padding: 20px 0px;
+	padding: 20px 219px;
 	font-size: 0px;
 	z-index: 49;
 }
@@ -121,7 +121,6 @@ a:focus {
 .column-menu {
 	display: inline-block;
 	font-size: 0px;
-	/* padding: 20px; */
 	margin-right: 130px;
 }
 
@@ -136,7 +135,6 @@ a:focus {
 .list-menu__item {
 	display: inline-block;
 	position: relative;
-	padding: 10px 0px;
 }
 
 .list-menu__item:not(:last-child) {
@@ -165,10 +163,12 @@ a:focus {
 	border-radius: 10px;
 }
 
+
+
 .sub-list {
 	position: absolute;
 	left: 0px;
-	top: 81px;
+	top: 59px;
 	padding-top: 11px;
 	visibility: hidden;
 }
@@ -188,9 +188,9 @@ a:focus {
 .last-list {
 	max-width: 260px;
 	position: absolute;
-	left: 185px;
+	left: 184px;
 	top: 0px;
-	padding-left: 10px;
+	padding-left: 11px;
 	visibility: hidden;
 }
 
@@ -203,6 +203,7 @@ a:focus {
 
 .list-last__link {
 	background-color: fuchsia;
+
 }
 
 .list-last__link--color {
@@ -223,7 +224,6 @@ a:focus {
 
 .column-social {
 	display: inline-block;
-	padding: 10px 0;
 }
 
 .social-column {}

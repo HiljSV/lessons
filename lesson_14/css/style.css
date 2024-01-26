@@ -1,0 +1,1227 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	background-color: #fff;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;	
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+
+}
+
+[class*="__container"] {
+	margin: 0 auto;
+	max-width: 1920px;
+}
+
+/* ! ======================== HEADER ========================= */
+
+.header {
+	margin: 0 auto;
+	max-width: 1950px;
+	width: 100%;
+	padding: 0 15px;
+	font-size: 0px;
+	/* background: rgba(55, 57, 63, 0.846); */
+	position: relative;
+	z-index: 50;
+	text-align: center;
+	animation: render-infinit 4s linear infinite;
+}
+
+@keyframes render-infinit {
+	0% {
+		background: rgba(55, 57, 63, 0.846);
+	}
+
+	50% {
+		background: rgba(29, 30, 35, 0.846);
+
+	}
+
+	100% {
+		background: rgba(55, 57, 63, 0.846);
+	}
+
+}
+
+.header__conteiner {}
+
+.header__wrap {
+	margin: 0 auto;
+	max-width: 1258px;
+}
+
+/* ! ++++++++++++++++ LOGO +++++++++++++++++ */
+
+.header-logo {
+	display: inline-block;
+	padding-top: 5px;
+	margin-right: 195px;
+}
+
+.logo-header {}
+
+.logo {}
+
+.logo-header__link {
+	max-width: 220px;
+	padding: 5px 10px;
+	background: #37393F;
+	border-radius: 10px;
+	transition: background 0.3s;
+	transition-delay: 0.3s;
+}
+
+.logo-header__img {
+	width: 29px;
+	padding: 4px 0;
+	margin-right: 4px;
+}
+
+.logo-header__text {
+	display: inline-block;
+	color: #6B77E5;
+	font-family: "Poppins", sans-serif;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+	transition: all 0.3s;
+	transition-delay: 0.3s;
+}
+
+
+.header-logo:hover .logo-header__link {
+	background: rgba(50, 240, 180, 0.367);
+	transition: background 0.5s;
+	transition-delay: 0.2s;
+
+}
+
+.header-logo:hover .logo-header__text {
+	color: #fff;
+	transition: color 0.5s;
+	transition-delay: 0.2s;
+}
+
+/* ! ++++++++++++++++ NAV +++++++++++++++++ */
+
+.header-nav {
+	display: inline-block;
+	max-width: 661px;
+	margin-right: 40px;
+}
+
+.nav-header {}
+
+.nav-list {
+	display: inline-block;
+}
+
+.list-nav {}
+
+.list-nav__item {
+	display: inline-block;
+	position: relative;
+	margin-bottom: 5px;
+}
+
+.list-nav__item:not(:last-child) {
+	margin-right: 39px;
+}
+
+.list-nav__link::after {
+	content: "";
+	width: 0;
+	display: block;
+	height: 3px;
+	margin-top: 2px;
+	left: 50%;
+	position: relative;
+	transition: all 0.3s;
+	transition-delay: 0.3s;
+}
+
+.nav-list-sub {
+	position: absolute;
+	left: 0px;
+	top: 36px;
+	padding: 24px 10px 5px 10px;
+	visibility: hidden;
+}
+
+.sub-list__item {
+	display: inline-block;
+	position: relative;
+}
+
+.sub-list__link {
+	display: inline-block;
+	vertical-align: middle;	
+	width: 220px;
+}
+
+.nav-list-last {
+	display: inline-block;
+	position: absolute;
+	text-align: left;
+	left: 220px;
+	top: -10px;
+	padding: 10px 10px 5px 11px;
+	visibility: hidden;
+}			
+
+.sub-list,
+.last-list {
+	background: rgba(55,	57, 63, 0.846);
+}
+
+.last-list__item {
+	position: relative;
+}
+
+.sub-list__item:not(:last-child),
+.last-list__item:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+.last-list__link {	
+	width: 150px;
+	text-align: center;
+}
+
+.list-nav__link,
+.sub-list__link,
+.last-list__link {
+	padding: 5px 5px;
+	background-color: #37393F;
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	color: #fff;	
+	transition: all 0.2s;
+	transition-delay: 0.2s;
+}
+
+.sub-list__link::after,
+.last-list__link::after {
+	content: "";
+	width: 0px;
+	display: block;
+	height: 3px;
+	margin-top: 2px;
+	background-color: #fff;
+	transition:
+		background-color 0.3s,
+		widht 0.3s;
+	transition-delay: 0.3s;
+}
+
+.list-nav__item:hover .list-nav__link::after,
+.sub-list__item:hover .sub-list__link::after,
+.last-list__item:hover .last-list__link::after {
+	background-color: #fff;
+	width: 100%;
+	left: 0;
+	transition: all 0.3s;
+	transition-delay: 0.3s;
+	visibility: visible;
+}
+
+.list-nav__item:hover .list-nav__link,
+.sub-list__item:hover .sub-list__link,
+.last-list__item:hover .last-list__link {
+	background-color: rgba(50, 240, 180, 0.367);
+	transition: all 0.3s;
+	transition-delay: 0.3s;
+}
+
+.list-nav__item:hover .sub-list,
+.sub-list__item:hover .last-list {
+	visibility: visible;
+	transition: all 0.3s;
+	transition-delay: 0.3s;
+}
+
+
+/* ! ++++++++++++++++ SOCIAL +++++++++++++++++ */
+
+.header-social {
+	display: inline-block;
+	position: relative;
+	top: -20px;
+	left: 0px;
+	max-width: 188px;
+	min-height: 25px;
+}
+
+
+.social-header__link {
+	text-align: center;
+	background: #37393F;
+	border-radius: 20%;
+	padding: 5px;
+	position: relative;
+}
+
+.social-header__link:not(:last-child) {
+	margin-bottom: 5px;
+	margin-right: 16px;
+}
+
+.social-heder__img {
+	width: 25px;
+	height: 25px;
+}
+
+
+/* !  ---------------ACTIVE--------------- */
+
+.social-header__link:active {
+	background-color: rgb(28, 108, 237);
+}
+
+.list-nav__item:hover .list-nav__link:active,
+.sub-list__link:active,
+.last-list__link:active {
+	color: rgb(190, 189, 225);
+}
+
+
+/* !  ---------------VISITED--------------- */
+
+
+
+/* !  ---------------FOCUS--------------- */
+
+.logo-header__link:hover:focus,
+.list-nav__link:hover:focus,
+.sub-list__link:hover:focus,
+.last-list__link:hover:focus,
+.social-header__link:hover:focus {
+	outline: 2px solid rgba(50, 240, 180, 0.367);	
+}
+
+/* ! ======================== MAIN ========================= */
+
+.main {
+	margin: 0 auto;
+	font-size: 0;
+	padding: 50px 15px;
+	max-width: 1950px;
+	background: #c6cad8;
+}
+
+.main__conteiner {}
+
+.practice {
+	max-width: 100%;
+	text-align: center;
+	background: #c6d0f4;
+	font-size: 0px;
+}
+
+.practice__title,
+.block-practice__title,
+.box-text p,
+.list__item {
+	color: #37393F;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.practice__title {
+	padding: 10px 0;
+	font-family: "Inter", sans-serif;
+	font-size: 35px;
+}
+
+.practice-block {
+	margin: 0 auto;
+	width: 80%;
+	padding: 20px;
+	background-color: yellowgreen;
+}
+
+.block-practice {}
+
+
+.block-practice__title {
+	font-family: "Inter", sans-serif;
+	font-size: 30px;
+	padding-bottom: 20px;
+}
+
+.block-practice__text {
+	padding: 10px;
+}
+
+.block-practice__text p {
+	font-family: "Poppins", sans-serif;
+	color: #37393F;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: left;
+	padding: 10px 20px;
+
+}
+
+
+.box {
+	margin: 0 auto;
+	width: 90%;
+	background-color: rgb(21, 201, 246);
+	margin-bottom: 20px;
+	border-radius: 15px;
+	padding: 15px;
+}
+
+.box>* {
+	padding: 20px 20px;
+	display: inline-block;
+	vertical-align: middle;
+	width: 50%;
+	/* background-color: #fff;	 */
+}
+
+.box__wrap {
+	background-color: #37393F;
+}
+
+.box__item {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(227, 13, 159);
+}
+
+.box-text {}
+
+.box-text p {
+	font-family: "Poppins", sans-serif;
+	color: #37393F;
+	font-size: 16px;
+	text-align: left;
+}
+
+.box-text p:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+
+/* !  ---------------TRANSITION--------------- */
+
+.box__item--transition {
+	transition: all 0.3s;
+}
+
+.box__item--transition:hover {
+	background-color: rgb(219, 78, 7);
+	border-radius: 50%;
+}
+
+/* !  ---------------DURATION--------------- */
+
+.box {
+	transition-duration: 1000ms;
+
+}
+
+.box:hover {
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 1), inset 0px 0px 15px rgba(0, 0, 0, 0);
+	transition-duration: 500ms;
+}
+
+.box__item--transition-duration {
+	background-color: rgb(227, 13, 159);
+	transition-duration: 1800ms;
+
+}
+
+.box__item--transition-duration:hover {
+	background-color: rgb(219, 78, 7);
+	transition-duration: 500ms;
+}
+
+
+/* !  ---------------PROPERTY--------------- */
+
+.box__item--transition-property {
+	background-color: rgb(227, 13, 159);
+	transition-duration: 1800ms;
+	transition-property: background-color, width;
+}
+
+.box__item--transition-property:hover {
+	background-color: rgb(219, 78, 7);
+	width: 581px;
+	transition-duration: 500ms;
+	transition-property: background-color, width;
+}
+
+
+.box__item--transition-property-too {
+	background-color: rgb(227, 13, 159);
+	transition-duration: 1s, 3s;
+	transition-property: background-color, width;
+}
+
+.box__item--transition-property-too:hover {
+	background-color: rgb(219, 78, 7);
+	width: 581px;
+	transition-duration: 1000ms, 500ms;
+	transition-property: background-color, width;
+}
+
+.box__item--transition-property-all {
+	background-color: rgb(227, 13, 159);
+	transition-duration: 1s, 3s;
+	transition-property: all;
+}
+
+.box__item--transition-property-all:hover {
+	background-color: rgb(219, 78, 7);
+	width: 581px;
+	height: 350px;
+	transition-duration: 1000ms, 500ms;
+	transition-property: all;
+}
+
+
+.box__item--transition-property-visibility {
+	background-color: rgb(227, 13, 159);
+	transition-duration: 1s;
+	transition-property: all;
+	visibility: visible;
+}
+
+.box__wrap:hover .box__item--transition-property-visibility {
+	background-color: rgb(219, 78, 7);
+	width: 581px;
+	height: 350px;
+	visibility: hidden;
+	transition-duration: 500ms;
+	transition-property: all;
+
+
+}
+
+.box__item--transition-property-opacity {
+	background-color: rgb(227, 13, 159);
+	transition-duration: 0.51s;
+	transition-property: all;
+	visibility: visible;
+	opacity: 1;
+}
+
+.box__wrap:hover .box__item--transition-property-opacity {
+	background-color: rgb(219, 78, 7);
+	width: 581px;
+	height: 350px;
+	visibility: hidden;
+	transition-duration: 1s;
+	transition-property: all;
+	opacity: 0;
+}
+
+/* !  ---------------DELAY--------------- */
+
+.box__item--transition-delay {
+	background-color: rgb(227, 13, 159);
+	transition-property: all;
+	transition-delay: 1s;
+}
+
+.box__item--transition-delay:hover {
+	background-color: rgb(219, 78, 7);
+	width: 581px;
+	transition-property: all;
+	transition-delay: 0.5s;
+}
+
+.box__item--transition-delay-duration {
+	background-color: rgb(227, 13, 159);
+	transition-duration: 1s, 1.5s, 2s;
+	transition-delay: 4.5s, 3s, 2s;
+	transition-property: height, background-color, width;
+}
+
+.box__item--transition-delay-duration:hover {
+	background-color: rgb(219, 78, 7);
+	width: 581px;
+	height: 350px;
+	transition-duration: 0.3s, 0.5s, 0.8s;
+	transition-delay: 0s, 0.3s, 0.8s;
+	transition-property: width, background-color, height;
+}
+
+/* !  ---------------LIST-----DELAY--------------- */
+
+.list {
+	width: 200px;
+	height: 250px;
+}
+
+.list__item {
+	background-color: rgb(227, 13, 159);
+	padding: 5px;
+	font-family: "Poppins", sans-serif;
+	color: #fff;
+	font-size: 18px;
+	text-align: left;
+}
+
+.list__item:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.list__item {
+	transform: translate(-820px, 0);
+	transition-duration: 0.2s;
+}
+
+.list__item:nth-child(1) {
+	transition-delay: 0s;
+}
+
+.list__item:nth-child(2) {
+	transition-delay: 0.2s;
+}
+
+.list__item:nth-child(3) {
+	transition-delay: 0.4s;
+}
+
+.list__item:nth-child(4) {
+	transition-delay: 0.6s;
+}
+
+.list__item:nth-child(5) {
+	transition-delay: 0.8s;
+}
+
+.list:hover .list__item {
+	transform: translate(0px, 0);
+	transition-duration: 0.5s;
+}
+
+/* !!!____lesson_14___1h:01m:52s____ прискорити або пригальмувати ____*/
+
+/* !  ---------------TRANSITION-TIMING-FUNCTION--------------- */
+
+.box__item--transition-timing-function-ease {
+	background-color: rgb(227, 13, 159);
+	transition-duration: 0.5s;
+	transition-timing-function: ease;
+}
+
+.box__item--transition-timing-function-linear {
+	background-color: rgb(227, 13, 159);
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+}
+
+.box__item--transition-timing-function-linear:hover {
+	width: 581px;
+}
+
+.box__item--transition-timing-function-bezier {
+	background-color: rgb(227, 13, 159);
+	transition-duration: 0.5s;
+	transition-timing-function: cubic-bezier(0.39, -0.42, 0.47, 1.35);
+}
+
+.box__item--transition-timing-function-bezier:hover {
+	width: 581px;
+}
+
+.box__item--transition-timing-function-steps {
+	background-color: rgb(227, 13, 159);
+	transition-duration: 0.8s;
+	transition-timing-function: steps(3, start);
+}
+
+.box__item--transition-timing-function-steps:hover {
+	width: 581px;
+}
+
+.box__item--transition-timing-function-rotate {
+	background-color: rgb(227, 13, 159);
+	transition-duration: 0.3s;
+	transition-timing-function: linear;
+}
+
+.box__item--transition-timing-function-rotate:hover {
+	width: 200px;
+	transform: rotate(360deg);
+}
+
+.box__item--transition-universal {
+	background-color: rgb(227, 13, 159);
+	transition-duration: 0.3s;
+	transition: all 0.3s linear 1s;
+}
+
+.box__item--transition-universal:hover {
+	background-color: rgb(219, 78, 7);
+	width: 300px;
+	height: 300px;
+}
+
+.box__item--transition-optimization {
+	background-color: rgb(227, 13, 159);
+	transition:
+		width 0.3s linear 0s,
+		height 0.3s ease 0.5s;
+}
+
+.box__item--transition-optimization:hover {
+	width: 300px;
+	height: 300px;
+}
+
+/* ! ---------------Приклади-------------- */
+/* ! ---------------Приклад 1-------------- */
+
+.image img {
+	width: 350px;
+}
+
+.image {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+}
+
+.image--butt1::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #000000;
+	opacity: 0.5;
+	transform: scale(0);
+	transition: transform 0.3s;
+}
+
+.image--butt1:hover::before {
+	transform: scale(1);
+}
+
+/* ! ---------------Приклад 2-------------- */
+
+.image--butt2::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #000000;
+	opacity: 0.5;
+	transform: translate(-100%, 0px);
+	transition: left 0.3s;
+}
+
+.image--butt2:hover::before {
+	transform: translate(0px, 0px);
+}
+
+/* ! ---------------Приклад 3-------------- */
+
+.image--butt3::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: -100%;
+	background-color: #000000;
+	opacity: 0.5;
+	transition: left 0.3s;
+}
+
+.image--butt3:hover::before {
+	left: 0;
+}
+
+/* ! ---------------Приклад 4-------------- */
+
+
+.box__link a {
+	padding: 15px;
+	font-family: "Poppins", sans-serif;
+	font-size: 35px;
+	text-align: center;
+	color: rgb(31, 233, 31);
+	overflow: hidden;
+	transition: color 0.3s;
+}
+
+.box__link>* {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.box__link--butt4 a::after {
+	content: "";
+	width: 0;
+	display: block;
+	height: 2px;
+	margin-top: 2px;
+	background-color: rgb(31, 233, 31);
+	transition:
+		background-color 0.3s,
+		width 0.3s;
+}
+
+.box__link--butt4 a:hover {
+	color: yellow;
+}
+
+.box__link--butt4 a:hover::after {
+	background-color: yellow;
+	width: 100%;
+}
+
+/* ! ---------------Приклад 5-------------- */
+
+
+
+.box__link--butt5 a::after {
+	content: "";
+	width: 0;
+	display: block;
+	height: 2px;
+	margin-top: 2px;
+	left: 50%;
+	position: relative;
+	background-color: rgb(31, 233, 31);
+	transition: all 0.3s;
+}
+
+.box__link--butt5 a:hover {
+	color: yellow;
+}
+
+.box__link--butt5 a:hover::after {
+	background-color: yellow;
+	width: 100%;
+	left: 0;
+}
+
+
+
+
+/* !  ------------------ CSS ANIMATION & KEYFARAMES --------------- */
+/* ! ---------------animation-name: rotate;-------------- */
+
+.box__animation {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background-color: #a4e943;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes run {
+	0% {
+		left: 0;
+	}
+
+	100% {
+		left: 100%;
+	}
+}
+
+.box__animation:hover {
+	animation-name: rotate;
+}
+
+
+
+/* ! --------------- animation-name: rotate; animation-duration: 1s; -------------- */
+
+.box__animation--timing-function:hover {
+	animation-name: rotate;
+	animation-duration: 1s;
+}
+
+
+/* ! --------------- animation-name: rotate; animation-duration: 1s; animation-timing-function ; -------------- */
+
+.box__animation--duration {
+	animation-name: rotate;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	animation-timing-function: linear;
+}
+
+/* ! --------------- animation-iteration-count -------------- */
+
+.box__animation--iteration-count:hover {
+	animation-name: rotate;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	animation-timing-function: linear;
+	animation-iteration-count: 2;
+}
+
+.box__animation--iteration-count-infinite {
+	animation-name: rotate;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+/* ! --------------- animation-direction -------------- */
+
+.box__animation--direction {
+	animation-name: rotate;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+/* ! --------------- animation-direction animation-name: none; -------------- */
+
+.box__animation--direction-name-none {
+	animation-name: rotate;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+.box__animation--direction-name-none:hover {
+	animation-name: none;
+}
+
+/* ! --------------- animation-direction animation-play-state: paused; -------------- */
+
+.box__animation-play-state {
+	animation-name: rotate;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+.box__animation-play-state:hover {
+	animation-play-state: paused;
+}
+
+/* ! --------------- animation-direction animation-play-state: paused; -------------- */
+
+
+.box__animation-run {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	background-color: #a4e943;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes run {
+	0% {
+		left: 0;
+	}
+
+	100% {
+		left: 100%;
+	}
+}
+
+.box__animation-run--play-state {
+	animation-name: run;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+.box__animation-run--play-state {
+	animation-play-state: running;
+}
+
+.box__animation-run--play-state:hover {
+	animation-play-state: paused;
+}
+
+/* ! --------------- animation-direction animation-play-state: paused; -------------- */
+
+.box__animation-delay {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background-color: #a4e943;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes run {
+	0% {
+		left: 0;
+	}
+
+	100% {
+		left: 50%;
+	}
+}
+
+.box__animation-delay {
+	animation-name: rotate, run;
+	animation-duration: 1s, 0.5s;
+	animation-timing-function: linear, ease;
+	animation-iteration-count: infinite;
+}
+
+.box__animation-delay {
+	animation-delay: 5s, 2s;
+}
+
+/* ! --------------- animation-fill-mode -------------- */
+
+.box__animation-fill-mode {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background-color: #a4e943;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes run {
+	0% {
+		left: 0;
+	}
+
+	100% {
+		left: 50%;
+	}
+}
+
+.box__animation-fill-mode {
+	animation-name: rotate, run;
+	animation-duration: 1s, 0.5s;
+	animation-timing-function: linear, ease;
+
+	animation-delay: 5s, 2s;
+}
+
+.box__animation-fill-mode {
+	animation-fill-mode: forwards, forwards;
+
+}
+
+
+
+/* ! --------------- Приклад маятник Ньютона -------------- */
+
+.newton {
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	border-top: 10px solid yellow;
+	position: relative;
+}
+
+.newton:hover .newton__item {
+	animation-play-state: paused;
+}
+
+.newton__item {
+	position: absolute;
+	top: -2px;
+	height: 100%;
+	width: 33.333%;
+	transform-origin: top;
+}
+
+.newton__item::before {
+	content: "";
+	width: 5px;
+	margin-left: -2.5px;
+	position: absolute;
+	background-color: #fff;
+	height: 100%;
+	left: 50%;
+}
+
+.newton__item::after {
+	width: 100px;
+	height: 100px;
+	content: "";
+	background-color: green;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.newton__item:nth-child(1) {
+	left: 0;
+	animation: left-item 1s infinite ease-in alternate;
+}
+
+.newton__item:nth-child(2) {
+	left: 33.33%;
+}
+
+.newton__item:nth-child(3) {
+	animation: right-item 1s infinite ease-out alternate;
+	right: 0;
+}
+
+@keyframes left-item {
+	0% {
+		transform: rotate(45deg);
+	}
+
+	50% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes right-item {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(-45deg);
+	}
+}
+
+/* ! --------------- Приклад кнопка -------------- */
+
+.button {
+	cursor: pointer;
+	background-color: green;
+	display: inline-block;
+	padding: 15px;
+	font-size: 15px;
+	border-radius: 15px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	box-shadow: 0px 5px 0px #000;
+	position: relative;
+	top: 0;
+	transition: all 0.2s;
+}
+
+.button:hover {
+	top: 2px;
+	box-shadow: 0px 3px 0px #000;
+}
+
+.button:active {
+	top: 5px;
+	box-shadow:
+		0px 0px 0px #000,
+		inset 0px 0px 5px 0px #333;
+}
+
+/* ! -----------------------FOOTER--------------------- */
+
+.footer {
+	margin: 0 auto;
+	max-width: 1950px;
+	width: 100%;
+	padding: 0 15px;
+	font-size: 0px;
+	position: relative;		
+	z-index: 49;
+	text-align: center;
+	animation: render-infinit 4s linear infinite;
+}
+
+.footer__conteiner {}
+
+.footer-info {
+	text-align: center;	
+	max-width: 100%;
+	padding: 15px 0;
+}
+
+.info-footer {}
+
+.info {}
+
+.info-items {}
+
+.items-info {}
+
+.items {}
+
+.items-info__item {
+	font-family: "Inter", sans-serif;
+	color: #fff;
+	font-size: 35px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+}

@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/prince.webp" type="image/x-icon">
+	<title>Lesson 14</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__conteiner">
+				<div class="header__wrap">
+					<div class="header-logo logo-header logo">
+						<a href="#https://wwww.cote_lapyx.com" target="_blank" class="logo-header__link">
+							<img src="img/prince.webp" alt="logo" class="logo-header__img">
+							<h1 class="logo-header__text">cote lapix</h1>
+						</a>
+
+					</div>
+					<nav class="header-nav nav-header">
+						<ul class="nav-list list-nav">
+							<li class="list-nav__item"><a href="#" class="list-nav__link">Home</a></li>
+							<li class="list-nav__item"><a href="#" class="list-nav__link">About Us</a>
+								<ul class="nav-list-sub sub-list">
+									<li class="sub-list__item"><a href="#" class="sub-list__link">Company Management</a></li>
+									<li class="sub-list__item"><a href="#" class="sub-list__link">Business Management</a></li>
+									<li class="sub-list__item"><a href="#" class="sub-list__link">
+											Consultant & Programs
+										</a></li>
+								</ul>
+							</li>
+							<li class="list-nav__item"><a href="#" class="list-nav__link">Pages</a>
+								<ul class="nav-list-sub sub-list">
+									<li class="sub-list__item"><a href="#" class="sub-list__link">Product</a>
+										<ul class="nav-list-last last-list">
+											<li class="last-list__item"><a href="car.html" class="last-list__link">Car</a></li>
+											<li class="last-list__item"><a href="#" class="last-list__link">Programs</a></li>
+											<li class="last-list__item"><a href="#" class="last-list__link">Business</a></li>
+										</ul>
+									</li>
+									<li class="sub-list__item"><a href="#" class="sub-list__link">Guide</a></li>
+									<li class="sub-list__item"><a href="#" class="sub-list__link">Finance</a></li>
+								</ul>
+
+							</li>
+							<li class="list-nav__item"><a href="#" class="list-nav__link">Services</a>
+								<ul class="nav-list-sub sub-list">
+									<li class="sub-list__item"><a href="#" class="sub-list__link">Licenses</a></li>
+									<li class="sub-list__item"><a href="#" class="sub-list__link"> Instructions</a></li>
+									<li class="sub-list__item"><a href="#" class="sub-list__link">404 Page</a></li>
+								</ul>
+
+							</li>
+							<li class="list-nav__item"><a href="#" class="list-nav__link">Blog</a></li>
+							<li class="list-nav__item"><a href="#" class="list-nav__link">Main Page</a></li>
+						</ul>
+					</nav>
+					<div class="header-social social-header">
+						<a href="#" class="social-header__link">
+							<img src="img/header/Instagram.svg" alt="instagram" class="social-header__img">
+						</a>
+						<a href="#" class="social-header__link"><img src="img/header/fb.svg" alt="facebook"
+								class="social-header__img"></a>
+						<a href="#" class="social-header__link"><img src="img/header/twiter.svg" alt="twiter"
+								class="social-header__img"></a>
+						<a href="#" class="social-header__link"><img src="img/header/pintrest.svg" alt="pintrest"
+								class="social-header__img"></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main__conteiner">
+				<div class="practice">
+					<h3 class="practice__title">practice</h3>
+					<div class="practice-block block-practice">
+						<h4 class="block-practice__title">transition</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__item box__item--transition">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									transition: all 0.3s;
+								</p>
+							</div>
+						</div>
+
+						<h4 class="block-practice__title">transition-duration</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__item box__item--transition-duration">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.box__item--transition-duration {
+									background-color: rgb(227, 13, 159);
+									transition-duration: 1800ms;}
+								</p>
+								<p>
+									.box__item--transition-duration:hover {
+									background-color: rgb(219, 78, 7);
+									transition-duration: 500ms;
+									width: 581px;}
+								</p>
+							</div>
+						</div>
+
+						<h4 class="block-practice__title">transition-property</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__item box__item--transition-property">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.box__item {
+									background-color: rgb(227, 13, 159);
+									transition-duration: 1800ms;
+									transition-property: background-color, width;
+									}
+								</p>
+								<p>
+									.box__item--transition-property:hover {
+									background-color: rgb(219, 78, 7);
+									width: 581px;
+									transition-duration: 500ms;
+									transition-property: background-color, width;
+									}
+								</p>
+							</div>
+						</div>
+
+						<h4 class="block-practice__title">transition-duration: 0s, 0s; transition-property: background-color,
+							width;</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__item box__item--transition-property-too">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.box__item {
+									background-color: rgb(227, 13, 159);
+									transition-duration: 1s, 3s;
+									transition-property: background-color, width;
+									}
+								</p>
+								<p>
+									.box__item--transition-property-all:hover {
+									background-color: rgb(219, 78, 7);
+									width: 581px;
+									transition-duration: 1000ms, 500ms;
+									transition-property: background-color, width;
+									}
+								</p>
+							</div>
+						</div>
+
+						<h4 class="block-practice__title">transition-duration: 0s, 0s; transition-property: all;</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__item box__item--transition-property-all">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.box__item {
+									background-color: rgb(227, 13, 159);
+									transition-duration: 1s, 3s;
+									transition-property: all;
+									}
+								</p>
+								<p>
+									.box__item--transition-property-all:hover {
+									background-color: rgb(219, 78, 7);
+									width: 581px;
+									transition-duration: 1000ms, 500ms;
+									transition-property: all;
+									}
+								</p>
+							</div>
+						</div>
+
+						<h4 class="block-practice__title">transition-duration: 0s, 0s; transition-property: all; visibility;
+						</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__item box__item--transition-property-visibility">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									visibility: visible; visibility: hidden;
+								</p>
+								<p>
+									.box__item {
+									background-color: rgb(227, 13, 159);
+									transition-duration: 1s;
+									transition-property: all;
+									}
+								</p>
+								<p>
+									.box__item--transition-property-all:hover {
+									background-color: rgb(219, 78, 7);
+									width: 581px;
+									transition-duration: 500ms;
+									transition-property: all;
+									}
+								</p>
+							</div>
+						</div>
+						<h4 class="block-practice__title">transition-duration: 0s, 0s; transition-property: all; visibility;
+							opacity;</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__item box__item--transition-property-opacity">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									visibility: visible; visibility: hidden; opacity
+								</p>
+								<p>
+									.box__item--transition-property-opacity {
+									background-color: rgb(227, 13, 159);
+									transition-duration: 0.51s;
+									transition-property: all;
+									visibility: visible;
+									opacity: 1;
+									}
+								</p>
+								<p>
+									.box__wrap:hover .box__item--transition-property-opacity {
+									background-color: rgb(219, 78, 7);
+									width: 581px;
+									height: 350px;
+									visibility: hidden;
+									transition-duration: 1s;
+									transition-property: all;
+									opacity: 0;
+									}
+								</p>
+							</div>
+						</div>
+
+						<!-- ! =============== DELAY =============== -->
+
+						<h4 class="block-practice__title">transition-delay: ;</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__item box__item--transition-delay">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.box__item--transition-delay {
+									background-color: rgb(227, 13, 159);
+									transition-property: all;
+									transition-delay: 1s;
+									}
+								</p>
+								<p>
+									.box__wrap:hover .box__item--transition-delay {
+									background-color: rgb(219, 78, 7);
+									width: 581px;
+									transition-property: all;
+									transition-delay: 0.5s;
+									}
+								</p>
+							</div>
+						</div>
+
+						<h4 class="block-practice__title">transition-duration: ; transition-property: ; transition-delay: ;
+						</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__item box__item--transition-delay-duration">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.box__item--transition-delay-duration {
+									background-color: rgb(227, 13, 159);
+									transition-duration: 0.8s, 1s, 1.2s;
+									transition-property: width, height, background-color;
+									transition-delay: 0s, 0.8s, 1.8s;
+									}
+								</p>
+								<p>
+									.box__item--transition-delay-duration:hover {
+									background-color: rgb(219, 78, 7);
+									width: 581px;
+									height: 350px;
+									transition-duration: 0.5s, 0.8s, 1s;
+									transition-property: width, background-color, height;
+									transition-delay: 0s, 0.5s, 1.3s;
+									}
+								</p>
+							</div>
+						</div>
+
+						<h4 class="block-practice__title">list; list__item;
+						</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<ul class="list">
+									<li class="list__item">Item1</li>
+									<li class="list__item">Item2</li>
+									<li class="list__item">Item3</li>
+									<li class="list__item">Item4</li>
+									<li class="list__item">Item5</li>
+								</ul>
+							</div>
+							<div class="box-text">
+								<p>
+									.list {
+									width: 200px;
+									height: 250px;
+									}
+									.list__item {
+									background-color: red;
+									padding: 5px;
+									font-family: "Poppins", sans-serif;
+									color: #fff;
+									font-size: 18px;
+									text-align: left;
+									}
+									.list__item:not(:last-child) {
+									margin-bottom: 15px;
+									}
+									.list__item {
+									transform: translate(-820px, 0);
+									transition-duration: 0.2s;
+									}
+									.list__item:nth-child(1) {
+									transition-delay: 0s;
+									}
+									.list__item:nth-child(2) {
+									transition-delay: 0.2s;
+									}
+									.list__item:nth-child(3) {
+									transition-delay: 0.4s;
+									}
+									.list__item:nth-child(4) {
+									transition-delay: 0.6s;
+									}
+									.list__item:nth-child(5) {
+									transition-delay: 0.8s;
+									}
+									.list:hover .list__item {
+									transform: translate(0px, 0);
+									transition-duration: 0.5s;
+									}
+								</p>
+							</div>
+						</div>
+
+						<h4 class="block-practice__title">transition-timing-function: ease; На початку повільно, середина
+							швидко, закінчення повільно, (за замовченням).
+						</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__item box__item--transition-timing-function-ease">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.box__item--transition-timing-function-ease {
+									background-color: rgb(227, 13, 159);
+									transition-duration: 0.5s;
+									transition-timing-function: ease;
+									}
+								</p>
+								<p>
+									.box__item--transition-timing-function-ease:hover {
+									width: 581px;
+									}
+								</p>
+							</div>
+						</div>
+
+						<h4 class="block-practice__title">transition-timing-function: linear; Змінюється з постійною
+							швидкістю.
+						</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__item box__item--transition-timing-function-linear">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.box__item--transition-timing-function-linear {
+									background-color: rgb(227, 13, 159);
+									transition-duration: 0.5s;
+									transition-timing-function: linear;
+									}
+								</p>
+								<p>
+									.box__item--transition-timing-function-linear:hover {
+									width: 581px;
+									}
+								</p>
+							</div>
+						</div>
+
+						<h4 class="block-practice__title">transition-timing-function: cubic-bezier(0.39, -0.42, 0.47, 1.35);
+						</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__item box__item--transition-timing-function-bezier">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.box__item--transition-timing-function-bezier {
+									background-color: rgb(227, 13, 159);
+									transition-duration: 0.5s;
+									transition-timing-function: cubic-bezier(0.39, -0.42, 0.47, 1.35);
+									}
+								</p>
+								<p>
+									.box__item--transition-timing-function-bezier:hover {
+									width: 581px;
+									}
+								</p>
+							</div>
+						</div>
+
+						<h4 class="block-practice__title">transition-timing-function: steps(3, start); Розбиває на кроки...
+							При створенні годинника
+						</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__item box__item--transition-timing-function-steps">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.box__item--transition-timing-function-steps {
+									background-color: rgb(227, 13, 159);
+									transition-duration: 0.8s;
+									transition-timing-function: steps(3, start);
+									}
+								</p>
+								<p>
+									.box__item--transition-timing-function-steps:hover {
+									width: 581px;
+									}
+								</p>
+							</div>
+						</div>
+
+						<h4 class="block-practice__title">transition-timing-function: linear; transform: rotate
+						</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__item box__item--transition-timing-function-rotate">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.box__item--transition-timing-function-rotate {
+									background-color: rgb(227, 13, 159);
+									transition-duration: 0.3s;
+									transition-timing-function: linear;
+									}
+								</p>
+								<p>
+									.box__item--transition-timing-function-rotate:hover {
+									width: 200px;
+									transform: rotate(360deg);
+									}
+								</p>
+							</div>
+						</div>
+
+						<h4 class="block-practice__title">Унівесальний запис: transition: all 0.3s linear 1s; = transition:
+							property duration timing-function delay;
+						</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__item box__item--transition-universal">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.box__item--transition-universal {
+									background-color: rgb(227, 13, 159);
+									transition-duration: 0.3s;
+									transition: all 0.3s linear 1s;
+									}
+								</p>
+								<p>
+									.box__item--transition-universal:hover {
+									background-color: rgb(219, 78, 7);
+									width: 300px;
+									height: 300px;
+									}
+								</p>
+							</div>
+						</div>
+
+						<h4 class="block-practice__title">Оптимізація transition;
+						</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__item box__item--transition-universal">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.box__item--transition-universal {
+									background-color: rgb(227, 13, 159);
+									transition-duration: 0.3s;
+									transition: all 0.3s linear 1s;
+									}
+								</p>
+								<p>
+									.box__item--transition-universal:hover {
+									background-color: rgb(219, 78, 7);
+									width: 300px;
+									height: 300px;
+									}
+								</p>
+							</div>
+						</div>
+
+						<!-- ! =============== Приклади ===============- -->
+						<!-- ! =============== Приклад 1 ===============- -->
+
+
+						<h4 class="block-practice__title">Приклад 1
+						</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="image image--butt1">
+									<img src="img/main/honey.webp" alt="honey">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.image img{
+									width: 350px;
+									}
+									.image{
+									display: inline-block;
+									position: relative;
+									overflow: hidden;
+									}
+									.image--butt1::before{
+									content: "";
+									position: absolute;
+									width: 100%;
+									height: 100%;
+									top: 0;
+									left: 0;
+									background-color: #000000;
+									opacity: 0.5;
+									transform: scale(0);
+									transition: transform 0.3s;
+									}
+									.image--butt1:hover::before{
+									transform: scale(1);
+									}
+								</p>
+							</div>
+						</div>
+
+						<!-- ! =============== Приклад 2 =============== -->
+
+						<h4 class="block-practice__title">Приклад 2
+						</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="image image--butt2">
+									<img src="img/main/honey.webp" alt="honey">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.image--butt2::before{
+									content: "";
+									position: absolute;
+									width: 100%;
+									height: 100%;
+									top: 0;
+									left: 0;
+									background-color: #000000;
+									opacity: 0.5;
+									transform: translate(-100%, 0px);
+									transition: transform 0.3s;
+									}
+									.image--butt2:hover::before{
+									transform: translate(0px, 0px);
+									}
+								</p>
+							</div>
+						</div>
+
+						<!-- ! =============== Приклад 3 =============== -->
+
+						<h4 class="block-practice__title">Приклад 3
+						</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="image image--butt3">
+									<img src="img/main/honey.webp" alt="honey">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.image--butt3::before{
+									content: "";
+									position: absolute;
+									width: 100%;
+									height: 100%;
+									top: 0;
+									left: -100%;
+									background-color: #000000;
+									opacity: 0.5;
+									transition: left 0.3s;
+									}
+									.image--butt3:hover::before{
+									left: -100%;
+									}
+								</p>
+							</div>
+						</div>
+
+						<!-- ! =============== Приклад 4 =============== -->
+
+						<h4 class="block-practice__title">Приклад 4
+						</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__link box__link--butt4">
+									<a href="#">I`m link</a>
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.box__link a {
+									padding: 15px;
+									font-family: "Poppins", sans-serif;
+									font-size: 35px;
+									text-align: center;
+									color: rgb(31, 233, 31);
+									overflow: hidden;
+									transition: color 0.3s;
+									}
+									.box__link>* {
+									display: inline-block;
+									vertical-align: middle;
+									width: 100%;
+									}
+									.box__link--butt4 a::after {
+									content: "";
+									width: 0;
+									display: block;
+									height: 2px;
+									margin-top: 2px;
+									background-color: rgb(31, 233, 31);
+									transition:
+									background-color 0.3s,
+									width 0.3s;
+									}
+									.box__link--butt4 a:hover {
+									color: yellow;
+									}
+									.box__link--butt4 a:hover::after {
+									background-color: yellow;
+									width: 100%;
+									}
+								</p>
+							</div>
+						</div>
+
+						<!-- ! =============== Приклад 5 =============== -->
+
+						<h4 class="block-practice__title">Приклад 5
+						</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__link box__link--butt5">
+									<a href="#">I`m link</a>
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.box__link--butt5 a::after {
+									content: "";
+									width: 0;
+									display: block;
+									height: 2px;
+									margin-top: 2px;
+									left: 50%;
+									position: relative;
+									background-color: rgb(31, 233, 31);
+									transition: all 0.3s;
+									}
+									.box__link--butt5 a:hover {
+									color: yellow;
+									}
+									.box__link--butt5 a:hover::after {
+									background-color: yellow;
+									width: 100%;
+									left: 0;
+									}
+								</p>
+							</div>
+						</div>
+
+
+						<!-- ! =============== CSS ANIMATION & KEYFARAMES =============== -->
+						<!-- ! =============== animation-name: rotate; =============== -->
+
+						<h4 class="block-practice__title">css animation & keyframes; animation-name: rotate;
+						</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__animation">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.box__animation {
+									position: relative;
+									width: 200px;
+									height: 200px;
+									background-color: #a4e943;
+									}
+
+									@keyframes rotate {
+									0% {
+									transform: rotate(0deg);
+									}
+									100% {
+									transform: rotate(360deg);
+									}
+									}
+
+									@keyframes run {
+									0% {
+									left: 0;
+									}
+									100% {
+									left: 100%;
+									}
+									}
+
+									.box__animation:hover {
+									animation-name: rotate;
+									}
+								</p>
+							</div>
+						</div>
+
+						<!-- ! =============== animation-name: rotate; animation-duration: 1s; =============== -->
+
+						<h4 class="block-practice__title">css animation & keyframes; animation-name: rotate;
+							animation-duration: 1s;
+						</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__animation box__animation--duration">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.box__animation--duration:hover {
+									animation-name: rotate;
+									animation-duration: 1s;
+									}
+								</p>
+							</div>
+						</div>
+
+						<!-- ! =============== animation-name: rotate; animation-duration: 1s; animation-timing-function ; =============== -->
+
+						<h4 class="block-practice__title">css animation & keyframes; animation-name: rotate;
+							animation-duration: 1s; animation-timing-function: ease (linear);
+						</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__animation box__animation--timing-function">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.box__animation--duration:hover {
+									animation-name: rotate;
+									animation-duration: 1s;
+									animation-timing-function: ease;
+									animation-timing-function: linear;
+
+									}
+								</p>
+							</div>
+						</div>
+
+
+						<!-- ! =============== animation-iteration-count =============== -->
+
+						<h4 class="block-practice__title">css animation-iteration-count: 2;
+						</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__animation box__animation--iteration-count">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.box__animation--iteration-count:hover {
+									animation-name: rotate;
+									animation-duration: 1s;
+									animation-timing-function: ease;
+									animation-timing-function: linear;
+									animation-iteration-count: 2;
+									}
+								</p>
+							</div>
+						</div>
+
+						<h4 class="block-practice__title">css animation-iteration-count Відповідає за повтор відтворення
+							ключових кадрів. animation-iteration-count: infinite;
+						</h4>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__animation box__animation--iteration-count-infinite">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.box__animation--iteration-count {
+									animation-name: rotate;
+									animation-duration: 0.5s;
+									animation-timing-function: ease;
+									animation-timing-function: linear;
+									animation-iteration-count: infinite;
+									}
+								</p>
+							</div>
+						</div>
+
+						<!-- ! =============== animation-direction =============== -->
+
+						<h4 class="block-practice__title">css animation-direction;
+						</h4>
+						<div class="block-practice__text">
+							<p>
+								Визначає напрямок та тип відтворення ключових кадрів.
+								normal - за замовченням
+								reverse - в зворотньому напрямку
+								alternate - кожна парна ітерація буде відбуватись у зворотньому напрямку
+								alternate-reverse - кожна непарна ітерація буде відбуватись у зворотньому напрямку
+							</p>
+						</div>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__animation box__animation--direction">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.box__animation--direction {
+									animation-name: rotate;
+									animation-duration: 0.5s;
+									animation-timing-function: ease;
+									animation-timing-function: linear;
+									animation-iteration-count: infinite;
+									animation-direction: alternate;
+									}
+								</p>
+							</div>
+						</div>
+
+						<h4 class="block-practice__title">css animation-direction; animation-name: none;
+						</h4>
+						<div class="block-practice__text">
+							<p>
+								Анімація починається з початку
+							</p>
+						</div>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__animation box__animation--direction-name-none">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.box__animation--direction-name-none {
+									animation-name: rotate;
+									animation-duration: 0.5s;
+									animation-timing-function: ease;
+									animation-timing-function: linear;
+									animation-iteration-count: infinite;
+									animation-direction: alternate;
+									}
+									.box__animation--direction-name-none:hover {
+									animation-name: none;
+									}
+								</p>
+							</div>
+						</div>
+
+						<h4 class="block-practice__title">css animation-direction; animation-play-state: paused;
+						</h4>
+						<div class="block-practice__text">
+							<p>
+								Анімація ставиться на паузу і продовжується далі після паузи.
+							</p>
+						</div>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__animation box__animation-play-state">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.box__animation-play-state {
+									animation-name: rotate;
+									animation-duration: 0.5s;
+									animation-timing-function: ease;
+									animation-timing-function: linear;
+									animation-iteration-count: infinite;
+									animation-direction: alternate;
+									}
+									.box__animation-play-state:hover {
+									animation-play-state: paused;
+									}
+								</p>
+							</div>
+						</div>
+
+						<!-- ! =============== animation-direction animation-play-state: paused; =============== -->
+
+						<h4 class="block-practice__title">css animation-play-state: running; animation-play-state:hover:
+							paused;
+						</h4>
+						<div class="block-practice__text">
+							<p>
+
+							</p>
+						</div>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__animation-run box__animation-run--play-state">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.box__animation-run {
+									position: relative;
+									width: 50px;
+									height: 50px;
+									background-color: #a4e943;
+									}
+									@keyframes rotate {
+									0% {
+									transform: rotate(0deg);
+									}
+									100% {
+									transform: rotate(360deg);
+									}
+									}
+									@keyframes run {
+									0% {
+									left: 0;
+									}
+									100% {
+									left: 100%;
+									}
+									}
+									.box__animation-run--play-state {
+									animation-name: run;
+									animation-duration: 0.5s;
+									animation-timing-function: linear;
+									animation-iteration-count: infinite;
+									animation-direction: alternate;
+									}
+									.box__animation-run--play-state {
+									animation-play-state: running;
+									}
+									.box__animation-run--play-state:hover {
+									animation-play-state: paused;
+									}
+								</p>
+							</div>
+						</div>
+
+						<!-- ! =============== animation-delay =============== -->
+
+						<h4 class="block-practice__title">css animation-delay;
+						</h4>
+						<div class="block-practice__text">
+							<p>
+								Відповідає за затримку перед відтворенням.
+							</p>
+						</div>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__animation box__animation-delay">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.box__animation-delay {
+									position: relative;
+									width: 200px;
+									height: 200px;
+									background-color: #a4e943;
+									}
+									@keyframes rotate {
+									0% {
+									transform: rotate(0deg);
+									}
+									100% {
+									transform: rotate(360deg);
+									}
+									}
+									@keyframes run {
+									0% {
+									left: 0;
+									}
+									100% {
+									left: 100%;
+									}
+									}
+									.box__animation-delay {
+									animation-name: rotate, run;
+									animation-duration: 1s, 0.5s ;
+									animation-timing-function: linear, ease;
+									animation-iteration-count: infinite;
+									}
+									.box__animation-delay {
+									animation-delay: 5s, 2s;
+									}
+								</p>
+							</div>
+						</div>
+
+						<!-- ! =============== animation-fill-mode =============== -->
+
+						<h4 class="block-practice__title">css animation-fill-mode;
+						</h4>
+						<div class="block-practice__text">
+							<p>
+								animation-fill-mode
+								Визначає,
+								які значення анімованих css властивостей
+								застосовуються до об'єкта після завершення анімації.
+							</p>
+							<p>animation-fill-mode: none;</p>
+							<p>Після закінчення анімації залишається в кінцевому положенні animation-fill-mode: forwards; </p>
+						</div>
+						<div class="box">
+							<div class="box__wrap">
+								<div class="box__animation box__animation-fill-mode">
+								</div>
+							</div>
+							<div class="box-text">
+								<p>
+									.box__animation-delay {
+									position: relative;
+									width: 200px;
+									height: 200px;
+									background-color: #a4e943;
+									}
+									@keyframes rotate {
+									0% {
+									transform: rotate(0deg);
+									}
+									100% {
+									transform: rotate(360deg);
+									}
+									}
+									@keyframes run {
+									0% {
+									left: 0;
+									}
+									100% {
+									left: 100%;
+									}
+									}
+									.box__animation-delay {
+									animation-name: rotate, run;
+									animation-duration: 1s, 0.5s ;
+									animation-timing-function: linear, ease;
+									animation-iteration-count: infinite;
+									}
+									.box__animation-delay {
+									animation-delay: 5s, 2s;
+									}
+								</p>
+							</div>
+						</div>
+
+						<!-- ! =============== Універсальний запис animation =============== -->
+
+						<h4 class="block-practice__title">Універсальний запис animation
+						</h4>
+						<div class="block-practice__text">
+							<p>
+								Порядок запису властивостей:
+								animation-name
+								animation-duration
+								animation-timing-function
+								animation-iteration-count
+								animation-direction
+								animation-play-state
+								animation-delay
+								animation-fill-mode
+							</p>
+							<p>animation: rotate 1s linear 1 normal running 0s forwards;</p>
+							<p>Декілька анімацій. animation: rotate 1s linear 1 normal running 0s forwards, rotate-2 1s ease
+								infinite alternate running 1s forwards; </p>
+						</div>
+
+						<!-- ! =============== Приклади =============== -->
+
+						<h4 class="block-practice__title">Приклад маятник Ньютона
+						</h4>
+						<div class="box">
+							<div class="newton">
+								<div class="newton__item"></div>
+								<div class="newton__item"></div>
+								<div class="newton__item"></div>
+							</div>
+						</div>
+
+						<h4 class="block-practice__title">Приклад кнопка
+						</h4>
+						<div class="box">
+							<div class="button">
+								я кнопка
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__conteiner">
+				<div class="footer-info info-footer info">
+					<div class="info-items items-info items">
+						<h3 class="items-info__item">footer</h3>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

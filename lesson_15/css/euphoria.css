@@ -301,6 +301,8 @@ body {
 	letter-spacing: 0.02em;
 	text-align: left;
 	margin-bottom: 20px;
+	
+	
 }
 
 .wishlist__row {
@@ -312,7 +314,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: flex-end;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -324,6 +326,7 @@ body {
 	flex-grow: 0;
 	border-radius: 4px;
 	margin-right: 36px;
+	padding-left: 58px;
 }
 
 .item-wishlist__img::before {
@@ -331,7 +334,7 @@ body {
 	background: url("../img/closecross.svg") 0 0 no-repeat;
 	position: absolute;
 	top: 48px;
-	left: -50px;
+	left: 0px;
 	width: 22px;
 	height: 22px;
 	transition: all 0.4s;
@@ -419,7 +422,9 @@ body {
 .item-wishlist__price {
 	order: 3;
 	flex-grow: 0;
-	margin-right: 50px;
+	flex-shrink: 1;
+	flex-basis: 82px;
+	margin-right: 40px;
 	color: rgb(128, 125, 126);
 	font-family: "Causten", sans-serif;
 	font-size: 22px;

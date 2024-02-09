@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<title>Lesson 15</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__conteiner">
+				<h1 class="header__title">я хедер</h1>
+			</div>
+			<div class="nextpage">
+				<a href="basis-gap.html" class="pagega">basis-gap</a>
+			</div>
+			<div class="euphoria">
+				<a href="euphoria.html" class="euphoria__link">Euphoria</a>
+			</div>
+
+		</header>
+
+		<main class="page">
+			<div class="page__container">
+				<div class="page-practice practice-page">
+					<div class="practice-page__item">
+						<h2 class="practice-page__title">Практика Flexbox</h2>
+						<div class="practice-page__text">
+							<p>
+								Flexbox - це цілий модуль, що містить у собі набір
+								властивостей та їх значень як для батьківського об'єкту
+								(flex-контейнера), так і для його дочірніх елементів
+								(flex-елементів).
+							</p>
+							<p>
+								Основною перевагою гнучкої FLEX розмітки є можливість
+								змінювати ширину/висоту простір навколо та порядок
+								flex-елементів, для того, щоб найкращим чином заповнити
+								доступний простір flex-контейнера та полегшувати адаптивність
+							</p>
+						</div>
+					</div>
+					<div class="practice-page__wrap">
+						<div class="practice-page__sub-item">
+							<!-- ! Властивості: display: flex / inline-flex; -->
+							<h3 class="practice-page__sub-title">
+								<span>Властивість:</span> display: flex;
+							</h3>
+							<div class="practice-page__sub-text">
+								<p>
+									<span>display: flex / inline-flex;</span>
+									<br>
+									1) Визначає flex-контейнер, блочний або блочний-рядковий
+									(залежить від значення).
+									<br>
+									2) Перетворює всі свої беспосередні дочірні елементи у
+									flex-елементи.
+								</p>
+							</div>
+							<!-- ! Властивість: display: flex -->
+							<h3 class="practice-page__sub-title">display: flex;</h3>
+							<!-- ! Flex контейнер -->
+							<div class="block block--flex">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">Елемент 2</div>
+								<div class="block__item">Елемент 3</div>
+							</div>
+							<!-- ! Властивість: display: inline-flex -->
+							<h3 class="practice-page__sub-title">display: inline-flex;</h3>
+							<div class="block block--inline-flex">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">Елемент 2</div>
+								<div class="block__item">Елемент 3</div>
+							</div>
+						</div>
+						<div class="practice-page__sub-item">
+							<!-- ! Властивості: flex-wrap: wrap; flex-wrap: nowrap; flex-wrap: wrap-reverse; -->
+							<h3 class="practice-page__sub-title">
+								<span>Властивості:</span> flex-wrap: wrap; / flex-wrap:
+								nowrap; / flex-wrap: wrap-reverse;
+							</h3>
+							<div class="practice-page__sub-text">
+								<p>
+									<span>flex-wrap:</span>
+									<br>
+									Визначає, чи зможуть flex-елементи переміщатися на наступні
+									рядки, коли перестають поміщатися всередині flex-контейнера.
+								</p>
+								<p>
+									nowrap - (за замовченням) Flex-елементи не можуть
+									переміщатися на наступні рядки flex-контейнера.
+								</p>
+								<p>
+									wrap - Flex-елементи зможуть переміщатися на наступні рядки
+									flex-контейнера.
+								</p>
+								<p>
+									wrap-reverse - Flex-елементи зможуть переміщатися на
+									наступні рядки flex-контейнера, але у зворотному порядку.
+								</p>
+							</div>
+							<!-- ! Властивість: flex-wrap: wrap;   -->
+							<h3 class="practice-page__sub-title">
+								display: flex; flex-wrap: wrap;
+							</h3>
+							<!-- ! Flex контейнер -->
+							<div class="block block--wrap">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">Елемент 2</div>
+								<div class="block__item">Елемент 3</div>
+							</div>
+							<!-- ! Властивість: flex-wrap: nowrap; -->
+							<h3 class="practice-page__sub-title">
+								display: flex; flex-wrap: nowrap;
+							</h3>
+							<div class="block block--nowrap">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">Елемент 2</div>
+								<div class="block__item">Елемент 3</div>
+							</div>
+							<!-- ! Властивість: flex-wrap: wrap-reverse; -->
+							<h3 class="practice-page__sub-title">
+								display: flex; flex-wrap: wrap-reverse;
+							</h3>
+							<div class="block block--wrap-reverse">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">Елемент 2</div>
+								<div class="block__item">Елемент 3</div>
+							</div>
+							<!-- ! Властивість: flex-wrap: wrap;   -->
+							<h3 class="practice-page__sub-title">
+								display: inline-flex; flex-wrap: wrap;
+							</h3>
+							<!-- ! Flex контейнер -->
+							<div class="block block--inline-wrap">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">Елемент 2</div>
+								<div class="block__item">Елемент 3</div>
+							</div>
+							<!-- ! Властивість: flex-wrap: nowrap; -->
+							<h3 class="practice-page__sub-title">
+								display: inline-flex; flex-wrap: nowrap;
+							</h3>
+							<div class="block block--inline-nowrap">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">Елемент 2</div>
+								<div class="block__item">Елемент 3</div>
+							</div>
+							<!-- ! Властивість: flex-wrap: wrap-reverse; -->
+							<h3 class="practice-page__sub-title">
+								display: inline-flex; flex-wrap: wrap-reverse;
+							</h3>
+							<div class="block block--inline-wrap-reverse">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">Елемент 2</div>
+								<div class="block__item">Елемент 3</div>
+							</div>
+						</div>
+					</div>
+					<div class="practice-page__wrap">
+						<div class="practice-page__sub-item">
+							<!-- ! Властивості: display: flex / inline-flex; -->
+							<h3 class="practice-page__sub-title">
+								<span>Властивість:</span> display: flex;
+							</h3>
+							<div class="practice-page__sub-text">
+								<p>
+									<span>display: flex / inline-flex;</span>
+									<br>
+									1) Визначає flex-контейнер, блочний або блочний-рядковий
+									(залежить від значення).
+									<br>
+									2) Перетворює всі свої беспосередні дочірні елементи у
+									flex-елементи.
+								</p>
+							</div>
+							<!-- ! Властивість: display: flex -->
+							<h3 class="practice-page__sub-title">display: flex;</h3>
+							<!-- ! Flex контейнер -->
+							<div class="block block--flex">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">Елемент 2</div>
+								<div class="block__item">Елемент 3</div>
+							</div>
+							<!-- ! Властивість: display: inline-flex -->
+							<h3 class="practice-page__sub-title">display: inline-flex;</h3>
+							<div class="block block--inline-flex">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">Елемент 2</div>
+								<div class="block__item">Елемент 3</div>
+							</div>
+						</div>
+						<div class="practice-page__sub-item">
+							<!-- ! Властивості: justify-content: flex-start; / flex-end; / center; / space-between; / space-around; / space-evenly; -->
+							<h3 class="practice-page__sub-title">
+								<span>Властивості:</span> justify-content: flex-start; /
+								flex-end; / center; / space-between; / space-around; /
+								space-evenly;
+							</h3>
+							<div class="practice-page__sub-text">
+								<p>
+									<span>justify-content:</span>
+									<br>
+									Визначає вирівнювання вздовж основної осі (напрямок залежить
+									від значення властивості flex-direction).
+								</p>
+								<p>
+									flex-start - Значення за промовчанням (не потрібно
+									вказувати). Flex-елементи притискаються до початку осі.
+								</p>
+								<p>flex-end - Flex-елементи притискаються вкінець осі.</p>
+								<p>
+									center - Flex-елементи розташовуються в центрі основної осі.
+								</p>
+								<p>
+									space-between - Flex-елементи розміщуються поступово по
+									основній осі. Перший елемент знаходиться на початку осі,
+									останній елемент знаходиться наприкінці осі. Між елементами
+									постійно однаковий простір
+								</p>
+								<p>
+									space-around - Flex-елементи розташовуються рівномірно по
+									основній осі. До кожного flex-елементу додається простір
+									ліворуч і праворуч.
+								</p>
+								<p>
+									space-evenly - Flex-елементи розташовуються рівномірно по
+									основній осі з однаковим простором навколо них.
+								</p>
+							</div>
+							<!-- ! Властивість: justify-content:flex-start;   -->
+							<h3 class="practice-page__sub-title">
+								display: flex; flex-wrap: wrap; justify-content:flex-start;
+							</h3>
+							<!-- ! Flex контейнер -->
+							<div class="block block--justify-start">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">Елемент 2</div>
+								<div class="block__item">Елемент 3</div>
+							</div>
+							<!-- ! Властивість: justify-content: flex-end; -->
+							<h3 class="practice-page__sub-title">
+								max-width: 30%; display: flex; flex-wrap: wrap-reverse;
+								justify-content: flex-end;
+							</h3>
+							<div class="block block--justify-end">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">Елемент 2</div>
+								<div class="block__item">Елемент 3</div>
+							</div>
+							<!-- ! Властивість: justify-content: center; -->
+							<h3 class="practice-page__sub-title">
+								display: flex; flex-wrap: wrap; justify-content: center;
+							</h3>
+							<div class="block block--justify-center">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">Елемент 2</div>
+								<div class="block__item">Елемент 3</div>
+							</div>
+							<!-- ! Властивість: justify-content: space-between;   -->
+							<h3 class="practice-page__sub-title">
+								display: inline-flex; flex-wrap: wrap; justify-content:
+								space-between;
+							</h3>
+							<!-- ! Flex контейнер -->
+							<div class="block block--justify-space-between">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">Елемент 2</div>
+								<div class="block__item">Елемент 3</div>
+							</div>
+							<!-- ! Властивість: justify-content: space-around; -->
+							<h3 class="practice-page__sub-title">
+								display: inline-flex; flex-wrap: nowrap; justify-content:
+								space-around;
+							</h3>
+							<div class="block block--justify-space-around">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">Елемент 2</div>
+								<div class="block__item">Елемент 3</div>
+							</div>
+							<!-- ! Властивість: justify-content: space-evenly; -->
+							<h3 class="practice-page__sub-title">
+								display: inline-flex; flex-wrap: wrap-reverse;
+								justify-content: space-evenly;
+							</h3>
+							<div class="block block--justify-space-evenly">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">Елемент 2</div>
+								<div class="block__item">Елемент 3</div>
+							</div>
+						</div>
+						<div class="practice-page__sub-item">
+							<!-- ! Властивості: align-items: stretch; / flex-start; flex-end; / center; / baseline; -->
+							<h3 class="practice-page__sub-title">
+								<span>Властивості:</span> align-items: stretch; / flex-start;
+								flex-end; / center; / baseline;
+							</h3>
+							<div class="practice-page__sub-text">
+								<p>
+									<span>align-items:</span>
+									<br>
+									Визначає вирівнювання вздовж поперечної осі (напрямок
+									залежить від значення властивості flex-direction).
+								</p>
+								<p>
+									stretch - Значення за промовчанням (не потрібно вказувати).
+									Flex-елементи розтягуються весь розмір поперечної осі
+									flex-контейнера.
+								</p>
+								<p>
+									flex-start - Flex-елементи притискаються до початку
+									поперечної осі.
+								</p>
+								<p>
+									flex-end - Flex-елементи притискаються вкінець поперечної
+									осі.
+								</p>
+								<p>center - Flex-елементи по центру</p>
+							</div>
+							<!-- ! Властивість: align-items: stretch;   -->
+							<h3 class="practice-page__sub-title">
+								display: flex; justify-content:flex-start; align-items:
+								stretch;
+							</h3>
+							<!-- ! Flex контейнер -->
+							<div class="block block--align-stretch">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">
+									Елемент 2 Lorem ipsum, dolor sit amet consectetur
+									adipisicing elit. Ipsa sequi modi nam quod esse aspernatur
+									odio eius voluptatibus rerum aperiam dolor ex id similique
+									optio, nemo magnam excepturi recusandae officia?
+								</div>
+								<div class="block__item">Елемент 3</div>
+							</div>
+							<!-- ! Властивість: align-items: flex-start; -->
+							<h3 class="practice-page__sub-title">
+								display: flex; justify-content:flex-start; align-items:
+								flex-start;
+							</h3>
+							<div class="block block--align-start">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">
+									Елемент 2 Lorem ipsum, dolor sit amet consectetur
+									adipisicing elit. Ipsa sequi modi nam quod esse aspernatur
+									odio eius voluptatibus rerum aperiam dolor ex id similique
+									optio, nemo magnam excepturi recusandae officia?
+								</div>
+								<div class="block__item">Елемент 3</div>
+							</div>
+							<!-- ! Властивість: align-items: flex-end; -->
+							<h3 class="practice-page__sub-title">
+								display: flex; justify-content:flex-start; align-items:
+								flex-end;
+							</h3>
+							<div class="block block--align-end">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">
+									Елемент 2 Lorem ipsum, dolor sit amet consectetur
+									adipisicing elit. Ipsa sequi modi nam quod esse aspernatur
+									odio eius voluptatibus rerum aperiam dolor ex id similique
+									optio, nemo magnam excepturi recusandae officia?
+								</div>
+								<div class="block__item">Елемент 3</div>
+							</div>
+							<!-- ! Властивість: align-items: center;   -->
+							<h3 class="practice-page__sub-title">
+								display: flex; justify-content:flex-start; align-items:
+								center;
+							</h3>
+							<!-- ! Flex контейнер -->
+							<div class="block block--align-center">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">
+									Елемент 2 Lorem ipsum, dolor sit amet consectetur
+									adipisicing elit. Ipsa sequi modi nam quod esse aspernatur
+									odio eius voluptatibus rerum aperiam dolor ex id similique
+									optio, nemo magnam excepturi recusandae officia?
+								</div>
+								<div class="block__item">Елемент 3</div>
+							</div>
+							<!-- ! Властивість: align-items: baseline; -->
+							<h3 class="practice-page__sub-title">
+								display: flex; justify-content:flex-start; align-items:
+								baseline;
+							</h3>
+							<div class="block block--align-baseline">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">
+									Елемент 2 Lorem ipsum, dolor sit amet consectetur
+									adipisicing elit. Ipsa sequi modi nam quod esse aspernatur
+									odio eius voluptatibus rerum aperiam dolor ex id similique
+									optio, nemo magnam excepturi recusandae officia?
+								</div>
+								<div class="block__item">Елемент 3</div>
+							</div>
+						</div>
+						<div class="practice-page__sub-item">
+							<!-- ! Властивості: flex-direction: row; / row-reverse; / column; / column-reverse; -->
+							<h3 class="practice-page__sub-title">
+								<span>Властивості:</span> flex-direction: row; / row-reverse;
+								/ column; / column-reverse;
+							</h3>
+							<div class="practice-page__sub-text">
+								<p>
+									<span>flex-direction:</span>
+									<br>
+									Встановлює основну вісь, таким чином визначає напрямок
+									flex-елементів, розташованих у flex-контейнері.
+								</p>
+								<p>
+									row - Значення за замовчуванням (не потрібно вказувати).
+									Основна вісь горизонтальна. Всі flex-елементи розташуються
+									ліворуч по горизонталі.
+								</p>
+								<p>row-reverse - змінює напрям горизонтального вектору</p>
+								<p>
+									column - змінює головну вісь на вертикальну (зверху вниз)
+									другорядна зліва на право.
+								</p>
+								<p>
+									column-reverse - змінює головну вісь на вертикальну (знизу
+									вверх) другорядна зліва на право.
+								</p>
+								<p>
+									gap - Проміжок між FLEX-елементами. Не залежить від
+									flex-direction. Погано працює з відсотковим basis
+								</p>
+							</div>
+							<!-- ! Властивість: flex-direction: row;   -->
+							<h3 class="practice-page__sub-title">
+								height: 500px; display: flex; justify-content: flex-start;
+								align-items: stretch; flex-direction: row;
+							</h3>
+							<!-- ! Flex контейнер -->
+							<div class="block block--direction-row">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">
+									Елемент 2 Lorem ipsum, dolor sit amet consectetur
+									adipisicing elit. Ipsa sequi modi nam quod esse aspernatur
+									odio eius voluptatibus rerum aperiam dolor ex id similique
+									optio, nemo magnam excepturi recusandae officia?
+								</div>
+								<div class="block__item">Елемент 3</div>
+							</div>
+							<!-- ! Властивість: flex-direction: row-reverse; -->
+							<h3 class="practice-page__sub-title">
+								height: 500px; display: flex; justify-content: flex-start;
+								align-items: stretch; flex-direction: row-reverse;
+							</h3>
+							<div class="block block--direction-row-reverse">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">
+									Елемент 2 Lorem ipsum, dolor sit amet consectetur
+									adipisicing elit. Ipsa sequi modi nam quod esse aspernatur
+									odio eius voluptatibus rerum aperiam dolor ex id similique
+									optio, nemo magnam excepturi recusandae officia?
+									flex-direction: row;
+								</div>
+								<div class="block__item">Елемент 3</div>
+							</div>
+							<!-- ! Властивість: flex-direction: column; -->
+							<h3 class="practice-page__sub-title">
+								height: 500px; display: flex; justify-content: flex-start;
+								align-items: stretch; flex-direction: column;
+							</h3>
+							<div class="block block--direction-column">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">
+									Елемент 2 Lorem ipsum, dolor sit amet consectetur
+									adipisicing elit. Ipsa sequi modi nam quod esse aspernatur
+									odio eius voluptatibus rerum aperiam dolor ex id similique
+									optio, nemo magnam excepturi recusandae officia?
+								</div>
+								<div class="block__item">Елемент 3</div>
+							</div>
+							<!-- ! Властивість: flex-direction: column-reverse;   -->
+							<h3 class="practice-page__sub-title">
+								height: 500px; display: flex; justify-content: flex-start;
+								align-items: center; flex-direction: column-reverse;
+							</h3>
+							<!-- ! Flex контейнер -->
+							<div class="block block--direction-column-reverse">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">
+									Елемент 2 Lorem ipsum, dolor sit amet consectetur
+									adipisicing elit. Ipsa sequi modi nam quod esse aspernatur
+									odio eius voluptatibus rerum aperiam dolor ex id similique
+									optio, nemo magnam excepturi recusandae officia?
+								</div>
+								<div class="block__item">Елемент 3</div>
+							</div>
+							<!-- ! Властивості: gap; / column-gap; / row-gap; -->
+							<!-- ! Властивість: gap;  -->
+							<h3 class="practice-page__sub-title">
+								display: flex; flex-wrap: wrap; justify-content: flex-start;
+								align-items: stretch; gap: 10px;
+							</h3>
+							<!-- ! Flex контейнер -->
+							<div class="block block--gap">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">Елемент 2 Lorem ipsum, dolor</div>
+								<div class="block__item">Елемент 3</div>
+								<div class="block__item">Елемент 4</div>
+								<div class="block__item">Елемент 5</div>
+							</div>
+							<!-- ! Властивість: column-gap;  -->
+							<h3 class="practice-page__sub-title">
+								display: flex; flex-wrap: wrap; justify-content: flex-start;
+								align-items: stretch; column-gap: 15px;
+							</h3>
+							<!-- ! Flex контейнер -->
+							<div class="block block--column-gap">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">Елемент 2 Lorem ipsum, dolor</div>
+								<div class="block__item">Елемент 3</div>
+								<div class="block__item">Елемент 4</div>
+								<div class="block__item">Елемент 5</div>
+							</div>
+							<!-- ! Властивість: row-gap;  -->
+							<h3 class="practice-page__sub-title">
+								display: flex; flex-wrap: wrap; justify-content: flex-start;
+								align-items: stretch; row-gap: 30px;
+							</h3>
+							<!-- ! Flex контейнер -->
+							<div class="block block--row-gap">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">Елемент 2 Lorem ipsum, dolor</div>
+								<div class="block__item">Елемент 3</div>
+								<div class="block__item">Елемент 4</div>
+								<div class="block__item">Елемент 5</div>
+							</div>
+							<!-- ! Властивість: row-gap; column-gap  -->
+							<h3 class="practice-page__sub-title">
+								display: flex; flex-wrap: wrap; justify-content: flex-start;
+								align-items: stretch; column-gap: 15px; row-gap: 30px;
+							</h3>
+							<!-- ! Flex контейнер -->
+							<div class="block block--row-gap-column">
+								<!-- ! Flex елемент -->
+								<div class="block__item">Елемент 1</div>
+								<div class="block__item">Елемент 2 Lorem ipsum, dolor</div>
+								<div class="block__item">Елемент 3</div>
+								<div class="block__item">Елемент 4</div>
+								<div class="block__item">Елемент 5</div>
+							</div>
+						</div>
+						<div class="practice-page__sub-item">
+							<!-- ! Властивості: FLEX – елементів. -->
+							<h3 class="practice-page__sub-title">
+								<span>Властивості FLEX – елементів:</span> align-self /
+								flex-grow / flex-shrink / flex-basis / order;
+							</h3>
+							<div class="practice-page__sub-text">
+								<p>
+									Властивості FLEX – елементів. Застосовуються для
+									flex-елемента, дочірнього об'єкта flex-контейнера
+								</p>
+								<p>
+									align-self Перевизначає для конкретного flex-елемента
+									вирівнювання вздовж поперечної осі (напрямок залежить від
+									значення якості flex-direction).
+								</p>
+								<p>
+									flex-grow - 0 заборонено. 1 дозволено. (за замовченням - 0)
+									Визначає можливість елемента збільшуватись (більше ніж
+									flex-basis) у розмірі, при необхідності заповнюючи весь
+									flex-контейнер.
+								</p>
+								<p>
+									flex-shrink - 0 заборонено. 1 дозволено. (за замовченням -
+									1) Визначає можливість елемента зменшуватись у розмірі
+									(меньше ніж flex-basis)
+								</p>
+								<p>
+									flex-basis - Визначає базовий розмір елемента за
+									замовченням, до розподілу простору, що залишився. Значення
+									можуть бути у відсотках пікселях тощо. auto (за замовченням)
+									- розмір по контенту
+								</p>
+								<p>
+									order - Керує порядком, в якому розташовуються flex-елементи
+									всередині flex-контейнера. При зміні порядку хоча б для
+									одного flex-елементу, варто прописувати order усім
+									flex-елементам, навіть тим які лишаються на своєму місці.
+								</p>
+								<p>
+									Універсальний запис: flex: flex-grow flex-shrink flex-basis;
+									<br>
+									flex: 0 1 auto; (за замовченням)
+								</p>
+							</div>
+							<!-- ! Властивість: align-self; order;  -->
+							<h3 class="practice-page__sub-title">align-self; order;</h3>
+							<!-- ! Flex контейнер -->
+							<div class="block block--flex-elements">
+								<!-- ! Flex елемент -->
+								<div class="block__item block__item--flex-elements">
+									Елемент 1
+								</div>
+								<div class="block__item block__item--flex-elements">
+									Елемент 2 Lorem ipsum, dolor Lorem ipsum porro?
+								</div>
+								<div class="block__item block__item--flex-elements">
+									Елемент 3
+								</div>
+								<div class="block__item block__item--flex-elements">
+									Елемент 4
+								</div>
+								<div class="block__item block__item--flex-elements">
+									Елемент 5
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__conteiner">
+				<h1 class="footer__title">я футер</h1>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

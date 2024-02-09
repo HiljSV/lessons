@@ -1,0 +1,80 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	background-color: #333;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #fff;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+
+.header {
+	background-color: #0e6676;
+	padding: 15px;
+	text-align: center;
+}
+.footer {
+	background-color: #0e6676;
+	padding: 15px;
+	text-align: center;
+}
+
+/* Відсотковий basis та абсолютний gap */
+
+.container {
+	max-width: 800px;	
+	overflow: hidden;
+	margin: 0 auto;
+	background-color: #666;
+}
+
+/* FLEX-контейнер */
+.columns-gap {
+	background-color: #794f45;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px -10px -20px -10px;
+}
+/* FLEX-елемент */
+.columns-gap__column {
+	padding: 0px 10px 20px 10px;
+	flex-basis: 33.333%;
+	flex-grow: 1;
+	flex-shrink: 1;
+	background-color: #77608d;
+}
+/* Контент */
+.columns-gap__item {
+	padding: 15px;
+	background-color: #7a956b;
+}
+
+
+.main {
+	flex-grow: 1;
+	/* footer - буде знаходитись завжди знизу екрана або 
+	.wrapper > main {
+						flex-grow: 1;
+   					}
+	 */
+}
+
+
+.footer {
+	background-color: #0e6676;
+	padding: 15px;
+	text-align: center;
+}

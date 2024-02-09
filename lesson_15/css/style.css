@@ -1,0 +1,455 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	background-color: #fff;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+
+[class*="__container"] {
+	margin: 0 auto;
+	max-width: 1920px;
+}
+
+/* ! ======================== HEADER ========================= */
+
+.header {
+	max-width: 1920px;
+	padding: 30px 0;
+	background-color: #1d1b1b;
+	margin: 0 auto;
+}
+
+.header__container {}
+
+.header__title {
+	font-size: 35px;
+	font-weight: 700;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.nextpage,
+.euphoria {
+	font-size: 35px;
+	font-weight: 700;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.pagega {}
+.euphoria__link {}
+
+/* ! ======================== MAIN ========================= */
+
+.page {
+	max-width: 1920px;
+	background-color: #73c2b6;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.page__container {}
+
+.page-practice {}
+
+.practice-page {}
+
+.practice-page__item {
+	padding: 0 0 50px;
+}
+
+.practice-page__title {
+	font-size: 30px;
+	font-weight: 700;
+	padding: 10px;
+	text-align: center;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+
+.practice-page__text {
+	padding: 0 200px 0;
+}
+
+.practice-page__text p {
+	text-indent: 50px;
+}
+
+.practice-page__text p,
+.practice-page__sub-text p {
+	font-size: 18px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 1.2;
+}
+
+.practice-page__wrap {
+	max-width: 70%;
+	padding: 30px;
+	margin: 0 auto;
+	background-color: rgb(32, 134, 157);
+}
+
+.practice-page__sub-item {
+	background-color: #fff;
+}
+
+.practice-page__sub-item:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.practice-page__sub-title {
+	font-size: 25px;
+	font-weight: 700;
+	padding: 10px;
+	text-align: center;
+	letter-spacing: 1px;
+	background-color: yellow;
+}
+
+.practice-page__sub-title span {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.practice-page__sub-text {
+	padding: 25px 200px;
+}
+
+.practice-page__sub-text p {
+	padding: 10px 0;
+}
+
+.practice-page__sub-text span {
+	display: block;
+	text-align: center;
+}
+
+.block {
+	background-color: #794f45;
+	border: 15px solid red;
+	max-width: 70%;
+	margin: 0 auto;
+}
+
+.block__item {
+	font-size: 15px;
+	font-weight: 700;
+	background-color: #7a956b;
+	padding: 40px;
+	text-align: center;
+	border: 15px solid #77608d;
+}
+
+/* ! ++++++++++ Властивості: display: flex / inline-flex; ++++++++++ */
+/* ! ++++++++++ Властивість: display: flex ++++++++++ */
+.block {
+	display: flex;
+}
+
+.block__item {}
+
+/* ! ++++++++++ Властивість: display: inline-flex ++++++++++ */
+.block--inline-flex {
+	display: inline-flex;
+}
+
+.block__item {}
+
+/* ! ++++++++++ Властивості: flex-wrap: wrap; flex-wrap: nowrap; flex-wrap: wrap-reverse; ++++++++++ */
+/* ! ++++++++++ Властивість: flex-wrap: wrap; ++++++++++ */
+.block--wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.block__item {}
+
+/* ! ++++++++++ Властивість: flex-wrap: nowrap; ++++++++++ */
+.block--nowrap {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.block__item {}
+
+/* ! ++++++++++ Властивість: flex-wrap: wrap-reverse; ++++++++++ */
+.block--wrap-reverse {
+	display: flex;
+	flex-wrap: wrap-reverse;
+}
+
+.block__item {}
+
+/* ! ++++++++++ Властивість: flex-wrap: wrap; ++++++++++ */
+.block--inline-wrap {
+	display: inline-flex;
+	flex-wrap: wrap;
+}
+
+.block__item {}
+
+/* ! ++++++++++ Властивість: flex-wrap: nowrap; ++++++++++ */
+.block--inline-nowrap {
+	display: inline-flex;
+	flex-wrap: nowrap;
+}
+
+.block__item {}
+
+/* ! ++++++++++ Властивість: flex-wrap: wrap-reverse; ++++++++++ */
+.block--inline-wrap-reverse {
+	display: inline-flex;
+	flex-wrap: wrap-reverse;
+}
+
+.block__item {}
+
+/* ! ++++++++++ Властивості: justify-content: flex-start; / flex-end; / center; / space-between; / space-around; / space-evenly; ++++++++++ */
+/* ! ++++++++++ Властивість: justify-content: flex-start; ++++++++++ */
+.block--justify-start {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.block__item {}
+
+/* ! ++++++++++ Властивість: justify-content: flex-end; ++++++++++ */
+.block--justify-end {
+	max-width: 30%;
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: flex-end;
+}
+
+.block__item {}
+
+/* ! ++++++++++ Властивість: justify-content: center; ++++++++++ */
+.block--justify-center {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.block__item {}
+
+/* ! ++++++++++ Властивість: justify-content: space-between; ++++++++++ */
+.block--justify-space-between {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.block__item {}
+
+/* ! ++++++++++ Властивість: justify-content: space-around; ++++++++++ */
+.block--justify-space-around {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.block__item {}
+
+/* ! ++++++++++ Властивість: justify-content: space-evenly; ++++++++++ */
+.block--justify-space-evenly {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.block__item {}
+
+/* ! ++++++++++ Властивості: align-items: stretch; / flex-start; flex-end; / center; / baseline; ++++++++++ */
+/* ! ++++++++++ Властивість: align-items: stretch; ++++++++++ */
+.block--align-stretch {
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+
+.block__item {}
+
+/* ! ++++++++++ Властивість: align-items: flex-start; ++++++++++ */
+.block--align-start {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+/* ! ++++++++++ Властивість: align-items: flex-end; ++++++++++ */
+.block--align-end {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+
+/* ! ++++++++++ Властивість: align-items: center; ++++++++++ */
+.block--align-center {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+/* ! ++++++++++ Властивість: align-items: baseline; ++++++++++ */
+.block--align-baseline {
+	display: flex;
+	justify-content: flex-start;
+	align-items: baseline;
+}
+
+/* ! ++++++++++ Властивості: flex-direction: row; / row-reverse; column; / column-reverse; ++++++++++ */
+/* ! ++++++++++ Властивість: flex-direction: row; ++++++++++ */
+.block--direction-row {
+	height: 500px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+	flex-direction: row;
+}
+
+.block__item {}
+
+/* ! ++++++++++ Властивість: flex-direction: row-reverse; ++++++++++ */
+.block--direction-row-reverse {
+	height: 500px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+	flex-direction: row-reverse;
+}
+
+/* ! ++++++++++ Властивість: flex-direction: column; ++++++++++ */
+.block--direction-column {
+	height: 500px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+	flex-direction: column;
+}
+
+/* ! ++++++++++ Властивість: flex-direction: column-reverse; ++++++++++ */
+.block--direction-column-reverse {
+	height: 500px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column-reverse;
+}
+
+/* ! ++++++++++ Властивості: gap; / column-gap; / row-gap; ++++++++++ */
+/* ! ++++++++++ Властивість: gap; ++++++++++ */
+.block--gap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	gap: 10px;
+}
+
+.block__item {}
+
+/* ! ++++++++++ Властивість: column-gap; ++++++++++ */
+.block--column-gap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	column-gap: 15px;
+}
+
+.block__item {}
+
+/* ! ++++++++++ Властивість: row-gap; ++++++++++ */
+.block--row-gap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	row-gap: 30px;
+}
+
+.block__item {}
+
+/* ! ++++++++++ Властивість: column-gap: row-gap; ++++++++++ */
+.block--row-gap-column {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	column-gap: 15px;
+	row-gap: 30px;
+}
+
+.block__item {}
+
+/* ! ++++++++++ Властивості FLEX – елементів: align-self / flex-grow / flex-shrink / flex-basis / order; ++++++++++ */
+/* ! ++++++++++ Властивість: align-self; order; ++++++++++ */
+.block--flex-elements {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.block__item--flex-elements:nth-child(1) {
+	order: 2;
+}
+
+.block__item--flex-elements:nth-child(2) {
+	width: 250px;
+	order: 3;
+}
+
+.block__item--flex-elements:nth-child(3) {
+	align-self: stretch;
+	order: 1;
+}
+
+.block__item--flex-elements:nth-child(4) {
+	align-self: stretch;
+	order: 5;
+}
+
+.block__item--flex-elements:nth-child(5) {
+	align-self: stretch;
+	order: 4;
+}
+
+/* ! ======================== FOOTER ========================= */
+
+.footer {
+	max-width: 1920px;
+	padding: 30px 0;
+
+	background-color: #1d1b1b;
+	margin: 0 auto;
+}
+
+.footer__container {}
+
+.footer__title {
+	font-size: 35px;
+	font-weight: 700;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+}

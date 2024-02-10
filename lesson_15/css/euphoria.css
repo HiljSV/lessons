@@ -25,7 +25,7 @@ body {
 
 [class*="__container"] {
 	margin: 0 auto;
-	max-width: 1270px;
+	max-width: 1470px;
 	padding: 0px 15px;
 }
 
@@ -38,102 +38,107 @@ body {
 	z-index: 50;
 	width: 100%;
 	background-color: #fff;
+	font-size: 0px;
 }
 
 .header__container {}
 
 .header__row {
-	padding: 34px 0px 31px;
+	padding: 34px 100px 31px;
 	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+.header__column {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	align-items: center;
 }
 
-.header__logo {
-	margin-right: 164px;
+.header__column--logo-search {
+	gap: 164px;
 }
+
+.header__logo {}
 
 .logo-header {}
 
 .logo-header__link {
-	flex: 0 1 91px;
-	justify-content: center;
-	align-items: center;
+	width: 100%;
 }
 
 .logo-header__image {}
 
 .header__search {
-	flex-basis: 184px;
-	min-height: 46px;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	align-items: center;
 	gap: 12px;
+}
+
+.search-header {
 	padding: 12px 48px;
 	border-radius: 8px;
 	background: #f6f6f6;
 }
 
-.search-header:not(:last-child) {
-	margin-right: 210px;
-}
-
 .search-header__image {
-	padding: 3px;
-	max-width: 20px;
-	min-height: 20px;
+	width: 14.17px;
+	height: 14.17px;
 }
 
 .search-header__text {
-	max-width: 56px;
-	min-height: 22px;
 	color: rgb(128, 125, 126);
 	font-family: "Causten", sans-serif;
 	font-size: 18px;
 	font-weight: 500;
 	line-height: 22px;
+	letter-spacing: 0%;
 	text-align: center;
 }
 
-.header__list {
-	flex-grow: 0;
-	flex-shrink: 1;
-	flex-basis: 206px;
-	min-height: 24px;
-	display: flex;
-	justify-content: space-between;
+.header__column--lang-but {
+	gap: 60px;
 }
 
-.list-header:not(:last-child) {
-	margin-right: 60px;
+.header__list {
+	padding: 12px 0;
 }
+
+.list-header {}
 
 .list-header__text {
 	color: rgb(51, 51, 51);
-	font-family: Causten;
+	font-family: "Causten", sans-serif;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 22px;
-
+	letter-spacing: 0%;
 	text-align: left;
 }
 
 .list-header__text::after {
 	content: "";
 	width: 10px;
-	/* flex-basis: 10px;	 */
 	height: 5px;
 	background: url(../img/treangl.svg) no-repeat right;
+	margin-left: 14px;
 	padding-bottom: 9px;
-	margin-left: 19px;
 }
 
 .header__button {
 	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	align-items: center;
 	gap: 29px;
 }
@@ -141,11 +146,15 @@ body {
 .button-header {}
 
 .button-header__link {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
 	padding: 12px 48px 12px 48px;
+	background: rgb(138, 51, 253);
+	color: rgb(255, 255, 255);
+	font-family: "Causten", sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 22px;
+	letter-spacing: 0px;
+	text-align: center;
 	border-radius: 8px;
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 	transition: all 0.3s linear 0s;
@@ -156,6 +165,7 @@ body {
 .button-header__link:hover {
 	background: rgb(138, 51, 253);
 	color: rgb(255, 255, 255);
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 	transition: all 0.3s linear 0s;
 	top: 2px;
 }
@@ -168,7 +178,7 @@ body {
 /* ! ++++++++++++++++++++++ MAIN +++++++++++++++++++++++ */
 
 .page {
-	padding: 0 20px;
+	/* padding: 0 20px; */
 }
 
 .page__container {}
@@ -176,14 +186,15 @@ body {
 /* ! ++++++++++++++++++++++ Categories For Men +++++++++++++++++++++++ */
 
 .products {
-	padding: 50px 0px;
+	padding-top: 50px;
 	display: flex;
 	margin: 0px -25px;
 	flex-wrap: wrap;
+	row-gap: 50px;
 }
 
 .products-wrap {
-	padding: 100px 0;
+	padding: 100px;
 }
 
 .products-wrap__link {
@@ -216,7 +227,7 @@ body {
 	flex-grow: 0;
 	flex-shrink: 0;
 	flex-basis: 25%;
-	margin-bottom: 50px;
+	/* margin-bottom: 50px; */
 }
 
 .products__item {}
@@ -239,6 +250,57 @@ body {
 .item-product__image:not(:last-child) {
 	margin-bottom: 15px;
 }
+
+.item-product__link {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.item-product__content {
+	display: flex;
+	flex: 0 1 200px;
+	flex-direction: column;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 4px;
+}
+
+.item-product__title {
+	flex-grow: 1;
+	color: rgb(42, 47, 47);
+	font-family: "Causten", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: -0.04px;
+	text-align: left;
+}
+
+.item-product__text {
+	color: rgb(127, 127, 127);
+	font-family: "Causten", sans-serif;
+	font-size: 13.41px;
+	font-weight: 500;
+	line-height: 1.2;
+	letter-spacing: -0.04px;
+	text-align: left;
+}
+
+.item-product__link::after {
+	content: "";
+	width: 18px;
+	height: 15px;
+	align-self: flex-start;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: 18px;
+	background: url("../img/arrow.svg") center no-repeat;
+}
+
+/* 
 
 .item-product__body {
 	display: flex;
@@ -278,16 +340,15 @@ body {
 	min-height: 14px;
 	flex-grow: 0;
 	flex-shrink: 0;
-	flex-basis: 18px;
-	background: url("../img/arrow.svg") center no-repeat;
-}
+	flex-basis: 18px; 
+background: url("../img/arrow.svg") center no-repeat;
+/* } */
 
 /* ! ++++++++++++++++++++++ Wishlist +++++++++++++++++++++++ */
 
 .wishlist {
 	margin: 0 auto;
 	max-width: 903px;
-	/* min-height: 110px; */
 	font-size: 0px;
 	padding-bottom: 100px;
 }
@@ -301,12 +362,6 @@ body {
 	letter-spacing: 0.02em;
 	text-align: left;
 	margin-bottom: 20px;
-	
-	
-}
-
-.wishlist__row {
-	border-bottom: 1px solid rgb(237, 238, 242);
 }
 
 .wishlist__item {
@@ -316,6 +371,7 @@ body {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	border-bottom: 1px solid rgb(237, 238, 242);
 }
 
 .item-wishlist {}
@@ -515,7 +571,6 @@ body {
 
 .bookmarks-orders__link {
 	padding: 12px 53px;
-
 	color: rgb(60, 66, 66);
 	font-family: "Core Sans C", sans-serif;
 	font-size: 22px;
@@ -523,6 +578,7 @@ body {
 	line-height: 33.5px;
 	letter-spacing: 0.02em;
 	text-align: left;
+	border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .bookmarks-orders__link:hover {
@@ -535,12 +591,11 @@ body {
 .active-orders {}
 
 .active-orders__info {
-	/* background-color: gray; */
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	padding: 30px 0;
-	border-bottom: 1px solid rgb(237, 238, 242);
+	border-bottom: 1px solid rgb(246, 246, 246);
 	gap: 30px;
 }
 
@@ -578,7 +633,6 @@ body {
 	font-size: 14px;
 	font-weight: 600;
 	line-height: 17px;
-
 	text-align: left;
 }
 

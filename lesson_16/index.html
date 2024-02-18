@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/prince.ico" type="image/x-icon">
+	<title>Lesson 16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<!-- ! ======================== HEADER =========================  -->
+		<header class="header">
+			<div class="header__container">
+				<h1 class="header__title">Lesson 16 HTML FORMS</h1>
+			</div>
+		</header>
+
+		<!-- ! ======================== MAIN =========================  -->
+		<main class="page">
+			<div class="page__container">
+				<!-- ! ======================== MY INFO =========================  -->
+				<div class="page-myinfo myinfo-page">
+					<div class="myinfo-page__wrap">
+						<h2 class="myinfo-page__title">My Info</h2>
+						<div class="myinfo-page__text">Add Address</div>
+						<form class="myinfo-page__form form-myinfo" action="#" method="GET" enctype="text/plain">
+							<div class="form-myinfo__row">
+								<div class="form-myinfo__column">
+									<label for="first-name" class="form-myinfo__label">First Name*</label>
+									<input id="first-name" class="form-myinfo__input" type="text" name="first-name" value=""
+										placeholder="First Name" autocomplete="" required tabindex="1" maxlength="100"
+										minlength="1">
+								</div>
+								<div class="form-myinfo__column">
+									<label for="last-name" class="form-myinfo__label">Last Name*</label>
+									<input id="last-name" class="form-myinfo__input" type="text" name="last-name" value=""
+										placeholder="Last Name" autocomplete="" required tabindex="2" maxlength="100"
+										minlength="1">
+								</div>
+							</div>
+							<div class="form-myinfo__row">
+								<div class="form-myinfo__column">
+									<label for="country" class="form-myinfo__label">Country / Region*</label>
+									<input id="country" class="form-myinfo__input" type="text" name="country" value=""
+										placeholder="Country / Region" autocomplete="" required tabindex="3" maxlength="50"
+										minlength="2">
+								</div>
+								<div class="form-myinfo__column">
+									<label for="company-name" class="form-myinfo__label">Company Name</label>
+									<input id="company-name" class="form-myinfo__input" type="text" name="company-name" value=""
+										placeholder="Company (optional)" autocomplete="4" tabindex="" maxlength="100"
+										minlength="1">
+								</div>
+							</div>
+							<div class="form-myinfo__row">
+								<div class="form-myinfo__column">
+									<label for="address" class="form-myinfo__label">Street Address*</label>
+									<input id="address" class="form-myinfo__input" type="text" name="address" value=""
+										placeholder="House number and street name" autocomplete="5" required tabindex=""
+										maxlength="50" minlength="2">
+								</div>
+								<div class="form-myinfo__column">
+									<label for="suite" class="form-myinfo__label">Apt, suite, unit</label>
+									<input id="suite" class="form-myinfo__input" type="text" name="suite" value=""
+										placeholder="apartment, suite, unit, etc. (optional)" autocomplete="6" tabindex=""
+										maxlength="250" minlength="1">
+								</div>
+							</div>
+							<div class="form-myinfo__row">
+								<div class="form-myinfo__column">
+									<label for="city" class="form-myinfo__label">City*</label>
+									<input id="city" class="form-myinfo__input" type="text" name="sity" value=""
+										placeholder="Town / City" autocomplete="" required tabindex="7" maxlength="150"
+										minlength="1">
+								</div>
+								<div class="form-myinfo__column">
+									<label for="state" class="form-myinfo__label">State*</label>
+									<input id="state" class="form-myinfo__input" type="text" name="state" value=""
+										placeholder="State" autocomplete="" required tabindex="8" maxlength="250" minlength="1">
+								</div>
+							</div>
+							<div class="form-myinfo__row">
+								<div class="form-myinfo__column">
+									<label for="phone" class="form-myinfo__label">Phone*</label>
+									<input id="phone" class="form-myinfo__input" type="tel" name="phone" value=""
+										placeholder="Phone" autocomplete="off" required tabindex="9" maxlength="13"
+										minlength="13">
+								</div>
+								<div class="form-myinfo__column">
+									<label for="postal" class="form-myinfo__label">Postal Code*</label>
+									<input id="postal" class="form-myinfo__input" type="text" name="postal" value=""
+										placeholder="Postal Code" autocomplete="off" required tabindex="10" maxlength="5"
+										minlength="5">
+								</div>
+							</div>
+							<div class="form-myinfo__row form-myinfo__row--deliveri-gap">
+								<label for="massage" class="form-myinfo__label">Delivery Instruction</label>
+								<textarea id="massage" class="form-myinfo__textarea" type="text" name="delivery" value=""
+									placeholder="Delivery Instruction" autocomplete="off" tabindex="-1"
+									maxlength="1000"></textarea>
+							</div>
+							<div class="form-myinfo__row form-myinfo__row-checkbox">
+								<div class="form-myinfo__group">
+									<div class="form-myinfo__checkbox checkbox">
+										<input id="check" class="checkbox__input" type="checkbox" name="shipping-address" checked
+											required tabindex="11">
+										<label for="check" class="checkbox__label">Set as default shipping address</label>
+									</div>
+									<div class="form-myinfo__checkbox checkbox">
+										<input id="check-2" class="checkbox__input" type="checkbox" name="billing-address"
+											required tabindex="12">
+										<label for="check-2" class="checkbox__label">Set as default billing
+											address</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-myinfo__row form-myinfo__row-button">
+								<button class="form-myinfo__button" type="submit" tabindex="14">Save</button>
+								<button class="form-myinfo__button" type="reset" tabindex="13">Cancel</button>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<!-- ! ======================== CHECK OUT =========================  -->
+				<div class="page-checkout checkout-page">
+					<div class="checkout-page__wrap">
+						<h2 class="checkout-page__title">Check Out</h2>
+						<div class="checkout-page__billing billing-page">
+							<h3 class="billing-page__sub-title">Billing Details</h3>
+							<form class="billing-page__form form-billing" action="#" method="GET" enctype="text/plain">
+								<div class="form-billing__row">
+									<div class="form-billing__column">
+										<label for="first-name" class="form-billing__label">First Name*</label>
+										<input id="first-name" class="form-billing__input" type="text" name="first-name" value=""
+											placeholder="First Name" autocomplete="" required tabindex="1" maxlength="100"
+											minlength="1">
+									</div>
+									<div class="form-billing__column">
+										<label for="last-name" class="form-billing__label">Last Name*</label>
+										<input id="last-name" class="form-billing__input" type="text" name="last-name" value=""
+											placeholder="Last Name" autocomplete="" required tabindex="2" maxlength="100"
+											minlength="1">
+									</div>
+								</div>
+								<div class="form-billing__row">
+									<div class="form-billing__column">
+										<label for="country" class="form-billing__label">Country / Region*</label>
+										<input id="country" class="form-billing__input" type="text" name="country" value=""
+											placeholder="Country / Region" autocomplete="" required tabindex="3" maxlength="50"
+											minlength="2">
+									</div>
+									<div class="form-billing__column">
+										<label for="company-name" class="form-billing__label">Company Name</label>
+										<input id="company-name" class="form-billing__input" type="text" name="company-name"
+											value="" placeholder="Company (optional)" autocomplete="4" tabindex="" maxlength="100"
+											minlength="1">
+									</div>
+								</div>
+								<div class="form-billing__row">
+									<div class="form-billing__column">
+										<label for="address" class="form-billing__label">Street Address*</label>
+										<input id="address" class="form-billing__input" type="text" name="address" value=""
+											placeholder="House number and street name" autocomplete="5" required tabindex=""
+											maxlength="50" minlength="2">
+									</div>
+									<div class="form-billing__column">
+										<label for="suite" class="form-billing__label">Apt, suite, unit</label>
+										<input id="suite" class="form-billing__input" type="text" name="suite" value=""
+											placeholder="apartment, suite, unit, etc. (optional)" autocomplete="6" tabindex=""
+											maxlength="250" minlength="1">
+									</div>
+								</div>
+								<div class="form-billing__row form-billing__row-address">
+									<div class="form-billing__column form-billing__column-city">
+										<label for="city" class="form-billing__label">City*</label>
+										<input id="city" class="form-billing__input" type="text" name="sity" value=""
+											placeholder="Town / City" autocomplete="" required tabindex="7" maxlength="150"
+											minlength="1">
+									</div>
+									<div class="form-billing__column form-billing__column-state">
+										<label for="state" class="form-billing__label">State*</label>
+										<input id="state" class="form-billing__input" type="text" name="state" value=""
+											placeholder="State" autocomplete="" required tabindex="8" maxlength="250"
+											minlength="1">
+									</div>
+									<div class="form-billing__column form-billing__column-postal">
+										<label for="postal" class="form-billing__label">Postal Code*</label>
+										<input id="postal" class="form-billing__input" type="text" name="postal" value=""
+											placeholder="Postal Code" autocomplete="off" required tabindex="9" maxlength="5"
+											minlength="5">
+									</div>
+								</div>
+								<div class="form-billing__row form-billing__row-phone">
+									<div class="form-billing__column">
+										<label for="phone" class="form-billing__label">Phone*</label>
+										<input id="phone" class="form-billing__input" type="tel" name="phone" value=""
+											placeholder="Phone" autocomplete="off" required tabindex="9" maxlength="10"
+											minlength="13">
+									</div>
+								</div>
+								<div class="form-billing__delivery">
+									<div class="form-billing__row-button">
+										<button class="form-billing__button" type="submit" tabindex="12">Continue to
+											delivery</button>
+									</div>
+									<div class="form-billing__row-checkbox">
+										<div class="form-billing__checkbox checkbox">
+											<input id="check3" class="checkbox__input checkbox__input-billing" type="checkbox"
+												name="shipping-address" required tabindex="11">
+											<label for="check3" class="checkbox__label checkbox__label-billing">Save my information
+												for a faster checkout</label>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+
+						<!-- ! ======================== SHIPPING ADDRESS =========================  -->
+						<div class="checkout-page__shipping shipping-page">
+							<h3 class="shipping-page__sub-title">Shipping Address</h3>
+							<div class="shipping-page__text">
+								Select the address that matches your card or payment method.
+							</div>
+							<form class="shipping-page__form form-shipping" action="#" method="GET" enctype="text/plain">
+								<div class="form-shipping__group">
+									<div class="form-shipping__radio form-shipping__radio-solid radio">
+										<input id="billing-address" class="radio__input" type="radio" name="address" required
+											tabindex="12">
+										<label for="billing-address" class="radio__label">Use a different shipping
+											address</label>
+									</div>
+									<div class="form-shipping__radio radio">
+										<input id="shipping-address" class="radio__input " type="radio" name="address" checked
+											required tabindex="11">
+										<label for="shipping-address" class="radio__label">Same as Billing address</label>
+									</div>
+								</div>
+							</form>
+						</div>
+
+						<!-- ! ======================== SHIPPING METHOD =========================  -->
+						<div class="checkout-page__method method-page">
+							<div class="method-page__title">Shipping Method</div>
+							<div class="method-page__shipping shipping-method">
+								<div class="shipping-method__block">
+									<div class="shipping-method__arrivers arrivers">
+										<p class="arrivers__text">Arrives by Monday, June 7</p>
+									</div>
+									<div class="shipping-method__delivery delivery-row delivery">
+										<div class="delivery__column column-delivery">
+											<div class="column-delivery__text">Delivery Charges</div>
+										</div>
+										<div class="delivery__column column__delivery">
+											<div class="column-delivery__price">$5.00</div>
+										</div>
+									</div>
+								</div>
+								<div class="delivery__column column__delivery">
+									<div class="column-delivery__sub-text">Additional fess may apply</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- ! ======================== PAYMENT METHOD =========================  -->
+
+						<div class="checkout-page__payment payment-page">
+							<div class="payment-page__item">
+								<h3 class="payment-page__sub-title">Payment Method</h3>
+								<div class="payment-page__text">
+									All transactions are secure and encrypted.
+								</div>
+							</div>
+							<div class="payment-page__wrap">
+								<form id="sum-pay" class="payment-page__form form-payment" action="#" method="POST"
+									enctype="text/plain">
+									<div class="form-payment__group">
+										<div class="form-payment__card form-payment__card-solid card">
+											<div class="card__section">
+												<div class="card__radio radio">
+													<input id="card" class="radio__input" type="radio" name="money" required
+														tabindex="">
+													<label for="card" class="radio__label">Credit Card</label>
+												</div>
+												<div class="radio__text">We accept all major credit cards.</div>
+											</div>
+											<div class="form-payment__major-cards major-cards">
+												<img src="img/googlepay.png" alt="googlepay" class="major-cards__img">
+												<img src="img/visa.png" alt="visa" class="major-cards__img">
+												<img src="img/paypal.png" alt="paypal" class="major-cards__img">
+												<img src="img/paypass.png" alt="paypass" class="major-cards__img">
+											</div>
+											<div class="card-form">
+												<div class="card-form__field">
+													<label for="cardnumber" class="card-form__label"></label>
+													<input id="cardnumber" class="card-form__input" type="text" name="cardnumber"
+														inputmode="numeric" value="" placeholder="Card number" autocomplete="on"
+														required tabindex="" pattern="[0-9\s]{16}" maxlength="16" minlength="16">
+												</div>
+												<div class="card-form__field">
+													<label for="namecard" class="card-form__label"></label>
+													<input id="namecard" class="card-form__input" type="text" name="namecard"
+														value="" placeholder="Name of card" autocomplete="on" required tabindex="">
+												</div>
+												<div class="card-form__field">
+													<label for="expirationdate" class="card-form__label"></label>
+													<input id="expirationdate" class="card-form__input" type="text"
+														name="expirationdate" inputmode="numeric" value=""
+														placeholder="Expiration date (MM/YY)" autocomplete="on" required tabindex=""
+														pattern="[0-9\s]{5}" maxlength="5" minlength="5">
+												</div>
+												<div class="card-form__field card-form__field--relative ">
+													<label for="securitycode" class="card-form__label"></label>
+													<input id="securitycode" class="card-form__input" type="password"
+														name="securitycode" inputmode="numeric" value="" placeholder="Security Code"
+														autocomplete="on" required tabindex="" pattern="[0-9\s]{3}" maxlength="3"
+														minlength="3">
+													<button class="card-form__button-eye card-form__button-eye--absolute"
+														type="button"><img class="card-form__image" src="img/eye.svg"
+															alt="eye"></button>
+												</div>
+											</div>
+										</div>
+										<div class="card__section card__section-solid ">
+											<div class="card__radio radio">
+												<input id="cash" class="radio__input" type="radio" name="money" required
+													tabindex="">
+												<label for="cash" class="radio__label">Cash on delivery</label>
+											</div>
+											<div class="radio__text">Pay with cash upon delivery.</div>
+										</div>
+										<div class="form-payment__radio radio">
+											<input id="paypal" class="radio__input " type="radio" name="money" checked required
+												tabindex="11">
+											<label for="paypal" class="radio__label">Paypal</label>
+										</div>
+									</div>
+								</form>
+								<div class="form-payment__row form-payment__row-button">
+									<button form="sum-pay" class="form-payment__button" type="submit" tabindex="14">Pay
+										Now</button>
+								</div>
+							</div>
+						</div>
+
+						<!-- ! ======================== REQUEST A CALL BACK =========================  -->
+						<div class="page-request request-page">
+							<div class="request-page__wrap">
+								<div class="request-page__item">
+									<div class="request-page__text">Contact Us</div>
+									<h2 class="request-page__title">Request A Call Back !</h2>
+								</div>
+								<form class="request-page__form form-request" action="#" method="POST" enctype="text/plain">
+									<div class="form-request__section">
+										<div class="form-request__row">
+											<div class="form-request__column">
+												<label for="name" class="form-request__label"></label>
+												<input id="name" class="form-request__input" type="text" name="name" value=""
+													placeholder="Your Name" autocomplete="" required tabindex="1" maxlength="100"
+													minlength="1">
+											</div>
+											<div class="form-request__column">
+												<label for="email" class="form-request__label"></label>
+												<input id="email" class="form-request__input" type="tel" name="email" value=""
+													placeholder="Email Address" autocomplete="" required tabindex="2" maxlength="10"
+													minlength="13">
+											</div>
+										</div>
+										<div class="form-request__row">
+											<div class="form-request__column">
+												<label for="phone" class="form-request__label"></label>
+												<input id="phone" class="form-request__input" type="tel" name="phone" value=""
+													placeholder="Phone Number" autocomplete="" required tabindex="3" maxlength="10"
+													minlength="13">
+											</div>
+											<div class="form-request__column">
+												<label for="company-name" class="form-request__label"></label>
+												<input id="company-name" class="form-request__input" type="text" name="company-name"
+													value="" placeholder="Subject" autocomplete="" required tabindex="4"
+													maxlength="100" minlength="1">
+											</div>
+										</div>
+
+										<div class="form-request__row form-request__row--not-gap">
+											<label for="massage" class="form-request__label"></label>
+											<textarea id="massage" class="form-request__textarea" type="text" name="delivery"
+												value="" placeholder="Message..." autocomplete="off" tabindex="-1"
+												maxlength="1000"></textarea>
+										</div>
+									</div>
+
+									<div class="form-request__row form-request__row-button">
+										<button class="form-request__button" type="submit" tabindex="14">Save</button>
+									</div>
+
+								</form>
+							</div>
+						</div>
+					</div>
+
+				</div>
+		</main>
+
+		<!-- ! ======================== FOOTER =========================  -->
+		<footer class="footer">
+			<div class="footer__container">
+				<h2 class="footer__title">FOOTER</h2>
+				<div class="footer__content">
+					<a href="indexpractica.html" class="footer__link">Practica</a>
+					<a href="indexzero.html" class="footer__link">Lesson 16</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

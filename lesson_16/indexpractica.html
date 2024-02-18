@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/stylepractica.css">
+	<link rel="shortcut icon" href="img/prince.ico" type="image/x-icon">
+	<title>Lesson 16 Practica</title>
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<!-- ! ======================== HEADER =========================  -->
+		<header class="header">
+			<div class="header__container">
+				<h1 class="header__title">Lesson 16 Practica</h1>
+			</div>
+		</header>
+
+		<!-- ! ======================== MAIN =========================  -->
+		<main class="page">
+			<div class="page__container">
+				<!-- ! ======================== PRACTICA =========================  -->
+				<div class="page__practica practica-page">
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 1</h2>
+						<div class="practica-page__text">
+							<p>В form атрибут action - "адреса" сервера. Не може бути пустим, варто ставити заглушку (#)</p>
+						</div>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>form class="form" action="#"</p>
+							</div>
+						</div>
+						<div class="practica-page__form">
+							<form class="form" action="#"></form>
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 2</h2>
+						<div class="practica-page__text">
+							<p>В form атрибут method - метод передачі даних
+								GET (за замовченням) - безпосередньо в адресному рядку
+								POST - приховано
+								<br>
+								Формат передачі данних з HTML-форми:
+								(так звана пара - ім'я та значення)
+								name=value
+								<br>
+								На сервері обробляються імена та їх значення
+							</p>
+							<p>
+								Приклад з Google:
+								Шукаємо наприклад "can i use"
+								Отримуємо адресний рядок:
+								https://www.google.com/search?q=can+i+use&...інші дані...
+								<br>
+								Дані передались методом GET
+								<br>
+								https://www.google.com/search - значення атрибуту action форми
+								? - відокремлення адреси від даних
+								q - ім'я поля куди ми вводили пошуковий запит
+								can+i+use - це данні які ми ввели
+								<br>
+								Передається пара - q=can+i+use
+							</p>
+						</div>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>form method="GET" class="form" action="#"</p>
+								<p>form method="POST" class="form" action="#"</p>
+							</div>
+						</div>
+						<div class="practica-page__form">
+							<form method="GET" class="form" action="#"></form>
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 3</h2>
+						<div class="practica-page__text">
+							<p>В form атрибут enctype - кодування даних під час відправки на сервер.</p>
+							<p>Для передачі файлів
+								використовуємо - multipart/form-data
+								Детальніше: <a class="practica-page__link" target="_blank"
+									href="https://www.w3schools.com/tags/att_form_enctype.asp">
+								</a>https://www.w3schools.com/tags/att_form_enctype.asp
+							</p>
+						</div>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>form enctype="multipart/form-data" method="GET" class="form" action="#"</p>
+								<p>form enctype="multipart/form-data" method="POST" class="form" action="#"</p>
+							</div>
+						</div>
+						<div class="practica-page__form">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#"></form>
+						</div>
+						<div class="practica-page__form">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#"></form>
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Теги</h2>
+						<div class="practica-page__text">
+							<p>Тег form - блочний</p>
+							<p>Тег label - рядковий</p>
+							<p>Теги input, textarea, button - блочно-рядкові</p>
+							<h2 class="practica-page__title">Тег input</h2>
+							<p>
+								input - Багатофункціональний елемент вводу даних.
+								задопомогою якого передаються данні.
+							</p>
+						</div>
+						<h2 class="practica-page__title">Атрибути</h2>
+						<div class="practica-page__text">
+							<p>type - тип елементу вводу даних ( Усі типи <a class="practica-page__link" target="_blank"
+									href="https://www.w3schools.com/html/html_form_input_types.asp">
+								</a> https://www.w3schools.com/html/html_form_input_types.asp )
+							</p>
+							<p>name - ім'я поля (даних)</p>
+							<p>value - значення поля за замовченням (дані)</p>
+							<p>placeholder - підпис поля</p>
+							<p>autocomplete - дозволяє (за замовченням) / забороняє (значення off) автозаповнення поля</p>
+							<p>required - обо'язково для заповнення</p>
+							<p>tabindex - керує навігацією за допомогою TAB</p>
+							<p>maxlength - максимальна кількість символів доступних для вводу</p>
+							<p>minlength - вимога до мінімальної кількості символів. працює в парі з required</p>
+							<p>checked (для деяких типів) - вибраний за замовченням ( не працює з type="text в input " )</p>
+							<p>disabled - поле перестає бути доступним для користування, данні передані не будуть</p>
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 4 input type, name</h2>
+						<div class="practica-page__text">
+							<p>type - тип елементу вводу даних</p>
+							<p>name - ім'я поля (даних)</p>
+						</div>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>form enctype="multipart/form-data" method="GET" class="form" action="#"
+									input class="form__input" type="text" name="search
+									form
+								</p>
+								<p>В name можна вказати form[] (пустий масив данних з назвою form), або писати за
+									логікою ім'я, вік.... </p>
+								<p>form enctype="multipart/form-data" method="GET" class="form" action="#"
+									input class="form__input" type="text" name="form[]"
+									form
+								</p>
+							</div>
+						</div>
+						<h2 class="practica-page__title">Зразок</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<input class="form__input" type="text" name="search">
+							</form>
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 5 input enctype</h2>
+						<div class="practica-page__text">
+							<p>value - значення поля за замовченням (дані)</p>
+						</div>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>form enctype="multipart/form-data" method="GET" class="form" action="#"
+									input class="form__input" type="text" name="search" value="Tom"
+									form
+								</p>
+								<p>В value можна вказати будь що але коли вводити данні потрібно видалити надпис,
+									залишати порожнім value=""
+								</p>
+								<p>Використовується в особистому кабінеті коли потрібно відредагувати свої данні
+									змінити їх. value="Tom"
+								</p>
+							</div>
+						</div>
+						<h2 class="practica-page__title">Зразок 1</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<input class="form__input" type="text" name="search" value="Tom">
+							</form>
+						</div>
+						<h2 class="practica-page__title">Зразок 2</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<input class="form__input" type="text" name="search" value="">
+							</form>
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 6 input placeholder</h2>
+						<div class="practica-page__text">
+							<p>placeholder - підпис поля</p>
+						</div>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>form enctype="multipart/form-data" method="GET" class="form" action="#"
+									input class="form__input" type="text" name="search" value="" placeholder="Surname"
+									form
+								</p>
+							</div>
+						</div>
+						<h2 class="practica-page__title">Зразок 1</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<input class="form__input" type="text" name="search" value="" placeholder="Surname">
+							</form>
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 7 input autocomplete </h2>
+						<div class="practica-page__text">
+							<p>autocomplete - дозволяє (за замовченням) / забороняє (значення off) автозаповнення поля</p>
+						</div>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>form enctype="multipart/form-data" method="GET" class="form" action="#"
+									input class="form__input" type="text" name="search" value="" placeholder="Surname"
+									autocomplete="off"
+									form
+								</p>
+								<p>form enctype="multipart/form-data" method="GET" class="form" action="#"
+									input class="form__input" type="text" name="search" value="" placeholder="Surname"
+									autocomplete=""
+									form
+								</p>
+							</div>
+						</div>
+						<h2 class="practica-page__title">Зразок 1</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<input class="form__input" type="text" name="search" value="" placeholder="Surname"
+									autocomplete="off">
+							</form>
+						</div>
+						<h2 class="practica-page__title">Зразок 2</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<input class="form__input" type="text" name="search" value="" placeholder="Surname"
+									autocomplete="">
+							</form>
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 8 input required </h2>
+						<div class="practica-page__text">
+							<p>required - обо'язково для заповнення</p>
+						</div>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>form enctype="multipart/form-data" method="GET" class="form" action="#"
+									input class="form__input" type="text" name="search" value="" placeholder="Surname"
+									autocomplete="off" required
+									form
+								</p>
+								<p>form enctype="multipart/form-data" method="GET" class="form" action="#"
+									input class="form__input" type="text" name="search" value="" placeholder="Surname"
+									autocomplete="" required
+									form
+								</p>
+							</div>
+						</div>
+						<h2 class="practica-page__title">Зразок 1</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<input class="form__input" type="text" name="search" value="" placeholder="Surname"
+									autocomplete="off" required>
+							</form>
+						</div>
+						<h2 class="practica-page__title">Зразок 2</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<input class="form__input" type="text" name="search" value="" placeholder="Surname"
+									autocomplete="" required>
+							</form>
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 9 input tabindex </h2>
+						<div class="practica-page__text">
+							<p>tabindex - керує навігацією за допомогою TAB, та змінює порядок в залежності від
+								встановленого індекса (Флекс структура коли input в декількох колонках), є tabindex "-1" -
+								виключає TAB, є tabindex "0" - TAB стане на нього останнім</p>
+						</div>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>form enctype="multipart/form-data" method="GET" class="form" action="#"
+									input class="form__input" type="text" name="search" value="" placeholder="Surname"
+									autocomplete="off" required tabindex
+									form
+								</p>
+								<p>form enctype="multipart/form-data" method="GET" class="form" action="#"
+									input class="form__input" type="text" name="search" value="" placeholder="Surname"
+									autocomplete="" required tabindex
+									form
+								</p>
+							</div>
+						</div>
+						<h2 class="practica-page__title">Зразок 1</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<input class="form__input" type="text" name="search" value="" placeholder="Surname"
+									autocomplete="off" required tabindex="2">
+							</form>
+						</div>
+						<h2 class="practica-page__title">Зразок 2</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<input class="form__input" type="text" name="search" value="" placeholder="Surname"
+									autocomplete="" required tabindex="1">
+							</form>
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 10 input maxlength, minlength </h2>
+						<div class="practica-page__text">
+							<p>maxlength - максимальна кількість символів доступних для вводу</p>
+							<p>minlength - вимога до мінімальної кількості символів. працює в парі з required</p>
+						</div>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>form enctype="multipart/form-data" method="GET" class="form" action="#"
+									input class="form__input" type="text" name="search" value="" placeholder="Surname"
+									autocomplete="off" required tabindex "2" maxlength
+									form
+								</p>
+								<p>form enctype="multipart/form-data" method="GET" class="form" action="#"
+									input class="form__input" type="text" name="search" value="" placeholder="Surname"
+									autocomplete="" required tabindex "1" maxlength
+									form
+								</p>
+							</div>
+						</div>
+						<h2 class="practica-page__title">Зразок 1</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<input class="form__input" type="text" name="search" value="" placeholder="Surname"
+									autocomplete="off" required tabindex="2" maxlength="10" minlength="3">
+							</form>
+						</div>
+						<h2 class="practica-page__title">Зразок 2</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<input class="form__input" type="text" name="search" value="" placeholder="Surname"
+									autocomplete="" required tabindex="1" maxlength="5" minlength="3">
+							</form>
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 11 input disabled </h2>
+						<div class="practica-page__text">
+							<p>disabled - поле перестає бути доступним для користування, данні передані не будуть</p>
+						</div>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>form enctype="multipart/form-data" method="GET" class="form" action="#"
+									input class="form__input" type="text" name="search" value="" placeholder="Surname"
+									autocomplete="off" required tabindex="1" maxlength="5" minlength="3" disabled
+									form
+								</p>
+								<p>form enctype="multipart/form-data" method="GET" class="form" action="#"
+									input class="form__input" type="text" name="search" value="" placeholder="Surname"
+									autocomplete="" required tabindex="1" maxlength="5" minlength="3"
+									form
+								</p>
+							</div>
+						</div>
+						<h2 class="practica-page__title">Зразок 1</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<input class="form__input" type="text" name="search" value="" placeholder="Surname"
+									autocomplete="off" required tabindex="2" maxlength="10" minlength="3" disabled>
+							</form>
+						</div>
+						<h2 class="practica-page__title">Зразок 2</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<input class="form__input" type="text" name="search" value="" placeholder="Surname"
+									autocomplete="" required tabindex="1" maxlength="5" minlength="3">
+								<button class="practica-page__button" type="submit">Відправити</button>
+								<button class="practica-page__button" type="reset">Очистити</button>
+							</form>
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 12 Окремий підпис поля вводу </h2>
+						<div class="practica-page__text">
+							<p>label - Окремий підпис поля вводу</p>
+							<p>Рядковий тег</p>
+							<p>Атрибут for - вказуємо ID поля з яким хочемо з'вязати label</p>
+						</div>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>
+									label for="surname">Введіть своє Прізвище label
+								</p>
+								<p>
+									label for="age" Введіть ссвій вік label
+								</p>
+								<p>
+									input id="surname" class="form__input" type="text" name="surname" value=""
+									placeholder="Surname" autocomplete="" required tabindex="" maxlength="100"
+									minlength="1"
+								</p>
+								<p>
+									input id="age" class="form__input" type="text" name="age" value=""
+									placeholder="Age" autocomplete="" required tabindex="" maxlength="3" minlength="1"
+								</p>
+							</div>
+						</div>
+						<h2 class="practica-page__title">Зразок 1</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<label for="surname">Введіть своє Прізвище</label>
+								<input id="surname" class="form__input" type="text" name="surname" value=""
+									placeholder="Surname" autocomplete="" required tabindex="" maxlength="100" minlength="1">
+							</form>
+						</div>
+						<h2 class="practica-page__title">Зразок 2</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<label for="age">Введіть свій вік</label>
+								<input id="age" class="form__input" type="text" name="age" value="" placeholder="Age"
+									autocomplete="" required tabindex="" maxlength="3" minlength="1">
+							</form>
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 13 Тип email - Однорядковий ввід поштової адреси</h2>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>
+									label for="mail">Введіть E-mail label
+								</p>
+								<p>
+									input id="mail" class="form__input" type="email" name="email" value=""
+									placeholder="email" autocomplete="" required tabindex="" maxlength=""
+									minlength=""
+								</p>
+							</div>
+						</div>
+						<h2 class="practica-page__title">Зразок 1</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<label for="mail">Введіть E-mail</label>
+								<input id="mail" class="form__input" type="email" name="email" value="" placeholder="email"
+									autocomplete="" required tabindex="" maxlength="" minlength="">
+							</form>
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 14 Тип hidden - Приховане поле. Використовується разом з
+							value</h2>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>
+									input value="windows" name="os" type="hidden"
+								</p>
+							</div>
+						</div>
+						<h2 class="practica-page__title">Зразок 1</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<input value="windows" name="os" type="hidden">
+							</form>
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 15 Тип tel - поле вводу телефонного номеру</h2>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>
+									label for="phone">Введіть номер телефону label
+								</p>
+								<p>
+									input id="phone" autocomplete="off" name="phone" type="tel"
+								</p>
+							</div>
+						</div>
+						<h2 class="practica-page__title">Зразок 1</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<label for="phone">Введіть номер телефону</label>
+								<input id="phone" autocomplete="off" name="phone" type="tel">
+							</form>
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 16 Тип password - поле вводу паролю</h2>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>
+									label for="pass">Введіть пароль label
+								</p>
+								<p>
+									input id="pass" autocomplete="off" name="pass" type="password"
+								</p>
+							</div>
+						</div>
+						<h2 class="practica-page__title">Зразок 1</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<label for="pass">Введіть пароль</label>
+								<input id="pass" autocomplete="off" name="pass" type="password">
+							</form>
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 17 Тип number - поле вводу числа</h2>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>
+									label for="digi">Введіть свій вік label
+								</p>
+								<p>
+									input id="digi" autocomplete="off" placeholder="Введіть свій вік" name="digi"
+									type="number"
+								</p>
+							</div>
+						</div>
+						<h2 class="practica-page__title">Зразок 1</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<label for="digi">Введіть свій вік</label>
+								<input id="digi" autocomplete="off" placeholder="Введіть свій вік" name="digi" type="number">
+							</form>
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 18 Тип color - поле вибору кольору</h2>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>
+									label for="color">Виберіть колір label
+								</p>
+								<p>
+									input id="color" name="color" type="color"
+								</p>
+							</div>
+						</div>
+						<h2 class="practica-page__title">Зразок 1</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<label for="color">Виберіть колір</label>
+								<input id="color" name="color" type="color">
+							</form>
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 19 Тип search - поле пошуку</h2>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>
+									label for="search">Що ви шукаєте? label
+								</p>
+								<p>
+									input id="search" name="search" type="search"
+								</p>
+							</div>
+						</div>
+						<h2 class="practica-page__title">Зразок 1</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<label for="search">Що ви шукаєте?</label>
+								<input id="search" name="search" type="search">
+							</form>
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 20 Тип date - поле вибору дати</h2>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>
+									label for="date">Оберіть дату label
+								</p>
+								<p>
+									input id="date" name="date" type="date"
+								</p>
+							</div>
+						</div>
+						<h2 class="practica-page__title">Зразок 1</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<label for="date">Оберіть дату</label>
+								<input id="date" name="date" type="date">
+							</form>
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 21 Тип range - поле вибору значення</h2>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>
+									label for="range">як ви сьогодні? label
+								</p>
+								<p>
+									input id="range" value="0" name="range" type="range"
+								</p>
+							</div>
+						</div>
+						<h2 class="practica-page__title">Зразок 1</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<label for="range">як ви сьогодні?</label>
+								<input id="range" value="0" name="range" type="range">
+							</form>
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 22 Тип checkbox - множинний вибір</h2>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>
+									input class="checkbox__input" checked id="check" name="car" type="checkbox"
+								</p>
+								<p>
+									label class="checkbox__label" for="check">Є тачка? label
+								</p>
+								<p>
+									input class="checkbox__input" id="check-2" name="flat" type="checkbox"
+								</p>
+								<p>
+									label class="checkbox__label" for="check-2">Є квартира? label
+								</p>
+							</div>
+						</div>
+						<h2 class="practica-page__title">Зразок 1</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<input class="form__checkbox-input" checked id="check" name="car" type="checkbox">
+								<label class="form__checkbox-label" for="check">Є тачка? </label>
+							</form>
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<input class="form__checkbox-input" id="check-2" name="flat" type="checkbox">
+								<label class="form__checkbox-label" for="check-2">Є квартира?</label>
+							</form>
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 23 Тип radio - одиночний вибір</h2>
+						<div class="practica-page__text">
+							<p>Для однієї групи радіо кнопок має бути одинакове значення атрибуту name</p>
+							<p>Варто вказувати значення атрибуту value</p>
+						</div>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>
+									fieldset class="practica-page__form-group
+									legend class="practica-page__form-title" Улюблена марка авто legend
+									div class="practica-page__form-radio"
+									input checked id="model-01" name="model" value="merc" type="radio"
+									label for="model-01">Mercedes label
+									div
+									div class="practica-page__form-radio"
+									input id="model-02" name="model" value="bmw" type="radio"
+									label for="model-02" BMW label
+									div
+									fieldset
+								</p>
+								<p>
+									fieldset class="practica-page__form-group
+									legend class="practica-page__form-title" Улюблена тваринка legend
+									div class="form__radio"
+									input checked id="pet-01" name="pet" value="cat" type="radio"
+									label for="pet-01">Cat label
+									div
+									div class="practica-page__form-radio"
+									input id="pet-02" name="pet" value="dog" type="radio"
+									label for="pet-02">Dog label
+									div
+									fieldset
+								</p>
+							</div>
+						</div>
+						<h2 class="practica-page__title">Зразок 1</h2>
+						<div class="practica-page__line">
+							<fieldset class="practica-page__form-group">
+								<legend class="practica-page__form-title">Улюблена марка авто</legend>
+								<div class="practica-page__form-radio">
+									<input checked id="model-01" name="model" value="merc" type="radio">
+									<label for="model-01">Mercedes</label>
+								</div>
+								<div class="practica-page__form-radio">
+									<input id="model-02" name="model" value="bmw" type="radio">
+									<label for="model-02">BMW</label>
+								</div>
+							</fieldset>
+							<fieldset class="practica-page__form-group">
+								<legend class="practica-page__form-title">Улюблена тваринка</legend>
+								<div class="practica-page__form-radio">
+									<input checked id="pet-01" name="pet" value="cat" type="radio">
+									<label for="pet-01">Cat</label>
+								</div>
+								<div class="practica-page__form-radio">
+									<input id="pet-02" name="pet" value="dog" type="radio">
+									<label for="pet-02">Dog</label>
+								</div>
+							</fieldset>
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 24 Тип file - додати файл (файли)</h2>
+						<div class="practica-page__text">
+							<p>Атрибут multiple - додавання групи файлів</p>
+							<p>Атрибут accept - фільтрує формати файлів
+								( <a class="practica-page__link" target="_blank"
+									href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/accept"></a>
+								https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/accept
+								)</p>
+						</div>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>
+									label for="file">додати файл label
+									input multiple accept=".jpg, .png" id="file" name="some-file" type="file"
+								</p>
+							</div>
+						</div>
+						<h2 class="practica-page__title">Зразок 1</h2>
+						<div class="practica-page__line">
+							<label for="file">додати файл</label>
+							<input multiple accept=".jpg, .png" id="file" name="some-file" type="file">
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 25 textarea - ввід багаторядкового тексту</h2>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>
+									label for="message">Ваше повідомлення label
+									textarea class="practica-page__form-textarea" id="message" name="message" textarea
+								</p>
+							</div>
+						</div>
+						<h2 class="practica-page__title">Зразок 1</h2>
+						<div class="practica-page__line">
+							<label for="message">Ваше повідомлення</label>
+							<textarea class="practica-page__form-textarea" id="message" name="message"></textarea>
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 26 Тег select - випадаючій список</h2>
+						<div class="practica-page__text">
+							<p>Атрибут multiple</p>
+							<p>Тег option - елемент списку</p>
+							<p>Атрибут selected - вибраний за замовченням</p>
+						</div>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>
+									select name="list"
+									option value="01">Пункт №1 option
+									option value="02">Пункт №2 option
+									option selected value="03">Пункт №3 option
+									option value="04">Пункт №4 option
+									select
+								</p>
+							</div>
+						</div>
+						<h2 class="practica-page__title">Зразок 1</h2>
+						<div class="practica-page__line">
+							<select name="list">
+								<option value="01">Пункт №1</option>
+								<option value="02">Пункт №2</option>
+								<option selected value="03">Пункт №3</option>
+								<option value="04">Пункт №4</option>
+							</select>
+						</div>
+					</div>
+					<div class="practica-page__block">
+						<h2 class="practica-page__title">Приклад 27 button - Кнопка</h2>
+						<div class="practica-page__text">
+							<p>type="button" - кнопка нічого не робить </p>
+							<p>type="reset" - обнуляє (скидає) поля вводу у формі. Має знаходитить в середені тегу form.</p>
+							<p>type="submit" - відправляє форму. Має знаходитить в середені тегу form.</p>
+						</div>
+						<div class="practica-page__column">
+							<h3 class="practica-page__subtitle">HTML code</h3>
+							<div class="practica-page__text">
+								<p>
+									button type="button" Я просто кнока button
+									button type="reset" Я кнока яка чистить форму button
+									button type="submit" Я кнопка яка відправляє форму button
+								</p>
+							</div>
+						</div>
+						<h2 class="practica-page__title">Зразок 1</h2>
+						<div class="practica-page__line">
+							<form enctype="multipart/form-data" method="GET" class="form" action="#">
+								<button class="practica-page__button" type="button">Я просто кнока</button>
+								<button class="practica-page__button" type="reset">Я кнока яка чистить форму</button>
+								<button class="practica-page__button" type="submit">Я кнопка яка відправляє форму</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- ! ======================== FOOTER =========================  -->
+		<footer class="footer">
+			<div class="footer__container">
+				<h2 class="footer__title">FOOTER</h2>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

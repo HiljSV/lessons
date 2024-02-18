@@ -1,0 +1,125 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	background-color: #333;
+	font-family: "Inter", sans-serif;
+	color: #fff;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+
+.header {
+}
+.footer {
+}
+
+.form {
+	padding: 50px;
+}
+.form__line {
+}
+
+.form__line:not(:last-child) {
+	margin-bottom: 20px;
+}
+.form__radio:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+/* 
+	Для тегу input, textarea ми не 
+	можемо використовувати псевдоелементи 
+	before та after
+*/
+
+.form__input {
+	height: 40px;
+	padding: 0px 15px;
+	width: 100%;
+	/* для іфонів */
+	border-radius: 0 !important;
+}
+.form__input::placeholder {
+	color: #000;
+	transition: opacity 0.3s;
+}
+.form__input:focus::placeholder {
+	opacity: 0;
+}
+
+.form__textarea {
+	height: 100px;
+	width: 100%;
+	padding: 15px;
+	line-height: 150%;
+	resize: vertical;
+	/* для іфонів */
+	border-radius: 0 !important;
+}
+.form__group {
+	border: 1px solid orange;
+	padding: 15px;
+}
+.form__group:not(:last-child) {
+	margin-bottom: 15px;
+}
+.form__title {
+	text-align: center;
+	background-color: yellow;
+	color: #000;
+	padding: 15px;
+}
+
+/* Стилізація checkbox */
+.checkbox {
+	position: relative;
+}
+.checkbox:not(:last-child) {
+	margin-bottom: 5px;
+}
+.checkbox__input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+/* Псевдоклас стану "в фокусі по TAB" */
+.checkbox__input:focus-visible + .checkbox__label {
+	outline: 1px solid #fff;
+}
+/* Псевдоклас стану "вибраний" */
+.checkbox__input:checked + .checkbox__label::before {
+	background-color: #7a956b;
+}
+
+.checkbox__label {
+	display: inline-flex;
+	gap: 10px;
+	cursor: pointer;
+}
+.checkbox__label::before {
+	/* width потрібен коли псевлоелемент флексимо разом з текстом */
+	width: 15px;
+	height: 15px;
+	flex-shrink: 0;
+	/* або */
+	/* flex: 0 0 15px; */
+	background-color: #fff;
+	transition: background-color 0.3s;
+	content: "";
+}

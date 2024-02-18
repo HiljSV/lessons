@@ -1,0 +1,982 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	background-color: rgb(255, 255, 255);
+	font-family: "Inter", sans-serif;
+	color: rgb(60, 66, 66);
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper>main {
+	flex-grow: 1;
+}
+
+[class*="__container"] {
+	margin: 0 auto;
+	max-width: 1920px;
+}
+
+/* ! ======================== HEADER ========================= */
+
+.header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	width: 100%;
+	background-color: rgb(120, 205, 17);
+	font-size: 0px;
+}
+
+.header__container {}
+
+.header__title,
+.footer__title {
+	padding: 30px 0;
+	font-size: 35px;
+	font-family: "Causten", sans-serif;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: center;
+}
+
+/* ! ======================== MAIN ========================= */
+
+.page {}
+
+.page__container {}
+
+/* ! ======================== MY INFO ========================= */
+
+.page-myinfo {
+	padding: 100px 0px;
+}
+
+.myinfo-page {}
+
+.myinfo-page__wrap {
+	margin: 0 auto;
+	padding: 0 15px;
+	max-width: 925px;
+	height: 100%;
+}
+
+.myinfo-page__title {
+	color: rgb(60, 66, 66);
+	font-family: "Core Sans C", sans-serif;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 33.5px;
+	letter-spacing: 2%;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.myinfo-page__text {
+	color: rgb(60, 66, 66);
+	font-family: "Core Sans C", sans-serif;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 33.5px;
+	letter-spacing: 2%;
+	text-align: left;
+	margin-bottom: 50px;
+}
+
+.myinfo-page__form {
+	display: flex;
+	flex-direction: column;
+	row-gap: 28px;
+}
+
+.form-myinfo {}
+
+.form-myinfo__row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 42px;
+}
+
+.form-myinfo__row--deliveri-gap {
+	gap: 10px;
+}
+
+.form-myinfo__column {
+	flex: 0 1 426px;
+}
+
+.form-myinfo__label,
+.form-myinfo__input,
+.form-myinfo__textarea,
+.form-myinfo__checkbox-label,
+.form-myinfo__button {
+	font-family: "Core Sans C", sans-serif;
+}
+
+.form-myinfo__label {
+	color: rgb(60, 66, 66);
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 22px;
+	letter-spacing: 0.02em;
+	text-align: left;
+}
+
+.form-myinfo__input,
+.form-myinfo__textarea {
+	background: #f6f6f6;
+	color: rgb(128, 125, 126);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19px;
+	text-align: left;
+	border-radius: 8px;
+	padding: 17px 22px;
+	cursor: pointer;
+}
+
+.form-myinfo__input {
+	height: 54px;
+	width: 100%;
+}
+
+.form-myinfo__input::placeholder {
+	transition: opacity 0.3s;
+}
+
+.form-myinfo__input:focus::placeholder {
+	opacity: 0;
+}
+
+.form-myinfo__textarea {
+	height: 149px;
+	width: 100%;
+	resize: vertical;
+}
+
+.form-myinfo__group {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+.form-myinfo__row-checkbox {
+	padding-bottom: 22px;
+}
+
+.form-myinfo__checkbox {}
+
+/*  ! Стилізація checkbox  */
+.checkbox {
+	position: relative;
+}
+
+.checkbox__input {
+	/*  ! Стилізація checkbox прибираємо стандартний checkbox (візуально) */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+/*  ! Стилізація checkbox Псевдоклас стану в focus (фокусі) по TAB  */
+.checkbox__input:focus-visible+.checkbox__label {
+	outline: 2px solid #000;
+}
+
+.checkbox__input:checked+.checkbox__label::before {
+	background: rgb(138, 51, 253);
+}
+
+.checkbox__label {
+	display: inline-flex;
+	align-items: center;
+	gap: 11px;
+	cursor: pointer;
+
+	color: rgb(60, 66, 66);
+	font-size: 20.09px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}
+
+.checkbox__label::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	flex: 0 0 20px;
+	box-sizing: border-box;
+	border: 2px solid rgb(190, 188, 189);
+	border-radius: 2.23px;
+	background: rgb(255, 255, 255);
+	transition: bacground 0.3s;
+}
+
+.form-myinfo__button {
+	color: rgb(255, 255, 255);
+	font-size: 20.09px;
+	font-weight: 600;
+	line-height: 24px;
+	text-align: center;
+	border-radius: 7.17px;
+	background: rgb(138, 51, 253);
+	padding: 12px 40px;
+}
+
+.form-myinfo__row-button {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+/* ! ======================== CHECK OUT ========================= */
+
+.page-checkout {
+	padding: 0px 0px 40px 100px;
+}
+
+.checkout-page {}
+
+.checkout-page__wrap {
+	max-width: 870px;
+	height: 100%;
+	padding: 0px 15px;
+}
+
+.checkout-page__title,
+.billing-page__sub-title,
+.shipping-page__sub-title {
+	color: rgb(60, 66, 66);
+	font-family: "Core Sans C", sans-serif;
+	font-weight: 600;
+	line-height: 33.5px;
+	letter-spacing: 0.02em;
+	text-align: left;
+}
+
+.checkout-page__title {
+	font-size: 28px;
+	padding-bottom: 20px;
+}
+
+.checkout-page__title::before {
+	content: "";
+	width: 6px;
+	height: 28px;
+	border-radius: 10px;
+	background: rgb(138, 51, 253);
+	top: 1px;
+	left: 0px;
+	position: relative;
+	margin-right: 15px;
+}
+
+.checkout-page__billing {
+	max-width: 802px;
+	height: 100%;
+	padding-bottom: 30px;
+	border-bottom: 1px solid rgb(237, 238, 242);
+}
+
+.billing-page__sub-title {
+	font-size: 22px;
+	padding-bottom: 50px;
+}
+
+.billing-page__form {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	row-gap: 28px;
+}
+
+.form-billing__row {
+	display: flex;
+	flex-direction: row;
+	gap: 38px;
+}
+
+.form-billing__column {
+	flex: 0 1 382px;
+	gap: 10px;
+}
+
+.form-billing__label,
+.form-billing__input,
+.checkbox__label {
+	font-family: "Core Sans C", sans-serif;
+}
+
+.form-billing__label {
+	color: rgb(60, 66, 66);
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 19px;
+	letter-spacing: 0.02em;
+	text-align: left;
+}
+
+.form-billing__input {
+	background: rgb(246, 246, 246);
+	color: rgb(128, 125, 126);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 17px;
+	text-align: left;
+	border-radius: 8px;
+	padding: 0px 20px;
+	cursor: pointer;
+}
+
+.form-billing__input {
+	height: 49px;
+	width: 100%;
+}
+
+.form-billing__input::placeholder {
+	transition: opacity 0.3s;
+}
+
+.form-billing__input:focus::placeholder {
+	opacity: 0;
+}
+
+.form-billing__row-checkbox {
+	padding-bottom: 32px;
+}
+
+.form-billing__row-address {
+	gap: 32px;
+}
+
+.form-billing__column-city,
+.form-billing__column-state,
+.form-billing__column-postal {
+	flex: 0 1 246px;
+}
+
+.form-billing__delivery {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.form-billing__button {
+	color: rgb(255, 255, 255);
+	font-size: 20.09px;
+	font-weight: 600;
+	line-height: 24px;
+	text-align: center;
+	border-radius: 8px;
+	background: rgb(138, 51, 253);
+	padding: 16px 20px;
+}
+
+.form-billing__row-phone:not(:last-child) {
+	margin-bottom: 12px;
+}
+
+.checkbox__label-billing {
+	gap: 10px;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.checkbox__label-billing::before {
+	content: "";
+	width: 18px;
+	height: 18px;
+	flex: 0 0 18px;
+	border: 1.8px solid rgb(190, 188, 189);
+	border-radius: 2px;
+	transition: bacground 0.3s;
+}
+
+.checkbox__label-billing {
+	height: 22px;
+	width: 100%;
+}
+
+/* ! ======================== SHIPPING ADDRESS ========================= */
+
+.checkout-page__shipping {
+	max-width: 870px;
+	height: 100%;
+	padding: 30px 15px;
+	border-bottom: 1px solid rgb(237, 238, 242);
+}
+
+.shipping-page {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.shipping-page__sub-title {
+	font-size: 22px;
+}
+
+.shipping-page__text,
+.radio__label {
+	font-family: "Core Sans C", sans-serif;
+}
+
+.shipping-page__text {
+	color: rgb(60, 66, 66);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19px;
+	text-align: left;
+	padding-bottom: 22px;
+}
+
+.shipping-page__form,
+.method-page__shipping {
+	border-radius: 12px;
+	background: rgb(246, 246, 246);
+}
+
+.form-shipping {
+	padding: 38px 48px 39px 28px;
+}
+
+.form-shipping__group {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 25px;
+}
+
+.form-shipping__radio {
+	flex: 0 1 24px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.form-shipping__radio-solid {
+	border-bottom: 1px solid rgb(190, 188, 189);
+	padding-bottom: 25px;
+}
+
+.radio {}
+
+.radio__input {}
+
+.radio__label {
+	color: rgb(60, 66, 66);
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 0%;
+	text-align: left;
+}
+
+/* ! ======================== SHIPPING METHOD ========================= */
+
+.checkout-page__method {
+	max-width: 870px;
+	height: 100%;
+	padding: 30px 15px;
+	border-bottom: 1px solid rgb(237, 238, 242);
+}
+
+.method-page {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.method-page__title {
+	color: rgb(60, 66, 66);
+	font-family: "Core Sans C", sans-serif;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 33.5px;
+	letter-spacing: 0.02em;
+	text-align: left;
+}
+
+.method-page__shipping {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.shipping-method {
+	padding: 32px 48px 32px 26px;
+}
+
+.shipping-method__block {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 25px;
+}
+
+.shipping-method__arrivers {
+	border-bottom: 1px solid rgb(190, 188, 189);
+	padding-bottom: 25px;
+}
+
+.arrivers__text,
+.column-delivery__text,
+.column-delivery__price {
+	color: rgb(60, 66, 66);
+	font-family: "Causten", sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	text-align: left;
+}
+
+.delivery-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 25px;
+}
+
+.column-delivery__sub-text {
+	color: rgb(128, 125, 126);
+	font-family: "Causten", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 19px;
+	letter-spacing: 0%;
+	text-align: left;
+}
+
+/* ! ======================== PAYMENT METHOD ========================= */
+
+.checkout-page__payment {
+	max-width: 870px;
+	height: 100%;
+	background: rgb(255, 255, 255);
+	padding: 30px 0px 100px;
+}
+
+.payment-page {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.payment-page__item {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.payment-page__sub-title {
+	color: rgb(60, 66, 66);
+	font-family: "Core Sans C", sans-serif;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 33.5px;
+	letter-spacing: 0.02em;
+	text-align: left;
+}
+
+.payment-page__text {
+	color: rgb(60, 66, 66);
+	font-family: "Causten", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19px;
+	text-align: left;
+}
+
+.payment-page__wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.payment-page__form {
+	border-radius: 12px;
+	background: rgb(246, 246, 246);
+	padding: 45px 48px 45px 28px;
+}
+
+.form-payment {}
+
+.form-payment__group {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.form-payment__card {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.form-payment__card-solid,
+.card__section-solid {
+	border-bottom: 1px solid rgb(190, 188, 189);
+	padding-bottom: 30px;
+}
+
+.card {}
+
+.card__section {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.card__radio {}
+
+/*  ! Стилізація radio  */
+.radio {
+	position: relative;
+}
+
+.radio__input {
+	/*  ! Стилізація radio прибираємо стандартний radio (візуально) */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+/*  ! Стилізація checkbox Псевдоклас стану в focus (фокусі) по TAB  */
+.radio__input:focus-visible+.radio__label {
+	outline: 2px solid #000;
+}
+
+.radio__input:checked+.radio__label::before {
+	background: url("../img/ellipse.png") center no-repeat;
+}
+
+.radio__label {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 19px;
+	cursor: pointer;
+
+	color: rgb(60, 66, 66);
+	font-size: 20.09px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}
+
+.radio__label::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+
+	flex: 0 0 20px;
+	box-sizing: border-box;
+	border: 2px solid rgb(190, 188, 189);
+	/* border-radius: 2.23px; */
+	border-radius: 50%;
+	background: rgb(255, 255, 255);
+	transition: bacground 0.3s;
+}
+
+.radio__label {
+	color: rgb(60, 66, 66);
+	font-family: "Causten", sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 0%;
+	text-align: left;
+}
+
+.radio__text {
+	margin-left: 37px;
+	color: rgb(60, 66, 66);
+	font-family: "Causten", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19px;
+	text-align: left;
+}
+
+.form-payment__major-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	gap: 20px;
+	padding-left: 37px;
+}
+
+.major-cards {}
+
+.major-cards__img {
+	border-radius: 8px;
+	background: rgb(255, 255, 255);
+}
+
+.card-form {
+	padding: 0px 23px 0px 37px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	row-gap: 26px;
+	column-gap: 30px;
+}
+
+.card-form__field {
+	flex: 0 1 337px;
+	gap: 10px;
+}
+
+.card-form__label {}
+
+.card-form__input {
+	color: rgb(128, 125, 126);
+	font-family: "Causten", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 17px;
+	text-align: left;
+	padding: 0px 20px;
+	box-sizing: border-box;
+	border: 1px solid rgb(60, 66, 66);
+	border-radius: 8px;
+}
+
+.card-form__input {
+	height: 49px;
+	width: 100%;
+}
+
+.card-form__field--relative {
+	position: relative;
+}
+
+.card-form__button-eye {}
+
+.card-form__button-eye--absolute {
+	position: absolute;
+	right: 20px;
+	top: calc(50% - 10px);
+}
+
+.card-form__image {}
+
+.form-payment__row {}
+
+.form-payment__row-button {}
+
+.form-payment__button {
+	color: rgb(255, 255, 255);
+	font-family: "Causten", sans-serif;
+	font-size: 20.09px;
+	font-weight: 600;
+	line-height: 24px;
+	text-align: center;
+	border-radius: 8px;
+	background: rgb(138, 51, 253);
+	padding: 16px 20px;
+}
+
+/* ! ======================== REQUEST A CALL BACK ========================= */
+
+.page-request {}
+
+.request-page {
+	padding-top: 100px;
+	padding-bottom: 150px;
+}
+
+.request-page__wrap {
+	margin: 0 auto;
+	padding: 0 15px;
+	max-width: 1250px;
+	height: 100%;
+	gap: 40px;
+}
+
+.request-page__wrap,
+.request-page__item,
+.request-page__form,
+.form-request__section {
+	display: flex;
+	flex-direction: column;
+}
+
+.request-page__item {
+	gap: 16px;
+}
+
+.request-page__text,
+.form-request__input,
+.form-request__textarea,
+.form-request__button {
+	color: rgb(55, 57, 63);
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 22px;
+	text-align: left;
+}
+
+.request-page__text {
+	font-weight: 500;
+	text-align: center;
+}
+
+.request-page__text::before {
+	content: "";
+	width: 12px;
+	height: 12px;
+	background: rgb(64, 221, 182);
+	top: 0px;
+	left: 0px;
+	position: relative;
+	margin-right: 6px;
+}
+
+.request-page__title {
+	color: rgb(55, 57, 63);
+	font-family: "Poppins", sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 60px;
+	text-align: center;
+}
+
+.request-page__form {
+	gap: 50px;
+}
+
+.form-request {}
+
+.form-request__section {
+	gap: 28px;
+}
+
+.form-request__row {
+	display: flex;
+	gap: 35px;
+}
+
+.form-request__row--not-gap {
+	gap: 0px;
+}
+
+.form-request__column {
+	display: flex;
+	flex: 0 1 591px;
+}
+
+.form-request__label {}
+
+.form-request__input {
+	padding-left: 40px;
+	box-sizing: border-box;
+	border: 1px solid rgb(221, 221, 221);
+	background: rgb(248, 248, 248);
+	/* для іфонів */
+	border-radius: 0 !important;
+}
+
+.form-request__input {
+	height: 65px;
+	width: 100%;
+}
+
+.form-request__input::placeholder {
+	color: #000;
+	transition: opacity 0.3s;
+}
+
+.form__input:focus::placeholder {
+	opacity: 0;
+}
+
+.form-request__textarea {
+	width: 100%;
+	resize: vertical;
+	padding: 22px 40px;
+	height: 222px;
+	box-sizing: border-box;
+	border: 1px solid rgb(221, 221, 221);
+	background: rgb(248, 248, 248);
+	cursor: pointer;
+	/* для іфонів */
+	border-radius: 0 !important;
+}
+
+.form-request__row-button {
+	display: flex;
+	justify-content: center;
+}
+
+.form-request__button {
+	padding: 21px 61px;
+	background: rgb(107, 119, 229);
+	color: rgb(255, 255, 255);
+	font-weight: 600;
+	text-align: center;
+	text-transform: capitalize;
+	transition: all 0.3s;
+}
+
+.form-request__button:hover {
+	text-decoration: underline;
+	transform: scale(1.1);
+}
+
+/* ! ======================== FOOTER ========================= */
+.footer {
+	background-color: rgb(120, 205, 17);
+}
+
+.footer__container {}
+
+.footer__title {}
+
+.footer__content {
+	padding: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	text-align: center;
+}
+
+.footer__link {
+	background-color: #fff;
+	padding: 20px;
+	font-size: 25px;
+	font-family: "Causten", sans-serif;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: center;
+	text-transform: uppercase;
+	transition: all 0.3s;
+}
+
+.footer__link:hover {
+	text-decoration: underline;
+	transform: scale(1.2);
+}

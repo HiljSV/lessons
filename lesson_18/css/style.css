@@ -1,0 +1,680 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Стилі загальних блоків (компонентів) */
+/* @import url("common.css"); */
+
+/* Основні стилі */
+body {
+	font-family: "Inter", sans-serif;
+	color: #6d6d6d;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper>main {
+	flex-grow: 1;
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Обмежуючий контейнер */
+[class*="__container"] {
+	max-width: 1200px;
+	/* 1170 + 15 + 15 */
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+/* ! Header */
+
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	background-color: rgb(254, 251, 247);
+}
+
+.header__container {
+	display: flex;
+	/* justify-content: space-between; */
+	gap: 20px;
+	align-items: center;
+	min-height: 100px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* ! logo */
+
+.header__logo {
+	color: rgb(0, 0, 0);
+	font-family: "Merriweather", sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 38px;	
+	text-align: left;
+	flex-shrink: 0;
+	position: relative;
+	z-index: 5;
+}
+
+
+/* ! menu */
+
+.menu {
+	flex: 1 1 auto;
+}
+
+.menu__body {}
+
+.menu__list {
+	display: flex;
+	justify-content: center;
+	column-gap: 36px;
+	row-gap: 8px;
+	flex-wrap: wrap;
+	/* wrap - попередити збільшення пунктів  */
+}
+
+.menu__item {}
+
+.menu__link {
+	color: rgb(0, 0, 0);
+	font-family: "Merriweather", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 100%;
+	transition: color 0.3s;
+}
+
+@media(any-hover:hover) {
+	.menu__item:hover .menu__link {
+		text-decoration-line: underline;
+	}
+}
+
+.menu__item--active .menu__link {
+	font-weight: 700;
+	color: rgb(213, 132, 23);
+	text-decoration-line: underline;
+}
+
+.menu__item--parent {
+	position: relative;
+}
+
+.menu__item--parent .menu__link {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.menu__item--parent .menu__link::after {
+	content: "";
+	background: url("../img/sub-menu-arrow.png") 0 0 no-repeat;
+	flex: 0 0 16px;
+	height: 8px;
+	width: 16px;
+	transition: all 0.3s;
+}
+
+.menu__item--parent:hover .sub-menu {
+	opacity: 1;
+	transform: translate(0px, 0px);
+	visibility: visible;
+	pointer-events: all;
+	/* ! властивість при якій курсор перестає взаємодіяти з курсором */
+}
+
+@media(any-hover:hover) {
+	.menu__item--parent:hover .menu__link::after {
+		transform: rotate(-180deg);
+		/* перевертаємо стрілочку догори при наведенні */
+	}
+}
+
+.sub-menu {
+	transition: all 0.3s;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	padding-top: 5px;
+	transform: translate(0px, 10%);
+	/* sub-menu 10% - приїжає з низу */
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	/* ! властивість при якій курсор перестає взаємодіяти з курсором */
+}
+
+.sub-menu__list {
+	width: 200px;
+	border-radius: 15px;
+	padding: 15px;
+	background-color: rgba(255, 147, 74, 0.28);
+	box-shadow: 0 0 5px 0px rgb(0, 0, 0, 0.5);
+}
+
+.sub-menu__item {}
+
+.sub-menu__item:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.sub-menu__link {
+	color: rgb(0, 0, 0);
+	font-size: 18px;
+}
+
+@media(any-hover:hover) {
+	.sub-menu__link:hover {
+		text-decoration: underline;
+	}
+}
+
+/* ! header__actions */
+
+.header__actions {
+	flex-shrink: 0;
+}
+
+.actions-header {
+	display: flex;
+	align-items: center;
+	gap: 23px;
+	position: relative;
+	z-index: 5;
+}
+
+.actions-header__item {
+	flex: 0 0 32px;
+	position: relative;
+	transition: all 0.3s;
+}
+
+
+@media(any-hover:hover) {
+	.actions-header__item:hover {
+		transform: scale(1.1);
+	}
+}
+
+.actions-header__item img {
+	max-width: 100%;
+}
+
+.actions-header__item span {
+	position: absolute;
+	right: 0;
+	top: 0;
+	border-radius: 50%;
+	background-color: rgb(255, 51, 51);
+	width: 12px;
+	height: 12px;
+	color: rgb(255, 255, 255);
+	font-size: 9px;
+	text-align: center;
+	line-height: 12px;
+}
+
+
+/*  menu - burger */
+
+.icon-menu {
+	display: none;
+}
+
+@media (max-width: 960px) {
+	.header__container {
+		min-height: 50px;
+	}
+
+	.menu__body {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		/* ! overflow: auto; для малих екранів щоб достатись нижніх пунктів меню скрол з'явиться  */
+		top: 0;
+		left: -100%;
+		transition: left 0.3s;
+		padding: 80px 15px 30px 15px;
+		background-color: rgb(183, 90, 29);
+	}
+
+	.menu__body::before {
+		content: "";
+		position: fixed;
+		width: 100%;
+		height: 50px;
+		top: 0;
+		left: -100%;
+		z-index: 2;
+		transition: left 0.3s;
+		background-color: rgba(255, 254, 254, 1);
+
+		/* ! .menu__body::before псевдоелемент щоб шапка була непрозорою коли йде скрол на малих екранах */
+	}
+
+	.menu-open .menu__body,
+	.menu-open .menu__body::before {
+		left: 0;
+	}
+
+	.menu__list {
+		flex-direction: column;
+		text-align: right;
+		row-gap: 28px;
+	}
+
+	.menu__link {
+		font-size: 28px;
+	}
+
+	.menu__item--parent .menu__link {
+		display: block;
+	}
+
+	.menu__item--parent .menu__link::after {
+		display: none;
+	}
+
+	.sub-menu {
+		position: relative;
+		visibility: visible;
+		opacity: 1;
+		padding-top: 10px;
+		transform: translate(0px, 0px);
+	}
+
+	.sub-menu__list {
+		width: 100%;
+		border-radius: 0;
+
+	}
+
+	.sub-menu__item:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	.sub-menu__link {
+		color: rgb(0, 0, 0);
+		font-size: 24px;
+	}
+
+	.icon-menu {
+		width: 30px;
+		display: block;
+		flex: 0 0 30px;
+		height: 18px;
+		position: relative;
+		z-index: 5;
+	}
+
+	.icon-menu::before,
+	.icon-menu::after,
+	.icon-menu span {
+		content: "";
+		height: 2px;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		transition: all 0.3s;
+		background-color: rgb(0, 0, 0);
+	}
+
+	.icon-menu::before {
+		top: 0;
+	}
+
+	.icon-menu::after {
+		bottom: 0;
+	}
+
+	.icon-menu span {
+		top: 50%;
+		margin-top: -1px;
+	}
+
+	.menu-open .icon-menu span {
+		transform: scale(0);
+	}
+
+	.menu-open .icon-menu::before {
+		transform: rotate(-45deg);
+		top: 50%;
+		margin-top: -1px;
+
+	}
+
+	.menu-open .icon-menu::after {
+		transform: rotate(45deg);
+		bottom: 50%;
+		margin-bottom: -1px;
+	}
+}
+
+@media (max-width: 440px) {
+	.header__container {
+		gap: 5px;
+	}
+
+	.header__logo {
+		font-size: 24px;
+	}
+
+	.actions-header {
+		gap: 10px;
+	}
+}
+
+/* ! page */
+
+.page {
+	display: flex;
+	flex-direction: column;
+
+
+}
+
+/* ! hero */
+
+.page__hero {}
+
+.hero {
+	background: url("../img/hero/lefttop.png") -12% 5% / auto no-repeat, url("../img/hero/rightcenter.png") 110% 60% / auto no-repeat, rgb(80, 34, 3);
+	padding: 198px 0px 58px 0px;
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+
+}
+
+.hero__container {
+	position: relative;
+	flex: 1 1 auto;
+	display: flex;
+	align-items: flex-start;
+}
+
+.hero__body {
+	/* flex-basis: 31.625%; */
+	/* flex-shrink: 0; */
+	/* padding-top: 57px;
+	padding-right: 30px; */
+}
+
+
+@media (min-width: 992px) {
+
+	.hero__container::before {
+		content: "";
+		background: url("../img/hero/leftfasbottom.png") 0 0 / cover no-repeat;
+		position: absolute;
+		bottom: -55px;
+		left: -160px;
+		height: 215px;
+		width: 239px;
+		border-radius: 195px 195px 0px 0px;
+		border: 1px solid rgb(255, 255, 255);
+	}
+
+	.hero__container::after {
+		content: "";
+		background: url("../img/hero/rightanfas.png") center / 237px 336px no-repeat;
+		position: absolute;
+		bottom: 0px;
+		right: -300px;
+		height: 370px;
+		width: 261px;
+		border-radius: 195px;
+		border: 1px solid rgb(255, 255, 255);
+		padding: 20px;
+	}
+
+	.hero__body {
+		flex-basis: 31.625%;
+		flex-shrink: 0;
+		padding-top: 57px;
+		padding-right: 30px;
+		/* ! Коли більше то відступи по макету (mobile-first)  */
+	}
+}
+
+.hero__body>* {
+	margin-bottom: 9px;
+}
+
+.hero__title,
+.hero__button {
+	color: rgb(255, 255, 255);
+	font-family: "Cormorant Infant", sans-serif;
+	/* text-align: left; */
+}
+
+.hero__title {
+	font-size: 78px;
+	font-weight: 700;
+	line-height: 129%;
+}
+
+.hero__button {
+	padding: 15px 25px 15px 25px;
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 4px;
+	position: relative;
+
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 100%;
+}
+
+.hero__button::before {
+	border-radius: 4px;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 15px;
+	left: -8px;
+	transition: all 0.3s;
+	background-color: rgba(255, 255, 255, 0.06);
+
+}
+
+@media (any-hover:hover) {
+	.hero__button:hover::before {
+		top: 0px;
+		left: 0px;
+	}
+
+	/* ! стилі відобразяться на пристроях на яких є курсор тобто не на мобільних деє тачскрін */
+}
+
+.hero__body>*:last-child {
+	margin-bottom: 0px;
+}
+
+.hero__image {
+
+	flex-basis: 36.75%;
+	/* 430/1170 */
+	flex-shrink: 0;
+	border-radius: 215px;
+	border: 1px solid rgb(255, 255, 255);
+	padding: 20px;
+}
+
+.hero__image img {
+	width: 100%;
+	border-radius: 215px;
+}
+
+.hero__content {
+	/* flex-basis: 31.625%; */
+	/* flex-shrink: 0; */
+	/* padding-top: 76px;
+	padding-left: 30px; */
+}
+
+@media (min-width: 992px) {
+	.hero__content {
+		flex-shrink: 0;
+		flex-basis: 31.625%;
+		padding-top: 76px;
+		padding-left: 30px;
+		/* ! Коли більше то відступи по макету (mobile-first)  */
+	}
+}
+
+.content-hero {
+	color: rgb(255, 255, 255);
+	font-family: "Cormorant Infant", sans-serif;
+	/* text-align: left; */
+}
+
+.content-hero {
+	display: flex;
+	align-self: stretch;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.content-hero__text {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 148%;
+
+	flex-grow: 1;
+}
+
+.content-hero__item {
+	/* align-self: flex-end; */
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 120%;
+	padding-left: 10px;
+	position: relative;
+
+	/* margin-bottom: 183px; */
+}
+
+.content-hero__item::before {
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 78.947368%;
+	/* 60/76 */
+	left: 0px;
+	top: 50%;
+	background-color: rgb(255, 255, 255);
+	transform: translate(0px, -50%);
+}
+
+@media (min-width: 992px) {
+	.content-hero__item {
+		align-self: flex-end;
+		/* ! Коли більше то відступи по макету (mobile-first)  */
+		margin-bottom: 183px;
+	}
+}
+
+@media (min-width: 1255px) {
+
+	.content-hero__item {
+		/* ! Коли більше то відступи по макету (mobile-first)  */
+		margin-right: -30px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.hero__title {
+		font-size: 64px;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.hero {
+		padding: 150px 0px 40px 0px;
+	}
+
+	.hero__container {
+		flex-direction: column;
+		gap: 40px;
+		align-items: stretch;
+	}
+
+	.hero__body {
+		text-align: center;
+	}
+
+	.hero__image {
+		align-self: center;
+	}
+}
+
+@media (max-width: 960px) {
+	.hero {
+		padding: 90px 0px 40px 0px;
+	}
+}
+
+
+@media (max-width: 470px) {
+	.hero {
+		background: rgb(80, 34, 3);
+	}
+
+	.hero__title {
+		font-size: 46px;
+	}
+}
+
+.footer {
+	width: 100%;
+	background-color: rgba(255, 147, 74, 0.28);
+}
+
+.footer__container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.footer__item a {
+	padding: 15px 20px;
+	box-shadow: 0 0 5px 0px rgb(0, 0, 0, 0.5);
+	color: rgb(14, 51, 61);
+	font-family: "DM Serif Text", sans-serif;
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 127%;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+@media (any-hover:hover) {
+	.footer__item a:hover {
+		transform: scale(1.1);
+		text-decoration: underline;
+	}
+}

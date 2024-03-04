@@ -1,0 +1,40 @@
+.block-header {
+	font-family: "Cormorant Infant", sans-serif;
+	font-weight: 700;
+}
+
+.block-header>* {
+	margin-bottom: 27px;
+}
+
+.block-header__label,
+.block-header__title,
+.block-header__text p {
+	line-height: 100%;
+	text-align: left;
+}
+
+.block-header__label {
+	color: rgb(213, 132, 23);
+	font-size: 20px;
+}
+
+.block-header__title {
+	color: rgb(0, 0, 0);
+	font-size: 64px;
+	margin-bottom: 31px;
+}
+
+.block-header__text {
+	color: rgb(96, 96, 96);
+	font-size: 30px;
+	line-height: 140%;
+}
+
+.block-header__text p:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.block-header>*:last-child {
+	margin-bottom: 0px;
+}

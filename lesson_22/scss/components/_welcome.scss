@@ -1,0 +1,287 @@
+// WELCOME
+/* ! WELCOME */
+
+.welcome {
+  @include adaptiveValue("padding-top", 151, 50);
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    @include adaptiveValue("padding-bottom", 151, 50);
+    // отобразить на весь экран на меньшем расширении ?
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      flex: 0 1 percent(828, 1920);
+      width: percent(828, 1920);
+      height: 100%;
+      background: $cardsBgColor;
+    }
+  }
+  // .welcome__container
+
+  &__container {
+    flex: 0 0 100%;
+    display: flex;
+    //  align-items: center;
+    justify-content: space-between;
+    @include adaptiveValue("column-gap", 69, 40);
+    row-gap: toRem(50);
+    flex-direction: column-reverse;
+    @media (min-width: $tablet) {
+      flex-direction: row;
+    }
+  }
+}
+.left-welcome {
+  position: relative;
+  z-index: 2;
+  // width: 100%;
+  flex: 0 0 percent(476, 1220);
+  display: flex;
+  column-gap: toRem(25);
+  flex-direction: column;
+  @media (min-width: toEm(571)) and (max-width: toEm(991.98)) {
+    flex-direction: row;
+  }
+  @media (min-width: $tablet) {
+    @include adaptiveValue("padding-right", 68, 10, 0, $maxWidth, 768);
+  }
+
+  // .left-welcome__image
+
+  &__image {
+    aspect-ratio: 408/446;
+    background-color: #e0dede;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    &:not(:last-child) {
+      margin-bottom: toRem(22);
+    }
+  }
+
+  // .left-welcome__title
+
+  &__title {
+    color: $mainColor;
+    font-family: $secondFontFamili;
+    @include adaptiveValue("font-size", 30, 24);
+    font-weight: 600;
+    line-height: 1.21;
+    text-align: left;
+    &:not(:last-child) {
+      margin-bottom: toRem(13);
+    }
+  }
+
+  // .left-welcome__text
+
+  &__text {
+    color: $textDarkColor;
+    line-height: 1.4619;
+    text-align: left;
+    &:not(:last-child) {
+      margin-bottom: toRem(20);
+    }
+    @extend %text-mb;
+  }
+
+  // .left-welcome__link
+
+  &__link {
+    display: inline-block;
+    color: $mainColor;
+    font-weight: 600;
+    line-height: 1.222222; /* 22/18 */
+    text-align: center;
+    text-transform: capitalize;
+    &:not(:last-child) {
+      margin-bottom: toRem(15);
+    }
+    &::after {
+      @extend %link-hover2;
+    }
+    @media (any-hover: hover) {
+      &:hover::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+}
+
+.right-welcome {
+  flex: 1 1 percent(673, 1220);
+  // .right-welcome__subtitle
+
+  &__subtitle {
+    color: $mainColor;
+    font-weight: 500;
+    line-height: 1.222222; /* 22/18 */
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    column-gap: toRem(6);
+    @include adaptiveValue("font-size", 18, 16);
+    &:not(:last-child) {
+      margin-bottom: toRem(16);
+    }
+    &::before {
+      content: "";
+      width: toEm(12, 18);
+      height: toEm(12, 18);
+      flex: 0 0 toEm(12, 18);
+      margin-top: toEm(7, 18);
+      background-color: $mainBgColor;
+    }
+  }
+
+  // .right-welcome__title
+
+  &__title {
+    color: rgb(55, 57, 63);
+    font-family: $secondFontFamili;
+    font-size: toRem(40);
+    font-weight: 700;
+    line-height: 1.5; /* 60/40 */
+    text-align: left;
+    &:not(:last-child) {
+      margin-bottom: toRem(20);
+    }
+  }
+
+  // .right-welcome__text
+
+  &__text {
+    color: $textDarkColor;
+    line-height: 1.46;
+    text-align: left;
+    &:not(:last-child) {
+      margin-bottom: toRem(20);
+    }
+    @extend %text-mb;
+  }
+
+  // .right-welcome__list
+
+  &__list {
+    &:not(:last-child) {
+      margin-bottom: toRem(43);
+    }
+  }
+
+  // .right-welcome__item
+
+  &__item {
+    color: $mainColor;
+    font-family: "Poppins", sans-serif;
+    @include adaptiveValue("font-size", 20, 18);
+    line-height: 1.65;
+    min-height: toRem(27);
+    display: flex;
+    align-items: flex-start;
+    column-gap: toRem(8);
+    &:not(:last-child) {
+      margin-bottom: toRem(23);
+    }
+    &::before {
+      content: "";
+      width: toRem(27);
+      height: toRem(27);
+      flex: 0 0 toRem(27);
+      background: url("/img/main/Vector\ \(4\).svg") center/cover no-repeat;
+      margin-top: toEm(3, 20);
+    }
+  }
+
+  // .right-welcome__cards
+
+  &__cards {
+    &:not(:last-child) {
+      margin-bottom: toRem(37);
+    }
+  }
+
+  // .right-welcome__actions
+
+  &__actions {
+  }
+}
+.subtitle {
+}
+.subtitle--dark {
+}
+.cards-welcome {
+  display: flex;
+  gap: toRem(21);
+  flex-wrap: wrap;
+  max-width: toRem(613);
+  // .cards-welcome__item
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    column-gap: toRem(19);
+    padding: toRem(31) toRem(32);
+    border: toRem(1) solid #e3e3e3;
+    flex: 1 1 flBasis(2, 21);
+    min-width: toRem(290);
+  }
+
+  // .cards-welcome__image
+
+  &__image {
+    flex: 0 0 toRem(40);
+    width: toRem(40);
+    height: toRem(39);
+    object-fit: contain;
+    font-size: toRem(12);
+  }
+
+  // .cards-welcome__content
+
+  &__content {
+  }
+
+  // .cards-welcome__title
+
+  &__title {
+    font-family: "Poppins", sans-serif;
+    color: #37393f;
+    font-size: toRem(20);
+    font-weight: 600;
+    line-height: 1.5;
+    &:not(:last-child) {
+      margin-bottom: toRem(3);
+    }
+  }
+
+  // .cards-welcome__text
+
+  &__text {
+    color: $textDarkColor;
+    font-size: toRem(16);
+    line-height: 1.35;
+  }
+}
+.actions-right-welcome {
+  // .actions-right-welcome__button
+
+  &__button {
+    min-width: toRem(170);
+    min-height: toRem(60);
+    @media (min-width: $tablet) {
+      min-width: toRem(185);
+      min-height: toRem(65);
+    }
+  }
+}
+.button {
+}

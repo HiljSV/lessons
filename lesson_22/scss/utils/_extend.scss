@@ -1,0 +1,28 @@
+%link-hover1 {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: toRem(-2);
+  width: 0;
+  height: toRem(2);
+  background-color: $secondaryBgColor;
+  transition: all 0.3s;
+}
+
+%link-hover2 {
+  content: "";
+  display: block;
+  width: 0;
+  height: toRem(2);
+  left: 50%;
+  position: relative;
+  margin-top: toRem(2);
+  background-color: $mainColor;
+  transition: all 0.3s;
+}
+
+%text-mb {
+  p:not(:last-child) {
+    margin-bottom: toRem(15);
+  }
+}

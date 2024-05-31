@@ -1,0 +1,86 @@
+/* ! Основні стилі */
+
+body {
+  background-color: $secondaryColor;
+  font-family: $mainFontFamili;
+  font-size: $mainFontSize;
+  font-weight: $mainfontWeight;
+  color: $textLightColor;
+}
+
+.wrapper {
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.wrapper main {
+  flex-grow: 1;
+}
+
+/* ! Обмежуючий контейнер */
+[class*="__container"] {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.button {
+  color: $secondaryColor;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: capitalize;
+  @include adaptiveValue("font-size", 18, 16);
+  padding: toRem(10);
+  min-width: toRem(150);
+  min-height: toRem(45);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $secondaryBgColor;
+  transition: all 0.3s;
+  @media (min-width: $tablet) {
+    min-width: toRem(185);
+    min-height: toRem(65);
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: $mainBgColor;
+      color: $mainColor;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  }
+  // .button--green
+  &.button--green {
+    color: $mainColor;
+    background-color: $mainBgColor;
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: $secondaryBgColor;
+        color: $secondaryColor;
+      }
+    }
+  }
+  // .button--green-white-text
+  &.button--green-white-text {
+    color: $secondaryColor;
+    background-color: $mainBgColor;
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: $secondaryBgColor;
+      }
+    }
+  }
+  // .button--black-white-text
+  &.button--black-white-text {
+    color: $secondaryColor;
+    background-color: $mainColor;
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: $secondaryBgColor;
+      }
+    }
+  }
+}

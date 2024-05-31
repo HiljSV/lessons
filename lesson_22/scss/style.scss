@@ -1,0 +1,52 @@
+@use "sass:math";
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1220;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// Шрифти
+@import "./base/fonts";
+// Обнулення
+@import "./base/reset";
+
+// Функції
+@import "./utils/functions";
+
+//Міксини
+@import "./utils/mixin";
+
+// Змінні
+@import "./utils/variables";
+
+// Шаблони
+@import "./utils/extend";
+
+//Компоненти
+@import "./base/common";
+
+// Змінні зразок, loverCamelCash
+// $mainColor: #fff;
+/* ! Змінні */
+
+//  ! Header
+
+@import "./components/header";
+
+// ! HERO
+
+@import "./components/hero";
+
+// ! WELCOME
+
+@import "./components/welcome";
+
+//  ! Footer
+@import "./components/footer";

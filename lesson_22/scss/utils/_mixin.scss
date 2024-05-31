@@ -1,0 +1,6 @@
+@mixin img($width: 100%, $height: 100%, $oFit: cover, $oPosition: top) {
+  width: $width;
+  height: $height;
+  object-fit: $oFit;
+  object-position: $oPosition;
+}

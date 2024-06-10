@@ -1,0 +1,49 @@
+/* Підключення шрифтів */
+
+/* @import url("fonts.css"); */
+
+/* Скидання стилів */
+
+@import url("reset.css");
+
+body {
+  font-size: 20px;
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}
+
+.page {
+  padding: 50px;
+}
+
+.page > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.button {
+  display: block;
+  padding: 15px 20px;
+  border-radius: 5px;
+  background-color: rgb(78, 78, 148);
+  text-align: center;
+  color: rgb(47, 13, 13);
+}
+
+.link {
+  display: inline-block;
+  text-decoration: underline;
+}
